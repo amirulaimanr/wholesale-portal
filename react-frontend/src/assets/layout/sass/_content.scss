@@ -1,0 +1,99 @@
+.layout-normal-container,
+.layout-main-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+    transition: margin-left $transitionDuration;
+}
+.layout-normal-container {
+    padding: 10rem 2rem 2rem 4rem;
+}
+
+.layout-main {
+    flex: 1 1 auto;
+}
+
+.left-col,
+.right-col,
+.mid-col {
+    height: 480px;
+}
+
+.lefcol-menu {
+    width: 100%;
+    height: 100%;
+    padding: 10px !important;
+}
+
+.p-megamenu-root-list {
+    height: 100% !important;
+    display: flex;
+    justify-content: space-between;
+}
+.p-megamenu.p-megamenu-vertical {
+    height: 100%;
+    width: 100% !important;
+}
+
+.p-submenu-icon {
+    color: #6c757d;
+    margin-left: 0.5rem;
+    right: 0;
+    position: absolute;
+}
+
+.mid-col {
+    margin-top: 5px;
+    height: 100%;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+}
+
+.r-banner-container {
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+}
+
+.r-banner-content {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.club-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.buyer-content {
+    height: 100px;
+    width: 100%;
+
+    margin-top: 10px;
+}
+
+.club-text {
+    font-size: 1rem;
+    font-weight: bolder;
+    margin-top: 20px;
+}
+
+.hot-products-container {
+    border-radius: 10px;
+}
+
+.col-2 {
+    border-radius: 10px;
+}
+
+.hot-img {
+    height: 140px;
+    width: auto;
+}
