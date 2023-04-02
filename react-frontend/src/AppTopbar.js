@@ -6,6 +6,7 @@ import { Button } from "primereact/button";
 import { Menu } from "primereact/menu";
 import { InputText } from "primereact/inputtext";
 import { MegaMenu } from "primereact/megamenu";
+import logo from "./assets/media/logo1.png";
 
 const AppTopbar = (props) => {
     const history = useHistory();
@@ -166,10 +167,10 @@ const AppTopbar = (props) => {
                 <div className="company-container">
                     <Link to="/">
                         <div className="company-items cursor-pointer min-w-max flex align-items-end">
-                            {/* <img src={"assets/logo/cb-logo.svg"} height={30} className="mb-1 mr-2" /> */}
-                            <h3 className="text-orange-500" style={{ fontFamily: "MarlinGeo", fontWeight: "bolder", margin: 0 }}>
-                                Wholesale360
-                            </h3>
+                            <img src={logo} className="logo-topbar" />
+                            {/* <h3 className="text-orange-500" style={{ fontFamily: "MarlinGeo", fontWeight: "bolder", margin: 0 }}>
+                                BigOrder.com
+                            </h3> */}
                         </div>
                     </Link>
                 </div>
