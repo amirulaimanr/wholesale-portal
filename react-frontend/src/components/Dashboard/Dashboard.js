@@ -27,38 +27,36 @@ const Dashboard = (props) => {
         },
         {
             label: "Vehicle parts",
-            icon: "pi pi-fw pi-calendar",
+            icon: "pi pi-fw pi-car",
         },
         {
             label: "Sports",
-            icon: "pi pi-fw pi-cog",
+            icon: "pi pi-fw pi-bolt",
         },
         {
             label: "Industrial Machinery",
-            icon: "pi pi-fw pi-cog",
+            icon: "pi pi-fw pi-building",
         },
         {
             label: "Home & Garden",
-            icon: "pi pi-fw pi-cog",
+            icon: "pi pi-fw pi-home",
         },
         {
             label: "Beauty",
-            icon: "pi pi-fw pi-cog",
+            icon: "pi pi-fw pi-eye",
         },
         {
             label: "All Categories",
-            icon: "pi pi-fw pi-cog",
+            icon: "pi pi-fw pi-align-justify",
             items: [
                 [
                     {
-                        label: "Setting 1",
-                        items: [{ label: "Setting 1.1" }, { label: "Setting 1.2" }],
+                        items: [{ label: "Gift" }, { label: "Furniture" }, { label: "Food" }],
                     },
                 ],
                 [
                     {
-                        label: "Technology 4",
-                        items: [{ label: "Setting 4.1" }, { label: "Setting 4.2" }],
+                        items: [{ label: "Packaging" }, { label: "Printing" }, { label: "Pets" }],
                     },
                 ],
             ],
@@ -83,16 +81,14 @@ const Dashboard = (props) => {
         },
     ];
 
+    // image banner  slideshow
+
     useEffect(() => {
         PhotoService.getImages().then((data) => setImages(data));
     }, []);
 
     const itemTemplate = (item) => {
-        return <img src={item.itemImageSrc} alt={item.alt} style={{ width: "100%", display: "block" }} />;
-    };
-
-    const thumbnailTemplate = (item) => {
-        return <img src={item.thumbnailImageSrc} alt={item.alt} style={{ display: "block" }} />;
+        return <img src={item.itemImageSrc} alt={item.alt} style={{ height: "400px", width: "100%", marginTop: "15px", display: "block" }} />;
     };
 
     return (
@@ -103,25 +99,35 @@ const Dashboard = (props) => {
                 </div>
                 <div class="mid-col col-6 text-center">
                     {/* <div className="card"> */}
-                    <Galleria value={images} responsiveOptions={responsiveOptions} numVisible={5} style={{ maxWidth: "640px" }} showItemNavigators showItemNavigatorsOnHover item={itemTemplate} showThumbnails={false} circular showIndicators transitionInterval={2000} />
+                    <Galleria value={images} responsiveOptions={responsiveOptions} numVisible={5} style={{ maxWidth: "640px" }} autoPlay showItemNavigators showItemNavigatorsOnHover item={itemTemplate} showThumbnails={false} circular showIndicators transitionInterval={3000} />
                     {/* </div> */}
                 </div>
                 <div class="right-col col-3 text-center ">
                     <div className="r-banner-container">
                         <div className="r-banner-content">
                             <div className="text-content">
-                                <div className="club-header">
+                                <div className="club-header cursor-pointer">
                                     Buyers Club Benefits
                                     <div className="arrow-sysmbol">
                                         <i className="pi pi-arrow-right" style={{ fontSize: "1.5rem" }}></i>
                                     </div>
                                 </div>
                             </div>
-                            <div className="card buyer-content">
-                                <div className="buyer-card1"></div>
+                            <div className="card buyer-content cursor-pointer">
+                                <div className="buyer-card1">
+                                    <div className="buyer-card-text">US $10 off with a new supplier</div>
+                                    <div className="buyer-card-img">
+                                        <img class="benefit-img" src="https://img.alicdn.com/imgextra/i4/O1CN01TJxTjd1m7ufWlgcUQ_!!6000000004908-0-tps-1024-1024.jpg" data-spm-anchor-id="a2700.product_home_l0.buyers_club.i1.2ce267afmmhSup" />
+                                    </div>
+                                </div>
                             </div>
-                            <div className="card buyer-content">
-                                <div className="buyer-card2"></div>
+                            <div className="card buyer-content cursor-pointer">
+                                <div className="buyer-card1">
+                                    <div className="buyer-card-text">RFQ: quotes with supplier preferences</div>
+                                    <div className="buyer-card-img">
+                                        <img class="benefit-img" src="https://img.alicdn.com/imgextra/i2/O1CN01ips21L1buUuLEZGW7_!!6000000003525-0-tps-128-128.jpg" />
+                                    </div>
+                                </div>
                             </div>
                             <div className="club-text">Sign up to enjoy exciting Buyers Club benefits</div>
                             <Button label="Join for free" className="p-button-rounded w-12 mt-3" onClick={() => history.push("/signup")} />
@@ -178,9 +184,72 @@ const Dashboard = (props) => {
                     </div>
                     <div className="tr-content">
                         <div className="grid tr-grid">
-                            <div className="col-2 hot-col bg-white cursor-pointer tr-item"></div>
-                            <div className="col-2 hot-col bg-white cursor-pointer tr-item"></div>
-                            <div className="col-2 hot-col bg-white cursor-pointer tr-item"></div>
+                            <div className="col-2 hot-col bg-white cursor-pointer tr-item">
+                                <div className="col-tr-content">
+                                    <div className="col-tr-image">
+                                        <img
+                                            data-v-453d7707=""
+                                            width="100%"
+                                            alt="New Double Cylinder Heavy Duty DC12V Car Air Pump Type Compressor Auto Metal Tire Inflator With LED Light"
+                                            class="img"
+                                            data-src="https://p.globalsources.com/IMAGES/PDT/S1195193275/Car-Air-Pump.jpg"
+                                            src="https://p.globalsources.com/IMAGES/PDT/S1195193275/Car-Air-Pump.jpg"
+                                            lazy="loaded"
+                                        />
+                                    </div>
+                                    <div className="tr-product-details-flexbox">
+                                        <div className="tr-product-name">Stamped Metal Parts OEM Aluminium Deep Drawn Caps</div>
+                                        <div className="tr-product-price">
+                                            <b>US$ 0.01 - 9.99</b> / Piece
+                                        </div>
+                                        <div className="tr-product-qty">100 Pieces (MOQ)</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-2 hot-col bg-white cursor-pointer tr-item">
+                                <div className="col-tr-content">
+                                    <div className="col-tr-image">
+                                        <img
+                                            data-v-453d7707=""
+                                            width="100%"
+                                            alt="New Double Cylinder Heavy Duty DC12V Car Air Pump Type Compressor Auto Metal Tire Inflator With LED Light"
+                                            class="img"
+                                            data-src="https://p.globalsources.com/IMAGES/PDT/S1195193275/Car-Air-Pump.jpg"
+                                            src="https://p.globalsources.com/IMAGES/PDT/S1195193275/Car-Air-Pump.jpg"
+                                            lazy="loaded"
+                                        />
+                                    </div>
+                                    <div className="tr-product-details-flexbox">
+                                        <div className="tr-product-name">Stamped Metal Parts OEM Aluminium Deep Drawn Caps</div>
+                                        <div className="tr-product-price">
+                                            <b>US$ 0.01 - 9.99</b> / Piece
+                                        </div>
+                                        <div className="tr-product-qty">100 Pieces (MOQ)</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-2 hot-col bg-white cursor-pointer tr-item">
+                                <div className="col-tr-content">
+                                    <div className="col-tr-image">
+                                        <img
+                                            data-v-453d7707=""
+                                            width="100%"
+                                            alt="New Double Cylinder Heavy Duty DC12V Car Air Pump Type Compressor Auto Metal Tire Inflator With LED Light"
+                                            class="img"
+                                            data-src="https://p.globalsources.com/IMAGES/PDT/S1195193275/Car-Air-Pump.jpg"
+                                            src="https://p.globalsources.com/IMAGES/PDT/S1195193275/Car-Air-Pump.jpg"
+                                            lazy="loaded"
+                                        />
+                                    </div>
+                                    <div className="tr-product-details-flexbox">
+                                        <div className="tr-product-name">Stamped Metal Parts OEM Aluminium Deep Drawn Caps</div>
+                                        <div className="tr-product-price">
+                                            <b>US$ 0.01 - 9.99</b> / Piece
+                                        </div>
+                                        <div className="tr-product-qty">100 Pieces (MOQ)</div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -193,9 +262,72 @@ const Dashboard = (props) => {
                     </div>
                     <div className="tr-content">
                         <div className="grid tr-grid">
-                            <div className="col-2 hot-col bg-white cursor-pointer tr-item"></div>
-                            <div className="col-2 hot-col bg-white cursor-pointer tr-item"></div>
-                            <div className="col-2 hot-col bg-white cursor-pointer tr-item"></div>
+                            <div className="col-2 hot-col bg-white cursor-pointer tr-item">
+                                <div className="col-tr-content">
+                                    <div className="col-tr-image">
+                                        <img
+                                            data-v-453d7707=""
+                                            width="100%"
+                                            alt="New Double Cylinder Heavy Duty DC12V Car Air Pump Type Compressor Auto Metal Tire Inflator With LED Light"
+                                            class="img"
+                                            data-src="https://p.globalsources.com/IMAGES/PDT/S1195193275/Car-Air-Pump.jpg"
+                                            src="https://p.globalsources.com/IMAGES/PDT/S1195193275/Car-Air-Pump.jpg"
+                                            lazy="loaded"
+                                        />
+                                    </div>
+                                    <div className="tr-product-details-flexbox">
+                                        <div className="tr-product-name">Stamped Metal Parts OEM Aluminium Deep Drawn Caps</div>
+                                        <div className="tr-product-price">
+                                            <b>US$ 0.01 - 9.99</b> / Piece
+                                        </div>
+                                        <div className="tr-product-qty">100 Pieces (MOQ)</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-2 hot-col bg-white cursor-pointer tr-item">
+                                <div className="col-tr-content">
+                                    <div className="col-tr-image">
+                                        <img
+                                            data-v-453d7707=""
+                                            width="100%"
+                                            alt="New Double Cylinder Heavy Duty DC12V Car Air Pump Type Compressor Auto Metal Tire Inflator With LED Light"
+                                            class="img"
+                                            data-src="https://p.globalsources.com/IMAGES/PDT/S1195193275/Car-Air-Pump.jpg"
+                                            src="https://p.globalsources.com/IMAGES/PDT/S1195193275/Car-Air-Pump.jpg"
+                                            lazy="loaded"
+                                        />
+                                    </div>
+                                    <div className="tr-product-details-flexbox">
+                                        <div className="tr-product-name">Stamped Metal Parts OEM Aluminium Deep Drawn Caps</div>
+                                        <div className="tr-product-price">
+                                            <b>US$ 0.01 - 9.99</b> / Piece
+                                        </div>
+                                        <div className="tr-product-qty">100 Pieces (MOQ)</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-2 hot-col bg-white cursor-pointer tr-item">
+                                <div className="col-tr-content">
+                                    <div className="col-tr-image">
+                                        <img
+                                            data-v-453d7707=""
+                                            width="100%"
+                                            alt="New Double Cylinder Heavy Duty DC12V Car Air Pump Type Compressor Auto Metal Tire Inflator With LED Light"
+                                            class="img"
+                                            data-src="https://p.globalsources.com/IMAGES/PDT/S1195193275/Car-Air-Pump.jpg"
+                                            src="https://p.globalsources.com/IMAGES/PDT/S1195193275/Car-Air-Pump.jpg"
+                                            lazy="loaded"
+                                        />
+                                    </div>
+                                    <div className="tr-product-details-flexbox">
+                                        <div className="tr-product-name">Stamped Metal Parts OEM Aluminium Deep Drawn Caps</div>
+                                        <div className="tr-product-price">
+                                            <b>US$ 0.01 - 9.99</b> / Piece
+                                        </div>
+                                        <div className="tr-product-qty">100 Pieces (MOQ)</div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -327,7 +459,7 @@ const Dashboard = (props) => {
                                     <b>US$ 0.01 - 9.99</b> / Piece
                                 </div>
                                 <div className="product-qty">100 Pieces (MOQ)</div>
-                                <div className="product-button">Inquire Now</div>
+                                <div className="product-button">Order Now</div>
                             </div>
                         </div>
                     </div>
@@ -350,7 +482,7 @@ const Dashboard = (props) => {
                                     <b>US$ 0.01 - 9.99</b> / Piece
                                 </div>
                                 <div className="product-qty">100 Pieces (MOQ)</div>
-                                <div className="product-button">Inquire Now</div>
+                                <div className="product-button">Order Now</div>
                             </div>
                         </div>
                     </div>
@@ -373,7 +505,7 @@ const Dashboard = (props) => {
                                     <b>US$ 0.01 - 9.99</b> / Piece
                                 </div>
                                 <div className="product-qty">100 Pieces (MOQ)</div>
-                                <div className="product-button">Inquire Now</div>
+                                <div className="product-button">Order Now</div>
                             </div>
                         </div>
                     </div>
@@ -396,7 +528,7 @@ const Dashboard = (props) => {
                                     <b>US$ 0.01 - 9.99</b> / Piece
                                 </div>
                                 <div className="product-qty">100 Pieces (MOQ)</div>
-                                <div className="product-button">Inquire Now</div>
+                                <div className="product-button">Order Now</div>
                             </div>
                         </div>
                     </div>

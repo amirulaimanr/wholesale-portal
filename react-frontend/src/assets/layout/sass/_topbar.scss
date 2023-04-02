@@ -205,6 +205,11 @@
             margin-top: 6px;
         }
     }
+
+    .left-request:hover,
+    .right-request:hover {
+        color: rgb(228, 137, 18);
+    }
 }
 
 @media (max-width: 991px) {

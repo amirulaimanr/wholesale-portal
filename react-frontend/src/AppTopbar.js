@@ -107,6 +107,24 @@ const AppTopbar = (props) => {
                                           return (
                                               <ul className="p-menu-list p-reset border-top-1 border-200">
                                                   <li className="p-menu-list p-reset">
+                                                      <a className="p-menuitem-link" role="menuitem">
+                                                          <span className=""></span>
+                                                          <span className={"p-menuitem-text "}>Buyer Center</span>
+                                                      </a>
+                                                  </li>
+                                                  <li className="p-menu-list p-reset">
+                                                      <a className="p-menuitem-link" role="menuitem">
+                                                          <span className=""></span>
+                                                          <span className={"p-menuitem-text "}>My Inquires</span>
+                                                      </a>
+                                                  </li>
+                                                  <li className="p-menu-list p-reset">
+                                                      <a className="p-menuitem-link" role="menuitem">
+                                                          <span className=""></span>
+                                                          <span className={"p-menuitem-text "}>My RFQ</span>
+                                                      </a>
+                                                  </li>
+                                                  <li className="p-menu-list p-reset">
                                                       <a className="p-menuitem-link" onClick={onLogout} role="menuitem">
                                                           <span className=""></span>
                                                           <span className={"p-menuitem-text "}>My Account</span>

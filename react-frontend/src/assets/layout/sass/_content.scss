@@ -27,6 +27,11 @@
     padding: 10px !important;
 }
 
+.p-megamenu-vertical .p-megamenu-root-list > .p-menuitem-active > .p-megamenu-panel {
+    left: 105% !important;
+    top: -100px;
+}
+
 .col-3 {
     padding-bottom: 0;
     padding-top: 0;
@@ -52,6 +57,15 @@
 .mid-col {
     background-color: #f8f9fa;
     border-radius: 5px;
+}
+
+.p-galleria .p-galleria-indicators .p-galleria-indicator.p-highlight button {
+    background-color: #ff9a27 !important;
+}
+
+.p-galleria .p-galleria-indicators .p-galleria-indicator button {
+    width: 10px !important;
+    height: 10px !important;
 }
 
 .r-banner-container {
@@ -87,6 +101,23 @@
     font-size: 1rem;
     font-weight: bolder;
     margin-top: 20px;
+}
+
+.buyer-card1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buyer-card-text {
+    font-size: 1rem;
+    padding-right: 20px;
+    font-weight: 600;
+}
+
+.buyer-card-img img {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
 }
 
 .hot-products-container {
@@ -167,6 +198,39 @@
     justify-content: space-between;
 }
 
+.col-tr-content {
+    width: 100%;
+    height: 100%;
+    padding: 10px 5px 0 5px;
+}
+
+.col-tr-image {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    justify-content: center;
+    // border: 1px solid blue;
+}
+
+.col-tr-image img {
+    width: 80px;
+    height: 100%;
+}
+
+.tr-product-details-flexbox {
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.tr-product-name,
+.tr-product-price,
+.tr-product-qty {
+    font-size: 10px;
+}
+
 .tr-text,
 .weekly-deals-text {
     font-size: 16px;
@@ -184,7 +248,7 @@
 }
 
 .tr-content {
-    margin-top: 40px;
+    margin-top: 30px;
     height: 200px;
     width: 100%;
 }
@@ -193,7 +257,7 @@
     display: flex;
     margin: 0 !important;
     width: 100%;
-    height: 160px;
+    height: 100%;
     justify-content: space-between;
     padding: 5px;
 }
