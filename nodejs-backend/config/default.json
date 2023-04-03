@@ -34,5 +34,5 @@
       }
     }
   },
-  "mongodb": "mongodb://localhost:27017/fp-scratch"
+  "mongodb": "mongodb://localhost:27017/wholesale-portal"
 }
