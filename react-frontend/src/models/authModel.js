@@ -1,3 +1,5 @@
+// defines a Redux model for authentication that can be used in a React application to handle login, logout, and user creation operations.
+
 import client from "../services/restClient";
 // import mongoose from "mongoose";
 const initState = {
@@ -73,7 +75,7 @@ export const auth = {
         },
 
         //////////////////////
-        //// CREATE USAER ////
+        //// CREATE USER ////
         //////////////////////
         async createUser(data, reduxState) {
             return new Promise(async (resolve, reject) => {
