@@ -11,6 +11,7 @@ import logo from "./assets/media/logo1.png";
 const AppTopbar = (props) => {
     const history = useHistory();
     const userMenuRef = useRef(null);
+    const auth = localStorage.getItem("user");
 
     const toggleUserMenu = (e) => userMenuRef.current.toggle(e);
     const items = [
@@ -94,7 +95,6 @@ const AppTopbar = (props) => {
         {
             label: props.isLoggedIn ? props.user?.email : "Sign In | Register",
             icon: "pi pi-fw pi-user",
-
             items: [
                 [
                     {
@@ -106,11 +106,17 @@ const AppTopbar = (props) => {
                                       template: (item) => {
                                           return (
                                               <ul className="p-menu-list p-reset border-top-1 border-200">
+                                                  {props.user?.role === "Supplier" && (
+                                                      <li className="p-menu-list p-reset">
+                                                          <Link to="/supplier-dashboard" className="p-menuitem-link" role="menuitem">
+                                                              <span className={"p-menuitem-text "}>Supplier Dashboard</span>
+                                                          </Link>
+                                                      </li>
+                                                  )}
                                                   <li className="p-menu-list p-reset">
-                                                      <a className="p-menuitem-link" role="menuitem">
-                                                          <span className=""></span>
+                                                      <Link to="/buyer-center" className="p-menuitem-link" role="menuitem">
                                                           <span className={"p-menuitem-text "}>Buyer Center</span>
-                                                      </a>
+                                                      </Link>
                                                   </li>
                                                   <li className="p-menu-list p-reset">
                                                       <a className="p-menuitem-link" role="menuitem">
@@ -125,13 +131,13 @@ const AppTopbar = (props) => {
                                                       </a>
                                                   </li>
                                                   <li className="p-menu-list p-reset">
-                                                      <a className="p-menuitem-link" onClick={onLogout} role="menuitem">
+                                                      <a className="p-menuitem-link" role="menuitem">
                                                           <span className=""></span>
                                                           <span className={"p-menuitem-text "}>My Account</span>
                                                       </a>
                                                   </li>
                                                   <li className="p-menu-list p-reset">
-                                                      <a className="p-menuitem-link" onClick={onLogout} role="menuitem">
+                                                      <a className="p-menuitem-link" role="menuitem">
                                                           <span className=""></span>
                                                           <span className={"p-menuitem-text "}>My Orders</span>
                                                       </a>
