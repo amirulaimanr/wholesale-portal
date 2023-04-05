@@ -2,12 +2,13 @@ import React from "react";
 import { connect } from "react-redux";
 import { Redirect, Route } from "react-router-dom";
 
-const ProtectedRoute = ({ children, isLoggedIn, ...rest }) => {
+const ProtectedRoute = ({ children, isLoggedIn, role, allowedRoles, ...rest }) => {
+    const isAuthorized = isLoggedIn && allowedRoles.includes(role);
     return (
         <Route
             {...rest}
             render={({ location }) =>
-                isLoggedIn ? (
+                isAuthorized ? (
                     children
                 ) : (
                     <Redirect
@@ -23,12 +24,8 @@ const ProtectedRoute = ({ children, isLoggedIn, ...rest }) => {
 };
 
 const mapState = (state) => {
-    const { isLoggedIn } = state.auth;
-    return { isLoggedIn };
+    const { isLoggedIn, user } = state.auth;
+    return { isLoggedIn, role: user?.role };
 };
-
-const mapDispatch = (dispatch) => ({
-    //
-});
 
 export default connect(mapState, null)(ProtectedRoute);
