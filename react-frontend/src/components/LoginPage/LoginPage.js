@@ -46,10 +46,10 @@ const LoginPage = (props) => {
     };
 
     return (
-        <div className="grid p-fluid flex flex-column align-items-center h-screen">
+        <div className="grid p-fluid flex flex-column align-items-center ">
             <div className="col-12 lg:col-6 xl:col-4">
-                <div className="card flex flex-column align-items-center">
-                    <div className="grid col-12 xl:col-8 flex flex-column align-items-center">
+                <div className="card flex flex-column align-items-center login-card">
+                    <div className="grid col-12 xl:col-8 flex flex-column align-items-center mt-6">
                         <h4>Login</h4>
                         <div className="w-full mb-4">
                             <p className="m-0">Email</p>
