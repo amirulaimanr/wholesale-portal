@@ -214,7 +214,7 @@ const SignUpPage = (props) => {
                                     <div className="flex align-items-center ml-5">
                                         <RadioButton
                                             inputId="role2"
-                                            name="supplier"
+                                            name="Supplier"
                                             value="Supplier"
                                             onChange={(e) => {
                                                 console.log(e.value);
