@@ -26,11 +26,6 @@ export const PhotoService = {
                 alt: "Description for Image 5",
                 title: "Title 5",
             },
-            // {
-            //     itemImageSrc: require("../assets/media/banner5.jpg"),
-            //     alt: "Description for Image 6",
-            //     title: "Title 6",
-            // },
         ];
     },
 
