@@ -4,6 +4,9 @@ import { Link, useHistory } from "react-router-dom";
 import classNames from "classnames";
 import { Button } from "primereact/button";
 import { Menu } from "primereact/menu";
+import { InputText } from "primereact/inputtext";
+import { MegaMenu } from "primereact/megamenu";
+import logo from "./assets/media/logo1.png";
 
 const AppTopbar = (props) => {
     const history = useHistory();
@@ -34,6 +37,128 @@ const AppTopbar = (props) => {
         },
     ];
 
+    // nav wrapper left menu
+    const left_items = [
+        {
+            label: "Languages",
+            icon: "pi pi-fw pi-globe",
+            items: [
+                [
+                    {
+                        items: [{ label: "English" }, { label: "Deutsch" }, { label: "Português" }, { label: "Español" }],
+                    },
+                ],
+            ],
+        },
+        {
+            label: "More",
+            icon: "pi pi-fw pi-users",
+            items: [
+                [
+                    {
+                        label: "Buyer Central",
+                        items: [{ label: "Services" }, { label: "Logistic Services" }],
+                    },
+                    {
+                        label: "Sell on Wholesale360",
+                        items: [{ label: "For global suppliers" }, { label: "For chinese suppliers" }],
+                    },
+                ],
+            ],
+        },
+        {
+            label: "Help",
+            icon: "pi pi-fw pi-calendar",
+            items: [
+                [
+                    {
+                        items: [{ label: "For buyers" }, { label: "For suppliers" }, { label: "Report abuse" }, { label: "Open case" }],
+                    },
+                ],
+            ],
+        },
+    ];
+    const right_items = [
+        {
+            label: "Favourites",
+            icon: "pi pi-fw pi-heart",
+        },
+        {
+            label: "Cart",
+            icon: "pi pi-fw pi-shopping-cart",
+        },
+        {
+            label: "Messages",
+            icon: "pi pi-fw pi-comments",
+        },
+        {
+            label: props.isLoggedIn ? props.user?.email : "Sign In | Register",
+            icon: "pi pi-fw pi-user",
+
+            items: [
+                [
+                    {
+                        label: "Welcome Back!",
+                        items: props.isLoggedIn
+                            ? [
+                                  {
+                                      label: "Logout",
+                                      template: (item) => {
+                                          return (
+                                              <ul className="p-menu-list p-reset border-top-1 border-200">
+                                                  <li className="p-menu-list p-reset">
+                                                      <a className="p-menuitem-link" role="menuitem">
+                                                          <span className=""></span>
+                                                          <span className={"p-menuitem-text "}>Buyer Center</span>
+                                                      </a>
+                                                  </li>
+                                                  <li className="p-menu-list p-reset">
+                                                      <a className="p-menuitem-link" role="menuitem">
+                                                          <span className=""></span>
+                                                          <span className={"p-menuitem-text "}>My Inquires</span>
+                                                      </a>
+                                                  </li>
+                                                  <li className="p-menu-list p-reset">
+                                                      <a className="p-menuitem-link" role="menuitem">
+                                                          <span className=""></span>
+                                                          <span className={"p-menuitem-text "}>My RFQ</span>
+                                                      </a>
+                                                  </li>
+                                                  <li className="p-menu-list p-reset">
+                                                      <a className="p-menuitem-link" onClick={onLogout} role="menuitem">
+                                                          <span className=""></span>
+                                                          <span className={"p-menuitem-text "}>My Account</span>
+                                                      </a>
+                                                  </li>
+                                                  <li className="p-menu-list p-reset">
+                                                      <a className="p-menuitem-link" onClick={onLogout} role="menuitem">
+                                                          <span className=""></span>
+                                                          <span className={"p-menuitem-text "}>My Orders</span>
+                                                      </a>
+                                                  </li>
+                                                  <li className="p-menu-list p-reset">
+                                                      <a className="p-menuitem-link" onClick={onLogout} role="menuitem">
+                                                          <span className={"text-primary"}></span>
+                                                          <span className={"p-menuitem-text text-primary"}>{item.label}</span>
+                                                      </a>
+                                                  </li>
+                                              </ul>
+                                          );
+                                      },
+                                  },
+                              ]
+                            : [
+                                  { label: "Sign In", command: () => history.push("/login") },
+                                  { label: "Register", command: () => history.push("/signup") },
+                              ],
+                    },
+                ],
+            ],
+        },
+    ];
+
+    // logout
+
     const onLogout = async () => {
         try {
             await props.logout();
@@ -43,61 +168,51 @@ const AppTopbar = (props) => {
             console.log("error", error);
         }
     };
+
     return (
         <div className="layout-topbar">
-            <Link to="/">
-                <div className="cursor-pointer min-w-max flex align-items-end">
-                    {/* <img src={"assets/logo/cb-logo.svg"} height={30} className="mb-1" /> */}
-                    <h3 className="text-red-500" style={{ fontFamily: "MarlinGeo", fontWeight: "bolder", margin: 0 }}>
-                        react-frontend
-                    </h3>
+            <div className="nav-wrapper">
+                <div className="nav-left">
+                    <MegaMenu className="megamenu-left" model={left_items} breakpoint="960px" />
                 </div>
-            </Link>
 
-            {/* search filter */}
+                <div className="nav-right">
+                    <MegaMenu className="megamenu-right" model={right_items} breakpoint="960px" />
+                </div>
+            </div>
 
-            {/* {props.showSideMenuButton ? (
-                <button type="button" className="p-link  layout-menu-button layout-topbar-button" onClick={props.onToggleMenuClick}>
-                    <i className="pi pi-bars" />
-                </button>
-            ) : null} */}
-
-            {/* <button type="button" className="p-link layout-topbar-menu-button layout-topbar-button" onClick={props.onMobileTopbarMenuClick}>
-                <i className="pi pi-ellipsis-v" />
-            </button> */}
-
-            <ul className={classNames("layout-topbar-menu lg:flex origin-top", { "layout-topbar-menu-mobile-active": props.mobileTopbarMenuActive })}>
-                {/* {props.onSettings ? (
-                    <li>
-                        <button className="p-link layout-topbar-button" onClick={props.onSettings}>
-                            <i className="pi pi-cog" />
-                            <span>Settings</span>
-                        </button>
-                    </li>
-                ) : null} */}
-                {/* {props.onAccount ? (
-                    <li>
-                        <button className="p-link layout-topbar-button" onClick={props.onAccount}>
-                            <i className="pi pi-user" />
-                            <span>Profile</span>
-                        </button>
-                    </li>
-                ) : null} */}
-                {props.isLoggedIn ? (
-                    <Button className="p-button-rounded p-button-outlined ml-3" style={{ zIndex: 20 }} icon="pi pi-user" label={props.user?.email} onClick={toggleUserMenu} aria-controls="user-popup-menu" aria-haspopup />
-                ) : (
-                    <Button label="login" className="p-button-rounded" onClick={() => history.push("/login")} />
-                )}
-            </ul>
-            <Menu
-                model={items}
-                popup
-                ref={userMenuRef}
-                id="user-popup-menu"
-                onClick={() => {
-                    toggleUserMenu();
-                }}
-            />
+            <div className="search-container">
+                <div className="company-container">
+                    <Link to="/">
+                        <div className="company-items cursor-pointer min-w-max flex align-items-end">
+                            <img src={logo} className="logo-topbar" />
+                            {/* <h3 className="text-orange-500" style={{ fontFamily: "MarlinGeo", fontWeight: "bolder", margin: 0 }}>
+                                BigOrder.com
+                            </h3> */}
+                        </div>
+                    </Link>
+                </div>
+                <div className="search-wrapper">
+                    <div className="p-inputgroup flex-1 w-28rem">
+                        <InputText placeholder="Search" />
+                        <Button icon="pi pi-search" className="p-button-warning" />
+                    </div>
+                </div>
+                <div className="request-container">
+                    <div className="left-request">
+                        <div className="logo-request">
+                            <i className="pi pi-box" style={{ fontSize: "2.2rem" }}></i>
+                        </div>
+                        <div className="text-request">Request for Quotation</div>
+                    </div>
+                    <div className="right-request">
+                        <div className="logo-orders">
+                            <i className="pi pi-inbox" style={{ fontSize: "2.2rem" }}></i>
+                        </div>
+                        <div className="text-orders">Orders</div>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 };
