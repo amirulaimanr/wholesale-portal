@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
 import classNames from "classnames";
-import { Route, useLocation, useHistory, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, useLocation, useHistory, Switch } from "react-router-dom";
 import { CSSTransition } from "react-transition-group";
 
 import AppTopbar from "../AppTopbar";
@@ -9,9 +9,12 @@ import { AppMenu } from "../AppMenu";
 import { AppConfigStatic } from "../AppConfigStatic";
 
 import Dashboard from "../components/Dashboard/Dashboard";
+import SupplierDashboard from "../components/SupplierDashboard/SupplierDashboard";
+import ProtectedRoute from "./ProtectedRoute";
 
 import PrimeReact from "primereact/api";
 
+// css style
 import "primereact/resources/primereact.css";
 import "primeicons/primeicons.css";
 import "primeflex/primeflex.css";
@@ -22,10 +25,13 @@ import "../assets/layout/layout.scss";
 import "../App.scss";
 import "../customStyles.css";
 
+// import components
 import LoginPage from "../components/LoginPage/LoginPage";
 import SignUpPage from "../components/LoginPage/SignUpPage";
 import NoMatch from "./NoMatch";
 import MainLayout from "../components/Layouts/MainLayout";
+import SupplierLayout from "../components/Layouts/SupplierLayout";
+import LayoutSelector from "../components/Layouts/LayoutSelector";
 
 import Account from "../components/Account/Account";
 import ToastWrapper from "./wrappers/ToastWrapper";
@@ -155,7 +161,7 @@ const MyRouter = () => {
     });
 
     // exclude path for render other components inside div
-    const excludePaths = ["/login", "/signup"];
+    const excludePaths = ["/login", "/signup", "/supplier-dashboard"];
 
     return (
         // <div>
@@ -176,7 +182,8 @@ const MyRouter = () => {
             {/* <div className="layout-sidebar" onClick={onSidebarClick}>
                 <AppMenu model={menu} onMenuItemClick={onMenuItemClick} layoutColorMode={layoutColorMode} />
             </div> */}
-            <MainLayout>
+
+            <LayoutSelector>
                 <Switch>
                     <Route path="/" exact render={() => <Dashboard colorMode={layoutColorMode} location={location} />} />
                     <Route path="/dashboard" exact render={() => <Dashboard colorMode={layoutColorMode} location={location} />} />
@@ -184,12 +191,13 @@ const MyRouter = () => {
                     <Route path="/signup" exact component={SignUpPage} />
                     <Route path="/account" component={Account} />
                     <Route path="/users" component={UsersPage} />
-                    {/* ~cb-add-route~ */}
-
+                    <ProtectedRoute path="/supplier-dashboard" component={SupplierDashboard} allowedRoles={["Supplier"]} />
                     <Route path="*" component={NoMatch} />
                 </Switch>
-                <AppFooter layoutColorMode={layoutColorMode} />
-            </MainLayout>
+            </LayoutSelector>
+
+            <AppFooter layoutColorMode={layoutColorMode} />
+
             <LoadingWrapper />
             <ToastWrapper />
             <StartupWrapper />
