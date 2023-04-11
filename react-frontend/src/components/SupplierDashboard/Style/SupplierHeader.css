@@ -1,0 +1,136 @@
+.main-wrap {
+    display: flex;
+    flex-direction: column;
+    margin-left: 240px;
+}
+
+.main-header {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.col-search {
+    display: flex;
+    align-items: center;
+}
+
+.searchform {
+    display: flex;
+    align-items: center;
+}
+
+.p-inputgroup {
+    width: 600px !important;
+    padding-left: 20px;
+}
+.input-group {
+    display: flex;
+    align-items: center;
+}
+
+.form-control {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    padding: 5px 10px;
+    margin-right: 10px;
+    font-size: 16px;
+    color: #555555;
+    width: 200px;
+}
+
+.btn-light {
+    background-color: transparent;
+    border: none;
+}
+
+.btn-light:hover {
+    background-color: #f2f2f2;
+}
+
+.col-nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    margin-right: 10px;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    color: #555555;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.nav-link:hover {
+    background-color: #f2f2f2;
+}
+
+.btn-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.btn-icon:hover {
+    background-color: #f2f2f2;
+}
+
+.dropdown-toggle {
+    display: flex;
+    align-items: center;
+    color: #555555;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.dropdown-toggle:hover {
+    background-color: #f2f2f2;
+}
+
+.dropdown-menu {
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    top: 70px;
+    display: none;
+}
+
+.dropdown-item {
+    color: #555555;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.dropdown-item:hover {
+    background-color: #f2f2f2;
+}

@@ -6,10 +6,17 @@ import SupplierLayout from "./SupplierLayout";
 const LayoutSelector = ({ children }) => {
     const location = useLocation();
 
-    if (location.pathname === "/supplier-dashboard") {
-        return <SupplierLayout>{children}</SupplierLayout>;
-    } else {
-        return <MainLayout>{children}</MainLayout>;
+    switch (location.pathname) {
+        case "/supplier-dashboard":
+        case "/supplier-products":
+        case "/add-products":
+        case "/supplier-category":
+        case "/supplier-orders":
+        case "/orders":
+        case "/supplier-users":
+            return <SupplierLayout>{children}</SupplierLayout>;
+        default:
+            return <MainLayout>{children}</MainLayout>;
     }
 };
 

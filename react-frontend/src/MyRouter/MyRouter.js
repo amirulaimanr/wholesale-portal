@@ -38,6 +38,15 @@ import ToastWrapper from "./wrappers/ToastWrapper";
 import StartupWrapper from "./wrappers/StartupWrapper";
 import LoadingWrapper from "./wrappers/LoadingWrapper";
 import UsersPage from "../components/UsersPage/UsersPage";
+import ProductScreen from "../components/SupplierDashboard/Screen/productScreen";
+import AddProducts from "../components/SupplierDashboard/Screen/AddProducts";
+import ProductsEditScreen from "../components/SupplierDashboard/Screen/ProductsEditScreen";
+import CategoriesScreen from "../components/SupplierDashboard/Screen/CategoriesScreen";
+import OrderScreen from "../components/SupplierDashboard/Screen/OrderScreen";
+import OrderMain from "../components/SupplierDashboard/OrderComponents/OrderMain";
+import OrderDetailsMain from "../components/SupplierDashboard/OrderComponents/OrderDetailsMain";
+import OrderDetailsScreen from "../components/SupplierDashboard/Screen/OrderDetailsScreen";
+import UsersScreen from "../components/SupplierDashboard/Screen/UsersScreen";
 // ~cb-add-import~
 
 const MyRouter = () => {
@@ -161,7 +170,7 @@ const MyRouter = () => {
     });
 
     // exclude path for render other components inside div
-    const excludePaths = ["/login", "/signup", "/supplier-dashboard"];
+    const excludePaths = ["/login", "/signup", "/supplier-dashboard", "/supplier-products", "/add-products", "/supplier-category", "/supplier-orders", "/orders", "/supplier-users"];
 
     return (
         // <div>
@@ -192,6 +201,14 @@ const MyRouter = () => {
                     <Route path="/account" component={Account} />
                     <Route path="/users" component={UsersPage} />
                     <ProtectedRoute path="/supplier-dashboard" component={SupplierDashboard} allowedRoles={["Supplier"]} />
+                    <ProtectedRoute path="/supplier-products" component={ProductScreen} allowedRoles={["Supplier"]} />
+                    <ProtectedRoute path="/add-products" component={AddProducts} allowedRoles={["Supplier"]} />
+                    <ProtectedRoute path="/product/${product._id}/edit" component={ProductsEditScreen} allowedRoles={["Supplier"]} />
+                    <ProtectedRoute path="/supplier-category" component={CategoriesScreen} allowedRoles={["Supplier"]} />
+                    <ProtectedRoute path="/supplier-orders" component={OrderScreen} allowedRoles={["Supplier"]} />
+                    <ProtectedRoute path="/orders" component={OrderDetailsScreen} allowedRoles={["Supplier"]} />
+                    <ProtectedRoute path="/supplier-users" component={UsersScreen} allowedRoles={["Supplier"]} />
+
                     <Route path="*" component={NoMatch} />
                 </Switch>
             </LayoutSelector>
