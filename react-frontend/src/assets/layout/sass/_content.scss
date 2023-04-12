@@ -6,6 +6,7 @@
     justify-content: space-between;
     transition: margin-left $transitionDuration;
 }
+
 .layout-normal-container {
     display: flex;
     flex-direction: column;
@@ -14,6 +15,7 @@
     transition: margin-left $transitionDuration;
     padding: 10rem 2rem 2rem 4rem;
     width: 1400px;
+    margin: auto;
 }
 
 .layout-fullwidth-container {
