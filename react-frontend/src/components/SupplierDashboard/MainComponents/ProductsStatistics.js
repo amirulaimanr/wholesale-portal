@@ -7,7 +7,9 @@ const ProductsStatistics = () => {
             <div className="card-main mb-4 shadow-sm">
                 <article className="card-body">
                     <h5 className="card-title">Products statistic</h5>
-                    <img src={ProductImg} />
+                    <div className="statistic-img">
+                        <img src={ProductImg} />
+                    </div>
                 </article>
             </div>
         </div>
