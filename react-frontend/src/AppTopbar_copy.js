@@ -159,16 +159,6 @@ const AppTopbar = (props) => {
 
     // logout
 
-    const onLogout = async () => {
-        try {
-            await props.logout();
-            history.replace("/");
-            toggleUserMenu();
-        } catch (error) {
-            console.log("error", error);
-        }
-    };
-
     return (
         <div className="layout-topbar">
             <div className="nav-wrapper">

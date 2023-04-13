@@ -11,6 +11,7 @@ import { AppConfigStatic } from "../AppConfigStatic";
 import Dashboard from "../components/Dashboard/Dashboard";
 import SupplierDashboard from "../components/SupplierDashboard/SupplierDashboard";
 import ProtectedRoute from "./ProtectedRoute";
+import SupplierRoute from "./SupplierRoute";
 
 import PrimeReact from "primereact/api";
 
@@ -169,6 +170,10 @@ const MyRouter = () => {
         "layout-theme-light": layoutColorMode === "light",
     });
 
+    // supplierRoute
+    const isAuthenticated = localStorage.getItem("token") ? true : false;
+    const isSupplier = localStorage.getItem("role") === "Supplier";
+
     // exclude path for render other components inside div
     const excludePaths = ["/login", "/signup", "/supplier-dashboard", "/supplier-products", "/add-products", "/supplier-category", "/supplier-orders", "/orders", "/supplier-users"];
 
@@ -200,14 +205,17 @@ const MyRouter = () => {
                     <Route path="/signup" exact component={SignUpPage} />
                     <Route path="/account" component={Account} />
                     <Route path="/users" component={UsersPage} />
-                    <ProtectedRoute path="/supplier-dashboard" component={SupplierDashboard} allowedRoles={["Supplier"]} />
-                    <ProtectedRoute path="/supplier-products" component={ProductScreen} allowedRoles={["Supplier"]} />
-                    <ProtectedRoute path="/add-products" component={AddProducts} allowedRoles={["Supplier"]} />
-                    <ProtectedRoute path="/product/${product._id}/edit" component={ProductsEditScreen} allowedRoles={["Supplier"]} />
-                    <ProtectedRoute path="/supplier-category" component={CategoriesScreen} allowedRoles={["Supplier"]} />
-                    <ProtectedRoute path="/supplier-orders" component={OrderScreen} allowedRoles={["Supplier"]} />
-                    <ProtectedRoute path="/orders" component={OrderDetailsScreen} allowedRoles={["Supplier"]} />
-                    <ProtectedRoute path="/supplier-users" component={UsersScreen} allowedRoles={["Supplier"]} />
+
+                    {/* supplier-dashboard */}
+
+                    <SupplierRoute exact path="/supplier-dashboard" component={SupplierDashboard} isAuthenticated={isAuthenticated} isSupplier={isSupplier} />
+                    <SupplierRoute path="/supplier-products" component={ProductScreen} isAuthenticated={isAuthenticated} isSupplier={isSupplier} />
+                    <SupplierRoute path="/add-products" component={AddProducts} isAuthenticated={isAuthenticated} isSupplier={isSupplier} />
+                    <SupplierRoute path="/product/${product._id}/edit" component={ProductsEditScreen} isAuthenticated={isAuthenticated} isSupplier={isSupplier} />
+                    <SupplierRoute path="/supplier-category" component={CategoriesScreen} isAuthenticated={isAuthenticated} isSupplier={isSupplier} />
+                    <SupplierRoute path="/supplier-orders" component={OrderScreen} isAuthenticated={isAuthenticated} isSupplier={isSupplier} />
+                    <SupplierRoute path="/orders" component={OrderDetailsScreen} isAuthenticated={isAuthenticated} isSupplier={isSupplier} />
+                    <SupplierRoute path="/supplier-users" component={UsersScreen} isAuthenticated={isAuthenticated} isSupplier={isSupplier} />
 
                     <Route path="*" component={NoMatch} />
                 </Switch>
