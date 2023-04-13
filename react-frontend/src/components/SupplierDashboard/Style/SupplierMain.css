@@ -176,7 +176,7 @@ svg {
     vertical-align: middle;
 }
 
-.card-body img {
+.statistic-img img {
     width: 100%;
     height: 350px;
     object-fit: contain;
@@ -409,7 +409,7 @@ svg {
 
 .col-lg-3 {
     flex: 0 0 auto;
-    width: 4%;
+    width: 25%;
 }
 
 .card-product-grid .info-wrap {
@@ -866,9 +866,10 @@ article {
 
 /* users */
 
-.row-cols-xl-4 > * {
-    flex: 0 0 auto;
-    width: 25%;
+.col-user {
+    width: 240px;
+    height: 100%;
+    padding: 20px;
 }
 
 .card-user {
@@ -879,11 +880,17 @@ article {
     position: absolute;
     transform: translate(-50%, -50%);
     top: 100%;
-}
+} */
 
 .img-md {
     width: 112px;
     height: 112px;
+    margin: auto;
+}
+
+.user-card {
+    display: grid;
+    place-items: center;
 }
 
 .img-lg,
@@ -898,4 +905,4 @@ article {
 .img-avatar {
     border-radius: 100%;
     border: 3px solid #fff;
-} */
+}

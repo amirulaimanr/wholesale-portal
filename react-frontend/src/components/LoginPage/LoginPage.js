@@ -25,9 +25,15 @@ const LoginPage = (props) => {
 
     const login = () => {
         if (validate()) {
-            props.login({ email, password }).then(() => {
-                history.push("/");
-            });
+            props
+                .login({ email, password })
+                .then((result) => {
+                    localStorage.setItem("token", result.accessToken);
+                    history.push("/");
+                })
+                .catch((error) => {
+                    // Handle login error
+                });
         }
     };
 

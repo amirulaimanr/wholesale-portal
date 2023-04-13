@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import userimg from "../../../assets/media/favicon.png";
 
 const UserComponent = () => (
     <section className="content-main">
@@ -38,11 +39,11 @@ const UserComponent = () => (
 
             {/* Card */}
             <div className="card-body">
-                <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4">
-                    <div className="col">
+                <div className="grid">
+                    <div className="col-user">
                         <div className="card-main card-user shadow-sm">
-                            <div className="card-header">
-                                <img className="img-md img-avatar" src="" alt="" />
+                            <div className="card-header user-card">
+                                <img className="img-md img-avatar" src={userimg} alt="" />
                             </div>
                             <div className="card-body">
                                 <h5 className="card-title mt-5">Admin</h5>
@@ -57,10 +58,10 @@ const UserComponent = () => (
                     </div>
 
                     {/* user */}
-                    <div className="col">
+                    <div className="col-user">
                         <div className="card-main card-user shadow-sm">
-                            <div className="card-header">
-                                <img className="" src="" alt="" />
+                            <div className="card-header user-card">
+                                <img className="img-md img-avatar" src={userimg} alt="" />
                             </div>
                             <div className="card-body">
                                 <h5 className="card-title mt-5">User</h5>
