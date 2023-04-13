@@ -1,0 +1,31 @@
+{
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/wholesale-portal-postman.json": true,
+    "**/README.md": true,
+    "**/docker-compose.yaml": true,
+    "react-frontend/LICENSE.md": true,
+    "react-frontend/Dockerfile": true,
+    "react-frontend/.gitignore": true,
+    "react-frontend/.gitattributes": true,
+    "react-frontend/.editorconfig": true,
+    "react-frontend/.dockerignore": true,
+    "react-frontend/public": true,
+    "react-frontend/node_modules": true,
+    "react-frontend\\src/App.test.js.demo": true,
+    "react-frontend\\src/serviceWorker.js": true,
+    "react-frontend\\src/AppTopbar_copy.js": true,
+    "react-frontend\\src/App.scss": true,
+    "nodejs-backend/Dockerfile": true,
+    "nodejs-backend/.gitignore": true,
+    "nodejs-backend/.eslintrc.json": true,
+    "nodejs-backend/.editorconfig": true,
+    "nodejs-backend/.dockerignore": true
+  },
+  "explorerExclude.backup": {}
+}
