@@ -2,10 +2,14 @@
 
 import client from "../services/restClient";
 // import mongoose from "mongoose";
+
+// initialState
+
 const initState = {
     user: {},
     isLoggedIn: false,
 };
+
 export const auth = {
     state: {
         ...initState,
@@ -16,6 +20,7 @@ export const auth = {
             return { ...state, ...newState };
         },
     },
+
     effects: (dispatch) => ({
         ///////////////
         //// LOGIN //// using feathers rest client
@@ -27,6 +32,9 @@ export const auth = {
                 try {
                     let loginResponse = await client.authenticate({ ...data, strategy: "local" });
                     this.update({ isLoggedIn: true, user: loginResponse.user });
+                    localStorage.setItem("userInfo", JSON.stringify(loginResponse.user));
+                    localStorage.setItem("token", loginResponse.accessToken);
+                    localStorage.setItem("role", loginResponse.user.role);
                     resolve();
                 } catch (error) {
                     console.log("error", { error });
@@ -43,6 +51,7 @@ export const auth = {
                 dispatch.loading.show();
                 try {
                     let loginResponse = await client.reAuthenticate();
+                    console.log(loginResponse);
                     this.update({ isLoggedIn: true, user: loginResponse.user });
                     resolve();
                 } catch (error) {
