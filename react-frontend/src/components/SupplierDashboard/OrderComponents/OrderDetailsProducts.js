@@ -19,7 +19,7 @@ const OrderDetailsProducts = () => {
                     <td>
                         <Link className="itemside" to="#">
                             <div className="left">
-                                <img src="" alt="" class="img-xs" />
+                                <img src="" alt="" className="img-xs" />
                             </div>
                             <div className="info">Velcro Sneakers For Boys</div>
                         </Link>

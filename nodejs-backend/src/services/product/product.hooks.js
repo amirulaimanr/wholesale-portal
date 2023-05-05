@@ -1,17 +1,8 @@
 const { authenticate } = require("@feathersjs/authentication").hooks;
-const { populate } = require("feathers-hooks-common");
-
-const supplierProductsSchema = {
-  include: {
-    service: "product",
-    nameAs: "product",
-    parentField: "_id",
-    childField: "supplierId",
-  },
-};
 
 module.exports = {
   before: {
+    // all: [authenticate("jwt")],
     all: [],
     find: [],
     get: [],
@@ -22,7 +13,7 @@ module.exports = {
   },
 
   after: {
-    all: [populate({ schema: supplierProductsSchema })],
+    all: [],
     find: [],
     get: [],
     create: [],

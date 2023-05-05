@@ -48,6 +48,10 @@ import OrderMain from "../components/SupplierDashboard/OrderComponents/OrderMain
 import OrderDetailsMain from "../components/SupplierDashboard/OrderComponents/OrderDetailsMain";
 import OrderDetailsScreen from "../components/SupplierDashboard/Screen/OrderDetailsScreen";
 import UsersScreen from "../components/SupplierDashboard/Screen/UsersScreen";
+import CategoriesMain from "../components/Categories/CategoriesMain";
+import ProductsDetails from "../components/Products/ProductsDetails";
+import SendInquiry from "../components/Products/SendInquiry";
+import RequestForQuotation from "../components/Products/RequestForQuotation";
 // ~cb-add-import~
 
 const MyRouter = () => {
@@ -205,6 +209,10 @@ const MyRouter = () => {
                     <Route path="/signup" exact component={SignUpPage} />
                     <Route path="/account" component={Account} />
                     <Route path="/users" component={UsersPage} />
+                    <Route path="/products/category/:category" component={CategoriesMain} />
+                    <Route path="/products/:category/:id" component={ProductsDetails} />
+                    <Route path="/request-for-quotation" component={RequestForQuotation} />
+                    <ProtectedRoute path="/send-inquiry/:id" component={SendInquiry} />
 
                     {/* supplier-dashboard */}
 

@@ -11,10 +11,17 @@ import { PhotoService } from "../../services/photoServices";
 import { ProductService } from "../../services/productServices";
 import productsData from "../../data/productsData";
 import suppliersData from "../../data/suppliersData";
+import { useDispatch, useSelector } from "react-redux";
 
 const Dashboard = (props) => {
     const history = useHistory();
-    useEffect(() => {}, []);
+    const dispatch = useDispatch();
+
+    const { productList, id } = useSelector((state) => state.productsModel);
+
+    useEffect(() => {
+        dispatch.productsModel.fetchProducts(id);
+    }, [dispatch, id]);
 
     // product filter
 
@@ -22,45 +29,56 @@ const Dashboard = (props) => {
 
     const weeklyDealProducts = productsData.filter((product) => product.category === "Weekly Deals");
 
-    const newProducts = productsData.filter((product) => {
+    const newProducts = productList.filter((product) => {
         const productDate = new Date(product.createdAt);
         const today = new Date();
         const daysDifference = (today.getTime() - productDate.getTime()) / (1000 * 3600 * 24);
-        return daysDifference <= 7; // Return true for products created within the last 7 days
+        return daysDifference <= 30; // Return true for products created within the last 7 days
     });
 
-    const rtoProducts = productsData.filter((product) => product.rto);
+    const rtoProducts = productList.filter((product) => product.rto);
 
     // vertical dropdown menu
+
+    const handleMenuItemClick = (category) => {
+        history.push(`/products/category/${category}`);
+    };
 
     const items = [
         {
             label: "Consumer Electronics",
             icon: "pi pi-fw pi-video",
+            category: "electronics",
         },
         {
             label: "Apparel",
             icon: "pi pi-fw pi-users",
+            category: "apparel",
         },
         {
             label: "Vehicle parts",
             icon: "pi pi-fw pi-car",
+            category: "vehicle_parts",
         },
         {
             label: "Sports",
             icon: "pi pi-fw pi-bolt",
+            category: "sports",
         },
         {
             label: "Industrial Machinery",
             icon: "pi pi-fw pi-building",
+            category: "machinery",
         },
         {
             label: "Home & Garden",
             icon: "pi pi-fw pi-home",
+            category: "home_garden",
         },
         {
             label: "Beauty",
             icon: "pi pi-fw pi-eye",
+            category: "beauty",
         },
         {
             label: "All Categories",
@@ -68,12 +86,20 @@ const Dashboard = (props) => {
             items: [
                 [
                     {
-                        items: [{ label: "Gift" }, { label: "Furniture" }, { label: "Food" }],
+                        items: [
+                            { label: "Gift", category: "gift" },
+                            { label: "Furniture", category: "furniture" },
+                            { label: "Food", category: "food" },
+                        ],
                     },
                 ],
                 [
                     {
-                        items: [{ label: "Packaging" }, { label: "Printing" }, { label: "Pets" }],
+                        items: [
+                            { label: "Packaging", category: "packaging" },
+                            { label: "Printing", category: "printing" },
+                            { label: "Pets", category: "pets" },
+                        ],
                     },
                 ],
             ],
@@ -111,8 +137,36 @@ const Dashboard = (props) => {
     return (
         <div className="col-12 flex flex-column align-items-center">
             <div className="grid w-10 ">
+                {/* vertical menu */}
                 <div className="left-col col-3 text-center ">
-                    <MegaMenu className="lefcol-menu" model={items} orientation="vertical" breakpoint="767px" />
+                    <MegaMenu
+                        className="lefcol-menu"
+                        model={items.map((item) => {
+                            console.log(item);
+                            if (item.items) {
+                                return {
+                                    ...item,
+                                    // items: item.items.map((subitem) => {
+                                    //     console.log(subitem);
+                                    //     return {
+                                    //         ...subitem,
+                                    //         items: subitem.items.map((subsubitem) => {
+                                    //             console.log(subsubitem);
+                                    //             return {
+                                    //                 ...subsubitem,
+                                    //                 command: () => handleMenuItemClick(subsubitem.category),
+                                    //             };
+                                    //         }),
+                                    //     };
+                                    // }),
+                                };
+                            } else {
+                                return { ...item, command: () => handleMenuItemClick(item.category) };
+                            }
+                        })}
+                        orientation="vertical"
+                        breakpoint="767px"
+                    />
                 </div>
                 <div className="mid-col col-6 text-center">
                     {/* <div className="card"> */}
@@ -158,37 +212,47 @@ const Dashboard = (props) => {
                     <div className="detail-title">Global Sources April 2023 Malaysia Show</div>
                     <div className="detail-desc">Hot products, new trends, more sourcing opportunities</div>
                 </div>
+
                 <div className="col-2 hot-col bg-white cursor-pointer">
-                    <div className="hot-img">
-                        <img src="https://s.globalsources.com/IMAGES/tradeShow/HK/20230110/cec_image.png" alt="" data-v-86497bee="" />
-                    </div>
-                    <div className="hot-text-container">
-                        <div className="hot-text">Consumer Electronics & Components</div>
-                    </div>
+                    <Link to={"/products/category/electronics"}>
+                        <div className="hot-img">
+                            <img src="https://s.globalsources.com/IMAGES/tradeShow/HK/20230110/cec_image.png" alt="" data-v-86497bee="" />
+                        </div>
+                        <div className="hot-text-container">
+                            <div className="hot-text">Consumer Electronics & Components</div>
+                        </div>
+                    </Link>
                 </div>
                 <div className="col-2 hot-col bg-white cursor-pointer">
-                    <div className="hot-img">
-                        <img src="https://p.globalsources.com/IMAGES/PDT/S1186466235/LCD-screens-for-iPhone-6P.jpg" alt="" data-v-86497bee="" />
-                    </div>
-                    <div className="hot-text-container">
-                        <div className="hot-text">Mobile Electronics</div>
-                    </div>
+                    <Link to={"/products/category/electronics"}>
+                        <div className="hot-img">
+                            <img src="https://p.globalsources.com/IMAGES/PDT/S1186466235/LCD-screens-for-iPhone-6P.jpg" alt="" data-v-86497bee="" />
+                        </div>
+                        <div className="hot-text-container">
+                            <div className="hot-text">Mobile Electronics</div>
+                        </div>
+                    </Link>
+                </div>
+
+                <div className="col-2 hot-col bg-white cursor-pointer">
+                    <Link to={"/products/category/apparel"}>
+                        <div className="hot-img">
+                            <img src="https://p.globalsources.com/IMAGES/PDT/B1188695749/Amoled-smart-watch.jpg" alt="" data-v-86497bee="" />
+                        </div>
+                        <div className="hot-text-container">
+                            <div className="hot-text">Lifestyle & Fashion</div>
+                        </div>
+                    </Link>
                 </div>
                 <div className="col-2 hot-col bg-white cursor-pointer">
-                    <div className="hot-img">
-                        <img src="https://p.globalsources.com/IMAGES/PDT/B1188695749/Amoled-smart-watch.jpg" alt="" data-v-86497bee="" />
-                    </div>
-                    <div className="hot-text-container">
-                        <div className="hot-text">Lifestyle & Fashion</div>
-                    </div>
-                </div>
-                <div className="col-2 hot-col bg-white cursor-pointer">
-                    <div className="hot-img">
-                        <img src="https://p.globalsources.com/IMAGES/PDT/B1193171384/Wet-and-Dry-VAC.jpg" alt="" data-v-86497bee="" />
-                    </div>
-                    <div className="hot-text-container">
-                        <div className="hot-text">Home & Kitchen</div>
-                    </div>
+                    <Link to={"/products/category/home_garden"}>
+                        <div className="hot-img">
+                            <img src="https://p.globalsources.com/IMAGES/PDT/B1193171384/Wet-and-Dry-VAC.jpg" alt="" data-v-86497bee="" />
+                        </div>
+                        <div className="hot-text-container">
+                            <div className="hot-text">Home & Kitchen</div>
+                        </div>
+                    </Link>
                 </div>
             </div>
 
@@ -262,21 +326,23 @@ const Dashboard = (props) => {
                     </div>
 
                     {newProducts.slice(0, 4).map((product) => (
-                        <div className="col-np bg-white pl-3" key={product.id}>
-                            <div className="col-np-content">
-                                <div className="col-np-image">
-                                    <img data-v-6fef611d="" width="100%" alt={product.name} className="img" data-src={product.image} src={product.image} lazy="loaded" />
-                                </div>
-                                <div className="product-details-flexbox">
-                                    <div className="product-name">{product.name}</div>
-                                    <div className="product-price">
-                                        <b>{product.price}</b> / {product.unit}
+                        <Link to={`/products/${product.category}/${product._id}`} className="text-900">
+                            <div className="col-np bg-white pl-3 cursor-pointer" key={product.id}>
+                                <div className="col-np-content">
+                                    <div className="col-np-image">
+                                        <img data-v-6fef611d="" width="100%" alt={product.name} className="img" data-src={product.image} src={product.image} lazy="loaded" />
                                     </div>
-                                    <div className="product-qty">{product.qty} (MOQ)</div>
-                                    <div className="product-button">Inquire Now</div>
+                                    <div className="product-details-flexbox-h">
+                                        <div className="product-name">{product.name}</div>
+                                        <div className="product-price">
+                                            <b>{product.price}</b> / {product.unit}
+                                        </div>
+                                        <div className="product-qty-h">{product.qty} (MOQ)</div>
+                                        <div className="product-button-h">Inquire Now</div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </Link>
                     ))}
                 </div>
             </div>
@@ -287,21 +353,23 @@ const Dashboard = (props) => {
                         <img data-v-3dc34b2e="" src="https://s.globalsources.com/IMAGES/website/image/home/rto_home.jpg" alt="" className="img" />
                     </div>
                     {rtoProducts.slice(0, 4).map((product) => (
-                        <div className="col-np bg-white pl-3" key={product.id}>
-                            <div className="col-np-content">
-                                <div className="col-np-image">
-                                    <img data-v-6fef611d="" width="100%" alt={product.name} className="img" data-src={product.image} src={product.image} lazy="loaded" />
-                                </div>
-                                <div className="product-details-flexbox">
-                                    <div className="product-name">{product.name}</div>
-                                    <div className="product-price">
-                                        <b>{product.price}</b> / {product.unit}
+                        <Link to={`/products/${product.category}/${product._id}`} className="text-900">
+                            <div className="col-np bg-white pl-3 cursor-pointer" key={product.id}>
+                                <div className="col-np-content">
+                                    <div className="col-np-image">
+                                        <img data-v-6fef611d="" width="100%" alt={product.name} className="img" data-src={product.image} src={product.image} lazy="loaded" />
                                     </div>
-                                    <div className="product-qty">{product.qty} (MOQ)</div>
-                                    <div className="product-button">Order Now</div>
+                                    <div className="product-details-flexbox-h">
+                                        <div className="product-name">{product.name}</div>
+                                        <div className="product-price">
+                                            <b>{product.price}</b> / {product.unit}
+                                        </div>
+                                        <div className="product-qty-h">{product.qty} (MOQ)</div>
+                                        <div className="product-button-h">Order Now</div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </Link>
                     ))}
                 </div>
             </div>

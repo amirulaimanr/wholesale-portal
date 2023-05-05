@@ -3,7 +3,7 @@
 const mongoose = require("mongoose");
 
 module.exports = function (app) {
-  const modelName = "buyer";
+  const modelName = "profile";
   const mongooseClient = app.get("mongooseClient");
   const { Schema } = mongooseClient;
   const schema = new Schema(
@@ -13,6 +13,24 @@ module.exports = function (app) {
         type: mongoose.Schema.Types.ObjectId,
         ref: "users",
       },
+      profileImg: {
+        type: String,
+      },
+      companyWebsite: {
+        type: String,
+      },
+      address: {
+        type: String,
+      },
+      // city: {
+      //   type: String,
+      // },
+      // state: {
+      //   type: String,
+      // },
+      // postcode: {
+      //   type: String,
+      // },
     },
     // ~cb-read-end~
     {
