@@ -1,4 +1,5 @@
 {
+    "proxy": "http://localhost:3030",
     "name": "react-frontend",
     "version": "0.0.1",
     "homepage": ".",
@@ -32,7 +33,7 @@
         "mongoose": "^5.13.14",
         "primeflex": "3.1.0",
         "primeicons": "^5.0.0",
-        "primereact": "7.2.0",
+        "primereact": "^7.2.0",
         "prismjs": "1.9.0",
         "react": "^17.0.1",
         "react-app-polyfill": "^1.0.6",
@@ -42,6 +43,7 @@
         "react-scripts": "3.4.1",
         "react-transition-group": "^4.4.1",
         "redux": "^4.2.1",
+        "redux-persist": "^6.0.0",
         "redux-thunk": "^2.4.2",
         "sass": "^1.32.8"
     },

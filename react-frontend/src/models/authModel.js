@@ -1,9 +1,6 @@
 // defines a Redux model for authentication that can be used in a React application to handle login, logout, and user creation operations.
 
 import client from "../services/restClient";
-// import mongoose from "mongoose";
-
-// initialState
 
 const initState = {
     user: {},
@@ -22,19 +19,18 @@ export const auth = {
     },
 
     effects: (dispatch) => ({
-        ///////////////
-        //// LOGIN //// using feathers rest client
-        ///////////////
         async login(data, reduxState) {
             return new Promise(async (resolve, reject) => {
                 dispatch.loading.show();
 
                 try {
                     let loginResponse = await client.authenticate({ ...data, strategy: "local" });
-                    this.update({ isLoggedIn: true, user: loginResponse.user });
+                    dispatch.auth.update({ user: loginResponse.user, isLoggedIn: true });
                     localStorage.setItem("userInfo", JSON.stringify(loginResponse.user));
                     localStorage.setItem("token", loginResponse.accessToken);
                     localStorage.setItem("role", loginResponse.user.role);
+                    const userId = loginResponse.user._id; // get the user ID from the user object
+                    localStorage.setItem("userId", userId); // store the user ID in local storage
                     resolve();
                 } catch (error) {
                     console.log("error", { error });
@@ -43,16 +39,15 @@ export const auth = {
                 dispatch.loading.hide();
             });
         },
-        /////////////////////////
-        //// RE-AUTHENTICATE ////
-        /////////////////////////
+
         async reAuth(data, reduxState) {
             return new Promise(async (resolve, reject) => {
                 dispatch.loading.show();
                 try {
                     let loginResponse = await client.reAuthenticate();
-                    console.log(loginResponse);
                     this.update({ isLoggedIn: true, user: loginResponse.user });
+                    console.log(initState);
+                    console.log(auth.state);
                     resolve();
                 } catch (error) {
                     console.log("error", { error });
@@ -61,9 +56,7 @@ export const auth = {
                 dispatch.loading.hide();
             });
         },
-        ////////////////
-        //// LOGOUT ////
-        ////////////////
+
         async logout(_, reduxState) {
             dispatch.loading.show();
             await client
@@ -83,9 +76,6 @@ export const auth = {
             dispatch.loading.hide();
         },
 
-        //////////////////////
-        //// CREATE USER ////
-        //////////////////////
         async createUser(data, reduxState) {
             return new Promise(async (resolve, reject) => {
                 dispatch.loading.show();

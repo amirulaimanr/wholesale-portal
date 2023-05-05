@@ -205,17 +205,19 @@ const AppTopbar = (props) => {
                     </div>
                 </div>
                 <div className="request-container">
-                    <div className="left-request">
-                        <div className="logo-request">
-                            <i className="pi pi-box" style={{ fontSize: "2.2rem" }}></i>
+                    <Link to={"/request-for-quotation"} className="text-800">
+                        <div className="left-request">
+                            <div className="logo-request">
+                                <i className="pi pi-box" style={{ fontSize: "2.2rem" }}></i>
+                            </div>
+                            <div className="text-request">Request for Quotation</div>
                         </div>
-                        <div className="text-request">Request for Quotation</div>
-                    </div>
+                    </Link>
                     <div className="right-request">
                         <div className="logo-orders">
                             <i className="pi pi-inbox" style={{ fontSize: "2.2rem" }}></i>
                         </div>
-                        <div className="text-orders">Orders</div>
+                        <div className="text-orders text-800">Orders</div>
                     </div>
                 </div>
             </div>

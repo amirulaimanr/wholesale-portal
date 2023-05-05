@@ -1,11 +1,28 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { connect } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import Product from "./Product";
-import products from "../../../data/Products";
 
 import "../Style/SupplierMain.css";
 
 const MainProducts = () => {
+    const dispatch = useDispatch();
+    const products = useSelector((state) => state.productsModel.productList);
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        const fetchProducts = async () => {
+            await dispatch.products.getAllProducts();
+            setLoading(false);
+        };
+        fetchProducts();
+    }, [dispatch.products]);
+
+    // useEffect(() => {
+    //     dispatch.products.getAllProducts();
+    // }, [dispatch.products]);
+
     return (
         <section className="content-main">
             <div className="content-header">
@@ -42,12 +59,26 @@ const MainProducts = () => {
                 </header>
 
                 <div className="card-body">
-                    <div className="row">
-                        {/* Products */}
-                        {products.map((product) => (
-                            <Product key={product._id} product={product} />
-                        ))}
-                    </div>
+                    {loading ? (
+                        <div className="text-center">
+                            <h3>Loading...</h3>
+                        </div>
+                    ) : (
+                        <div className="row">
+                            {/* Products */}
+                            {products.length > 0 ? (
+                                products.map((product) => {
+                                    console.log(products.length);
+                                    return <Product key={product._id} product={product} />;
+                                })
+                            ) : (
+                                <div className="text-center">
+                                    <h3 className="inline-block text-center">No products found!</h3>
+                                    <p>Please add a product.</p>
+                                </div>
+                            )}
+                        </div>
+                    )}
 
                     <nav className="float-end mt-4" aria-label="Page navigation">
                         <ul className="pagination">

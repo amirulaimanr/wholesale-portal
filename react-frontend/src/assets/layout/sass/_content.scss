@@ -23,6 +23,11 @@
     width: 100%;
 }
 
+.layout-product-container {
+    padding-top: 10rem;
+    width: 100%;
+}
+
 .layout-main {
     flex: 1 1 auto;
 }
@@ -325,6 +330,12 @@
     padding: 5px;
 }
 
+.col-np-xl {
+    height: 100%;
+    width: 240px;
+    padding: 5px;
+}
+
 .col-np-content {
     width: 100%;
     height: 100%;
@@ -348,6 +359,15 @@
     flex-direction: column;
     padding: 10px;
     width: 100%;
+    height: 120px;
+    justify-content: space-between;
+}
+
+.product-details-flexbox-h {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 100%;
     height: 160px;
     justify-content: space-between;
 }
@@ -358,16 +378,25 @@
     padding-top: 10px;
 }
 
+.product-name:hover {
+    text-decoration: underline;
+}
+
 .product-price {
     margin-top: -10px;
 }
 
-.product-qty {
+.product-qty-h {
     font-size: 12px;
     margin-top: -30px;
 }
 
-.product-button {
+.product-qty {
+    font-size: 12px;
+    margin-top: -20px;
+}
+
+.product-button-h {
     font-size: 12px;
     font-weight: 600;
     text-align: center;
@@ -380,6 +409,20 @@
     cursor: pointer;
 }
 
+.product-button {
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 28px;
+    height: 30px;
+    width: 120px;
+    border: 1px solid rgb(164, 164, 164);
+    border-radius: 7rem;
+    margin-top: 2px;
+    cursor: pointer;
+}
+
+.product-button-h:hover,
 .product-button:hover {
     background-color: #e2720f;
     color: #fff;
@@ -443,6 +486,7 @@
     margin-top: -30px;
     height: 70px;
     width: 70px;
+    padding: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) !important;
     transition: 0.3s !important;
 }
@@ -469,8 +513,7 @@
     height: 100%;
     border-radius: 20px;
     background-color: white;
-    border: 2px solid yellow;
-    outline: 1px solid rgb(255, 70, 70);
+    border: 1px solid rgba(233, 233, 233, 0.415);
     outline-offset: -4px;
     padding: 10px;
 }
@@ -483,3 +526,89 @@
 //     margin-top: 50px;
 //     width: 100%;
 // }
+
+.prod-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+}
+
+.paginator-bar {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-left: 3rem;
+    padding-top: 20px;
+}
+
+.p-paginator {
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+    border-radius: 15px !important;
+}
+
+.productList-card {
+    transition: 0.3s;
+}
+
+.productList-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.p-paginator .p-paginator-pages .p-paginator-page.p-highlight {
+    background-color: #ffebd5 !important;
+    border-color: #c36621 !important;
+    color: #482222 !important;
+}
+
+.empty-box {
+    display: block;
+    height: 30px;
+    width: 100%;
+}
+
+.input-group {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+}
+
+.input-group-addon {
+    display: table-cell;
+    width: 1%;
+    vertical-align: middle;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-right: none;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    border-radius: 4px;
+    user-select: none;
+    white-space: nowrap;
+}
+
+.input-group > .form-control {
+    display: table-cell;
+    margin-bottom: 0;
+}
+
+.input-group > .form-control:focus {
+    z-index: 2;
+}
+
+.input-group-addon:first-child {
+    border-right: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+}
+
+.input-group-addon:last-child {
+    border-radius: 0 4px 4px 0;
+}
+
+.p-inputnumber-buttons-stacked .p-inputnumber-input {
+    border-radius: 0 !important;
+    width: 100px !important;
+}
