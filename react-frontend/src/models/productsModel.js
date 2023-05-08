@@ -4,6 +4,7 @@ import client from "../services/restClient";
 export const productsModel = {
     state: {
         productList: [],
+        searchProducts: [],
         loading: false,
         error: null,
     },
@@ -11,6 +12,14 @@ export const productsModel = {
         setProductList: (state, payload) => ({
             ...state,
             productList: payload,
+        }),
+        setSearchProducts: (state, payload) => ({
+            ...state,
+            searchProducts: payload,
+        }),
+        setLoading: (state, payload) => ({
+            ...state,
+            loading: payload,
         }),
     },
     effects: (dispatch) => ({
@@ -35,10 +44,10 @@ export const productsModel = {
         },
 
         async fetchProductsById(id) {
+            console.log(id);
             try {
                 const data = await client.service("product").get(id);
                 console.log(data);
-                // dispatch.productsModel.setProductList(data.data);r
                 return data;
             } catch (error) {
                 console.log(error);
@@ -56,6 +65,22 @@ export const productsModel = {
                 return { data, supplier };
             } catch (error) {
                 console.error(error);
+            }
+        },
+
+        async getSearchProductsByName(name) {
+            try {
+                dispatch.productsModel.setLoading(true);
+                const search = await client.service("product").find({
+                    query: {
+                        name: name,
+                    },
+                });
+                dispatch.productsModel.setSearchProducts(search);
+            } catch (error) {
+                console.error(error);
+            } finally {
+                dispatch.productsModel.setLoading(false);
             }
         },
     }),

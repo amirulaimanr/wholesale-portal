@@ -14,7 +14,9 @@ export const auth = {
     reducers: {
         // handle state changes with pure functions
         update(state, newState) {
-            return { ...state, ...newState };
+            const updatedState = { ...state, ...newState };
+            console.log("Updated state:", updatedState);
+            return updatedState;
         },
     },
 
@@ -45,9 +47,7 @@ export const auth = {
                 dispatch.loading.show();
                 try {
                     let loginResponse = await client.reAuthenticate();
-                    this.update({ isLoggedIn: true, user: loginResponse.user });
-                    console.log(initState);
-                    console.log(auth.state);
+                    dispatch.auth.update({ isLoggedIn: true, user: loginResponse.user });
                     resolve();
                 } catch (error) {
                     console.log("error", { error });
