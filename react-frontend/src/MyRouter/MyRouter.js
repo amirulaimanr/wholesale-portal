@@ -52,6 +52,14 @@ import CategoriesMain from "../components/Categories/CategoriesMain";
 import ProductsDetails from "../components/Products/ProductsDetails";
 import SendInquiry from "../components/Products/SendInquiry";
 import RequestForQuotation from "../components/Products/RequestForQuotation";
+import SearchList from "../components/Products/SearchList";
+import BuyerRoute from "./BuyerRoute";
+import BuyerDashboard from "../components/BuyerCenter/BuyerDashboard";
+import InquiriesScreen from "../components/BuyerCenter/Screen/InquiriesScreen";
+import RfqScreen from "../components/BuyerCenter/Screen/RfqScreen";
+import BcOrderScreen from "../components/BuyerCenter/Screen/BcOrderScreen";
+import FavouritesScreen from "../components/BuyerCenter/Screen/FavouritesScreen";
+import MyAccountScreen from "../components/BuyerCenter/Screen/MyAccountScreen";
 // ~cb-add-import~
 
 const MyRouter = () => {
@@ -177,6 +185,7 @@ const MyRouter = () => {
     // supplierRoute
     const isAuthenticated = localStorage.getItem("token") ? true : false;
     const isSupplier = localStorage.getItem("role") === "Supplier";
+    const isBuyer = localStorage.getItem("role") === "Buyer";
 
     // exclude path for render other components inside div
     const excludePaths = ["/login", "/signup", "/supplier-dashboard", "/supplier-products", "/add-products", "/supplier-category", "/supplier-orders", "/orders", "/supplier-users"];
@@ -211,8 +220,22 @@ const MyRouter = () => {
                     <Route path="/users" component={UsersPage} />
                     <Route path="/products/category/:category" component={CategoriesMain} />
                     <Route path="/products/:category/:id" component={ProductsDetails} />
-                    <Route path="/request-for-quotation" component={RequestForQuotation} />
-                    <ProtectedRoute path="/send-inquiry/:id" component={SendInquiry} />
+                    <Route path="/searchList/products" component={SearchList} />
+
+                    <BuyerRoute path="/request-for-quotation" component={RequestForQuotation} isAuthenticated={isAuthenticated} isBuyer={isBuyer} />
+                    {/* <BuyerRoute path="/buyer-center" component={BuyerDashboard} isAuthenticated={isAuthenticated} isBuyer={isBuyer} /> */}
+                    <BuyerRoute path="/buyer-center/home" component={BuyerDashboard} isAuthenticated={isAuthenticated} isBuyer={isBuyer} />
+                    <BuyerRoute path="/buyer-center/inquiries" component={InquiriesScreen} isAuthenticated={isAuthenticated} isBuyer={isBuyer} />
+                    <BuyerRoute path="/buyer-center/rfq" component={RfqScreen} isAuthenticated={isAuthenticated} isBuyer={isBuyer} />
+                    <BuyerRoute path="/buyer-center/orders" component={BcOrderScreen} isAuthenticated={isAuthenticated} isBuyer={isBuyer} />
+                    <BuyerRoute path="/buyer-center/favourites" component={FavouritesScreen} isAuthenticated={isAuthenticated} isBuyer={isBuyer} />
+                    <BuyerRoute path="/buyer-center/userAccount" component={MyAccountScreen} isAuthenticated={isAuthenticated} isBuyer={isBuyer} />
+
+                    <Route path="/send-inquiry/:id" component={SendInquiry} />
+                    <SupplierRoute path="/buyerCenter/favourites" component={SendInquiry} />
+                    <SupplierRoute path="/buyerCenter/cart" component={SendInquiry} />
+                    <SupplierRoute path="/buyerCenter/message" component={SendInquiry} />
+                    <SupplierRoute path="/buyerCenter/orders" component={SendInquiry} />
 
                     {/* supplier-dashboard */}
 

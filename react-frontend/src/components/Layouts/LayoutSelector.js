@@ -17,6 +17,13 @@ const LayoutSelector = ({ children }) => {
         case "/supplier-users":
             return <SupplierLayout>{children}</SupplierLayout>;
         case (location.pathname.match(/^\/products\/category\/[\w-]+$/) || {}).input:
+        case "/buyer-center":
+        case "/buyer-center/home":
+        case "/buyer-center/inquiries":
+        case "/buyer-center/rfq":
+        case "/buyer-center/orders":
+        case "/buyer-center/favourites":
+        case "/buyer-center/userAccount":
             return <ProductLayout>{children}</ProductLayout>;
         default:
             return <MainLayout>{children}</MainLayout>;

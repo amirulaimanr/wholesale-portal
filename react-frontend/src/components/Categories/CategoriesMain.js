@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { DataView, DataViewLayoutOptions } from "primereact/dataview";
 import Products from "../Products/Products";
 import CategoriesFilter from "./CategoriesFilter";
 import { Paginator } from "primereact/paginator";

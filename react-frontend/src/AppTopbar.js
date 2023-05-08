@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { connect } from "react-redux";
 import { Link, useHistory } from "react-router-dom";
 import classNames from "classnames";
@@ -7,11 +7,15 @@ import { Menu } from "primereact/menu";
 import { InputText } from "primereact/inputtext";
 import { MegaMenu } from "primereact/megamenu";
 import logo from "./assets/media/logo1.png";
+import { useDispatch, useSelector } from "react-redux";
 
 const AppTopbar = (props) => {
     const history = useHistory();
     const userMenuRef = useRef(null);
-    const auth = localStorage.getItem("user");
+    const dispatch = useDispatch();
+
+    const [searchTerm, setSearchTerm] = useState("");
+    console.log("this is searchTerm", searchTerm);
 
     const toggleUserMenu = (e) => userMenuRef.current.toggle(e);
     const items = [
@@ -80,18 +84,25 @@ const AppTopbar = (props) => {
         },
     ];
     const right_items = [
-        {
-            label: "Favourites",
-            icon: "pi pi-fw pi-heart",
-        },
-        {
-            label: "Cart",
-            icon: "pi pi-fw pi-shopping-cart",
-        },
-        {
-            label: "Messages",
-            icon: "pi pi-fw pi-comments",
-        },
+        ...(props.isLoggedIn === false || props.user?.role === "Buyer"
+            ? [
+                  {
+                      label: "Favourites",
+                      icon: "pi pi-fw pi-heart",
+                      command: () => history.push("/buyer-center/favourites"),
+                  },
+                  {
+                      label: "Cart",
+                      icon: "pi pi-fw pi-shopping-cart",
+                      command: () => history.push("/buyerCenter/cart"),
+                  },
+                  {
+                      label: "Messages",
+                      icon: "pi pi-fw pi-comments",
+                      command: () => history.push("/buyer-center/inquiries"),
+                  },
+              ]
+            : []),
         {
             label: props.isLoggedIn ? props.user?.email : "Sign In | Register",
             icon: "pi pi-fw pi-user",
@@ -113,35 +124,52 @@ const AppTopbar = (props) => {
                                                           </Link>
                                                       </li>
                                                   )}
+                                                  {props.user?.role === "Buyer" && (
+                                                      <li className="p-menu-list p-reset">
+                                                          <Link to="/buyer-center/home" className="p-menuitem-link" role="menuitem">
+                                                              <span className={"p-menuitem-text "}>Buyer Center</span>
+                                                          </Link>
+                                                      </li>
+                                                  )}
+                                                  {props.user?.role === "Buyer" && (
+                                                      <li className="p-menu-list p-reset">
+                                                          <Link to="/buyer-center/inquiries">
+                                                              <a className="p-menuitem-link" role="menuitem">
+                                                                  <span className=""></span>
+                                                                  <span className={"p-menuitem-text "}>My Inquires</span>
+                                                              </a>
+                                                          </Link>
+                                                      </li>
+                                                  )}
+                                                  {props.user?.role === "Buyer" && (
+                                                      <li className="p-menu-list p-reset">
+                                                          <Link to="/buyer-center/rfq">
+                                                              <a className="p-menuitem-link" role="menuitem">
+                                                                  <span className=""></span>
+                                                                  <span className={"p-menuitem-text "}>My RFQ</span>
+                                                              </a>
+                                                          </Link>
+                                                      </li>
+                                                  )}
+
                                                   <li className="p-menu-list p-reset">
-                                                      <Link to="/buyer-center" className="p-menuitem-link" role="menuitem">
-                                                          <span className={"p-menuitem-text "}>Buyer Center</span>
+                                                      <Link to="/buyer-center/userAccount">
+                                                          <a className="p-menuitem-link" role="menuitem">
+                                                              <span className=""></span>
+                                                              <span className={"p-menuitem-text "}>My Account</span>
+                                                          </a>
                                                       </Link>
                                                   </li>
-                                                  <li className="p-menu-list p-reset">
-                                                      <a className="p-menuitem-link" role="menuitem">
-                                                          <span className=""></span>
-                                                          <span className={"p-menuitem-text "}>My Inquires</span>
-                                                      </a>
-                                                  </li>
-                                                  <li className="p-menu-list p-reset">
-                                                      <a className="p-menuitem-link" role="menuitem">
-                                                          <span className=""></span>
-                                                          <span className={"p-menuitem-text "}>My RFQ</span>
-                                                      </a>
-                                                  </li>
-                                                  <li className="p-menu-list p-reset">
-                                                      <a className="p-menuitem-link" role="menuitem">
-                                                          <span className=""></span>
-                                                          <span className={"p-menuitem-text "}>My Account</span>
-                                                      </a>
-                                                  </li>
-                                                  <li className="p-menu-list p-reset">
-                                                      <a className="p-menuitem-link" role="menuitem">
-                                                          <span className=""></span>
-                                                          <span className={"p-menuitem-text "}>My Orders</span>
-                                                      </a>
-                                                  </li>
+                                                  {props.user?.role === "Buyer" && (
+                                                      <li className="p-menu-list p-reset">
+                                                          <Link to="/buyer-center/orders">
+                                                              <a className="p-menuitem-link" role="menuitem">
+                                                                  <span className=""></span>
+                                                                  <span className={"p-menuitem-text "}>My Orders</span>
+                                                              </a>
+                                                          </Link>
+                                                      </li>
+                                                  )}
                                                   <li className="p-menu-list p-reset">
                                                       <a className="p-menuitem-link" onClick={onLogout} role="menuitem">
                                                           <span className={"text-primary"}></span>
@@ -162,6 +190,24 @@ const AppTopbar = (props) => {
             ],
         },
     ];
+
+    // search filter
+
+    // const handleSearch = async () => {
+    //     try {
+    //         const data = await dispatch.productsModel.searchProducts(searchTerm);
+    //         // navigate to the search results page
+    //         history.push(`/searchList/products?name={}`);
+    //     } catch (error) {
+    //         console.error(error);
+    //     }
+    // };
+
+    const handleSearch = () => {
+        const urlC = encodeURIComponent(searchTerm);
+        history.push(`/searchList/products?name=${urlC}`);
+        console.log(urlC);
+    };
 
     // logout
 
@@ -192,33 +238,36 @@ const AppTopbar = (props) => {
                     <Link to="/">
                         <div className="company-items cursor-pointer min-w-max flex align-items-end">
                             <img src={logo} className="logo-topbar" />
-                            {/* <h3 className="text-orange-500" style={{ fontFamily: "MarlinGeo", fontWeight: "bolder", margin: 0 }}>
-                                BigOrder.com
-                            </h3> */}
                         </div>
                     </Link>
                 </div>
                 <div className="search-wrapper">
                     <div className="p-inputgroup flex-1 w-28rem">
-                        <InputText placeholder="Search" />
-                        <Button icon="pi pi-search" className="p-button-warning" />
+                        <InputText placeholder="Search product by name" value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
+                        <Button icon="pi pi-search" className="p-button-warning" onClick={handleSearch} />
                     </div>
                 </div>
                 <div className="request-container">
                     <Link to={"/request-for-quotation"} className="text-800">
-                        <div className="left-request">
-                            <div className="logo-request">
-                                <i className="pi pi-box" style={{ fontSize: "2.2rem" }}></i>
+                        {(props.user?.role === "Buyer" || !props.isLoggedIn) && (
+                            <div className="left-request">
+                                <div className="logo-request">
+                                    <i className="pi pi-box" style={{ fontSize: "2.2rem" }}></i>
+                                </div>
+                                <div className="text-request">Request for Quotation</div>
                             </div>
-                            <div className="text-request">Request for Quotation</div>
-                        </div>
+                        )}
                     </Link>
-                    <div className="right-request">
-                        <div className="logo-orders">
-                            <i className="pi pi-inbox" style={{ fontSize: "2.2rem" }}></i>
-                        </div>
-                        <div className="text-orders text-800">Orders</div>
-                    </div>
+                    <Link to={"/buyer-center/orders"} className="text-800">
+                        {(props.user?.role === "Buyer" || !props.isLoggedIn) && (
+                            <div className="right-request">
+                                <div className="logo-orders">
+                                    <i className="pi pi-inbox" style={{ fontSize: "2.2rem" }}></i>
+                                </div>
+                                <div className="text-orders">Orders</div>
+                            </div>
+                        )}
+                    </Link>
                 </div>
             </div>
         </div>

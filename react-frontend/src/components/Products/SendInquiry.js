@@ -20,12 +20,14 @@ const SendInquiry = () => {
     console.log(product);
     const dispatch = useDispatch();
     const { id } = useParams();
+    console.log(id);
 
     useEffect(() => {
         const fetchProductDetails = async () => {
             try {
                 const productData = await dispatch.productsModel.fetchProductsById(id);
                 setProduct(productData);
+                console.log(productData);
             } catch (error) {
                 console.log(error);
             }
