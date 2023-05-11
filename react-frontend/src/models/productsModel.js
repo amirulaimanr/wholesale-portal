@@ -7,6 +7,7 @@ export const productsModel = {
         searchProducts: [],
         loading: false,
         error: null,
+        userId: localStorage.getItem("userId"),
     },
     reducers: {
         setProductList: (state, payload) => ({
@@ -83,5 +84,23 @@ export const productsModel = {
                 dispatch.productsModel.setLoading(false);
             }
         },
+
+        // favourites
+
+        // async addToFavourites(id) {
+        //     const userId = localStorage.getItem("userId");
+        //     try {
+        //         const newFav = {
+        //             product: id,
+        //             userId: userId, // Replace with the actual user ID
+        //             // buyerId: 'buyer-id-here', // Replace with the actual buyer ID
+        //         };
+        //         const result = await client.service("favourite").create(newFav);
+        //         console.log(result);
+        //         console.log(userId);
+        //     } catch (error) {
+        //         console.error(error);
+        //     }
+        // },
     }),
 };

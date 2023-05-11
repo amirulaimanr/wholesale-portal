@@ -44,8 +44,8 @@ const BuyerSidebar = () => {
                             </NavLink>
                         </li>
                         <li className="menu-item">
-                            <NavLink activeClassName="active" className="menu-link disabled" to="/supplier-sellers">
-                                <i className="icon pi pi-cog"></i>
+                            <NavLink activeClassName="active" className="menu-link disabled" to="/buyer-center/settings">
+                                <i className="icon fas fa-cog"></i>
                                 <span className="text">Settings</span>
                             </NavLink>
                         </li>

@@ -1,61 +1,32 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../Style/BuyerMain.css";
 import { Button } from "primereact/button";
 import Products from "../../Products/Products";
+import { useDispatch, useSelector } from "react-redux";
 
 const FavouritesMain = () => {
+    const dispatch = useDispatch();
+    const favourites = useSelector((state) => state.favouritesModel.favourites);
+    console.log(favourites);
+    const loading = useSelector((state) => state.favouritesModel.loading);
     const [selectedProducts, setSelectedProducts] = useState([]);
-    const [products, setProducts] = useState([
-        {
-            id: 1,
-            name: "Product 1",
-            description: "Description 1",
-            price: 10.99,
-            unit: "pieces",
-            isFavourite: true,
-            image: "https://via.placeholder.com/150x150",
-        },
-        {
-            id: 2,
-            name: "Product 2",
-            description: "Description 2",
-            price: 15.99,
-            unit: "pieces",
-            isFavourite: false,
-            image: "https://via.placeholder.com/150x150",
-        },
-        {
-            id: 3,
-            name: "Product 3",
-            description: "Description 3",
-            price: 20.99,
-            unit: "pieces",
-            isFavourite: true,
-            image: "https://via.placeholder.com/150x150",
-        },
-        {
-            id: 4,
-            name: "Product 4",
-            description: "Description 4",
-            price: 25.99,
-            unit: "pieces",
-            isFavourite: true,
-            image: "https://via.placeholder.com/150x150",
-        },
-    ]);
+    console.log(selectedProducts);
 
-    const handleRemoveFromFavourites = () => {
-        setProducts(
-            products.map((product) => {
-                if (selectedProducts.includes(product)) {
-                    return {
-                        ...product,
-                        isFavourite: false,
-                    };
-                }
-                return product;
-            })
-        );
+    useEffect(() => {
+        dispatch.favouritesModel.fetchFavourites(localStorage.getItem("userId"));
+    }, [dispatch]);
+
+    const handleRemoveFromFavourites = async () => {
+        const removedIds = [];
+
+        for (const product of selectedProducts) {
+            await dispatch.favouritesModel.removeFromFavourites(product._id, localStorage.getItem("userId"));
+            console.log(product._id);
+            removedIds.push(product._id);
+        }
+
+        dispatch.favouritesModel.setFavourites(favourites.filter((product) => !removedIds.includes(product._id)));
+
         setSelectedProducts([]);
     };
 
@@ -66,8 +37,6 @@ const FavouritesMain = () => {
             setSelectedProducts([...selectedProducts, product]);
         }
     };
-
-    const favouriteProducts = products.filter((product) => product.isFavourite);
 
     return (
         <>
@@ -81,16 +50,20 @@ const FavouritesMain = () => {
                 </div>
 
                 <div className="p-grid prod-row mt-5 ">
-                    {favouriteProducts.map((product) => (
-                        <div key={product.id} className="p-col-12 p-md-6 p-lg-4 p-xl-3">
-                            <div className="card mr-5 ml-2 w-10">
-                                <div className="p-field-checkbox">
-                                    <input type="checkbox" checked={selectedProducts.includes(product)} onChange={() => handleSelectProduct(product)} style={{ transform: "scale(1.5)" }} />
+                    {loading ? (
+                        <p>Loading...</p>
+                    ) : (
+                        favourites.map((product) => (
+                            <div key={product._id} className="p-col-12 p-md-6 p-lg-4 p-xl-3">
+                                <div className="card mr-5 ml-2 w-10">
+                                    <div className="p-field-checkbox">
+                                        <input type="checkbox" checked={selectedProducts.includes(product)} onChange={() => handleSelectProduct(product)} style={{ transform: "scale(1.5)" }} />
+                                    </div>
+                                    <Products product={product} loading={false} />
                                 </div>
-                                <Products product={product} loading={false} />
                             </div>
-                        </div>
-                    ))}
+                        ))
+                    )}
                 </div>
             </section>
         </>

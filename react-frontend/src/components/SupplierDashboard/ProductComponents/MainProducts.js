@@ -8,27 +8,20 @@ import "../Style/SupplierMain.css";
 
 const MainProducts = () => {
     const dispatch = useDispatch();
-    const products = useSelector((state) => state.productsModel.productList);
-    const [loading, setLoading] = useState(true);
+    const products = useSelector((state) => state.supplierModel.supplierProduct);
+    console.log(products);
+    const loading = useSelector((state) => state.supplierModel.loading);
 
     useEffect(() => {
-        const fetchProducts = async () => {
-            await dispatch.products.getAllProducts();
-            setLoading(false);
-        };
-        fetchProducts();
-    }, [dispatch.products]);
-
-    // useEffect(() => {
-    //     dispatch.products.getAllProducts();
-    // }, [dispatch.products]);
+        dispatch.supplierModel.fetchSupplierProductBySupplierId();
+    }, [dispatch]);
 
     return (
         <section className="content-main">
             <div className="content-header">
                 <h2 className="content-title">Products</h2>
                 <div>
-                    <Link to="/addproduct" className="btn btn-primary">
+                    <Link to="/supplier-dashboard/add-products" className="btn btn-primary">
                         Create new
                     </Link>
                 </div>
@@ -66,15 +59,16 @@ const MainProducts = () => {
                     ) : (
                         <div className="row">
                             {/* Products */}
-                            {products.length > 0 ? (
+                            {products && products.length > 0 ? (
                                 products.map((product) => {
                                     console.log(products.length);
+                                    console.log(product);
                                     return <Product key={product._id} product={product} />;
                                 })
                             ) : (
                                 <div className="text-center">
-                                    <h3 className="inline-block text-center">No products found!</h3>
-                                    <p>Please add a product.</p>
+                                    <p>No products found!</p>
+                                    <p className="ml-3">Please add a product.</p>
                                 </div>
                             )}
                         </div>
