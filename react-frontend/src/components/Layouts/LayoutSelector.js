@@ -7,23 +7,12 @@ import SupplierLayout from "./SupplierLayout";
 const LayoutSelector = ({ children }) => {
     const location = useLocation();
 
-    switch (location.pathname) {
-        case "/supplier-dashboard":
-        case "/supplier-products":
-        case "/add-products":
-        case "/supplier-category":
-        case "/supplier-orders":
-        case "/orders":
-        case "/supplier-users":
+    switch (true) {
+        case location.pathname.startsWith("/supplier-dashboard"):
             return <SupplierLayout>{children}</SupplierLayout>;
-        case (location.pathname.match(/^\/products\/category\/[\w-]+$/) || {}).input:
-        case "/buyer-center":
-        case "/buyer-center/home":
-        case "/buyer-center/inquiries":
-        case "/buyer-center/rfq":
-        case "/buyer-center/orders":
-        case "/buyer-center/favourites":
-        case "/buyer-center/userAccount":
+        case location.pathname.startsWith("/buyer-center"):
+        case location.pathname.startsWith("/products"):
+        case location.pathname.match(/^\/products\/category\/[\w-]+$/):
             return <ProductLayout>{children}</ProductLayout>;
         default:
             return <MainLayout>{children}</MainLayout>;

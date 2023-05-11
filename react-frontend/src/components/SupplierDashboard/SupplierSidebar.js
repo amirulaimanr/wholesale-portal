@@ -19,37 +19,37 @@ const SupplierSidebar = () => {
                 <nav>
                     <ul className="menu-aside">
                         <li className="menu-item">
-                            <NavLink activeClassName="active" className="menu-link" to="/supplier-dashboard" exact={true}>
+                            <NavLink activeClassName="active" className="menu-link" to="/supplier-dashboard/home" exact={true}>
                                 <i className="icon fas fa-home"></i>
                                 <span className="text">Dashboard</span>
                             </NavLink>
                         </li>
                         <li className="menu-item">
-                            <NavLink activeClassName="active" className="menu-link" to="/supplier-products">
+                            <NavLink activeClassName="active" className="menu-link" to="/supplier-dashboard/supplier-products">
                                 <i className="icon fas fa-shopping-bag"></i>
                                 <span className="text">Products</span>
                             </NavLink>
                         </li>
                         <li className="menu-item">
-                            <NavLink activeClassName="active" className="menu-link" to="/add-products">
+                            <NavLink activeClassName="active" className="menu-link" to="/supplier-dashboard/add-products">
                                 <i className="icon fas fa-cart-plus"></i>
                                 <span className="text">Add Products</span>
                             </NavLink>
                         </li>
                         <li className="menu-item">
-                            <NavLink activeClassName="active" className="menu-link" to="/supplier-category">
+                            <NavLink activeClassName="active" className="menu-link" to="/supplier-dashboard/supplier-category">
                                 <i className="icon fas fa-list"></i>
                                 <span className="text">Categories</span>
                             </NavLink>
                         </li>
                         <li className="menu-item">
-                            <NavLink activeClassName="active" className="menu-link" to="/supplier-orders">
+                            <NavLink activeClassName="active" className="menu-link" to="/supplier-dashboard/supplier-orders">
                                 <i className="icon fas fa-shopping-bag"></i>
                                 <span className="text">Orders</span>
                             </NavLink>
                         </li>
                         <li className="menu-item">
-                            <NavLink activeClassName="active" className="menu-link" to="/supplier-users">
+                            <NavLink activeClassName="active" className="menu-link" to="/supplier-dashboard/supplier-users">
                                 <i className="icon fas fa-user"></i>
                                 <span className="text">Users</span>
                             </NavLink>

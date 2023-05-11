@@ -60,6 +60,8 @@ import RfqScreen from "../components/BuyerCenter/Screen/RfqScreen";
 import BcOrderScreen from "../components/BuyerCenter/Screen/BcOrderScreen";
 import FavouritesScreen from "../components/BuyerCenter/Screen/FavouritesScreen";
 import MyAccountScreen from "../components/BuyerCenter/Screen/MyAccountScreen";
+import SettingsScreen from "../components/BuyerCenter/Screen/SettingsScreen";
+import ShoppingCartScreen from "../components/ShoppingCart/ShoppingCartScreen";
 // ~cb-add-import~
 
 const MyRouter = () => {
@@ -187,23 +189,12 @@ const MyRouter = () => {
     const isSupplier = localStorage.getItem("role") === "Supplier";
     const isBuyer = localStorage.getItem("role") === "Buyer";
 
-    // exclude path for render other components inside div
-    const excludePaths = ["/login", "/signup", "/supplier-dashboard", "/supplier-products", "/add-products", "/supplier-category", "/supplier-orders", "/orders", "/supplier-users"];
+    const excludePaths = ["/login", "/signup", "/supplier-dashboard"];
 
     return (
-        // <div>
-
         <div className={wrapperClass} onClick={onWrapperClick}>
-            {excludePaths.includes(location.pathname) ? null : (
-                <AppTopbar
-                    onToggleMenuClick={onToggleMenuClick}
-                    layoutColorMode={layoutColorMode}
-                    mobileTopbarMenuActive={mobileTopbarMenuActive}
-                    onMobileTopbarMenuClick={onMobileTopbarMenuClick}
-                    onMobileSubTopbarMenuClick={onMobileSubTopbarMenuClick}
-                    // onAccount={() => history.push("/account")}
-                    // onSettings={() => history.push("/settings")}
-                />
+            {excludePaths.some((path) => location.pathname.startsWith(path)) ? null : (
+                <AppTopbar onToggleMenuClick={onToggleMenuClick} layoutColorMode={layoutColorMode} mobileTopbarMenuActive={mobileTopbarMenuActive} onMobileTopbarMenuClick={onMobileTopbarMenuClick} onMobileSubTopbarMenuClick={onMobileSubTopbarMenuClick} />
             )}
 
             {/* <div className="layout-sidebar" onClick={onSidebarClick}>
@@ -230,23 +221,22 @@ const MyRouter = () => {
                     <BuyerRoute path="/buyer-center/orders" component={BcOrderScreen} isAuthenticated={isAuthenticated} isBuyer={isBuyer} />
                     <BuyerRoute path="/buyer-center/favourites" component={FavouritesScreen} isAuthenticated={isAuthenticated} isBuyer={isBuyer} />
                     <BuyerRoute path="/buyer-center/userAccount" component={MyAccountScreen} isAuthenticated={isAuthenticated} isBuyer={isBuyer} />
+                    <BuyerRoute path="/buyer-center/settings" component={SettingsScreen} isAuthenticated={isAuthenticated} isBuyer={isBuyer} />
+                    <BuyerRoute path="/shoppingCart/" component={ShoppingCartScreen} isAuthenticated={isAuthenticated} isBuyer={isBuyer} />
 
-                    <Route path="/send-inquiry/:id" component={SendInquiry} />
-                    <SupplierRoute path="/buyerCenter/favourites" component={SendInquiry} />
-                    <SupplierRoute path="/buyerCenter/cart" component={SendInquiry} />
-                    <SupplierRoute path="/buyerCenter/message" component={SendInquiry} />
-                    <SupplierRoute path="/buyerCenter/orders" component={SendInquiry} />
+                    <BuyerRoute path="/send-inquiry/:id" component={SendInquiry} isAuthenticated={isAuthenticated} isBuyer={isBuyer} />
 
                     {/* supplier-dashboard */}
 
                     <SupplierRoute exact path="/supplier-dashboard" component={SupplierDashboard} isAuthenticated={isAuthenticated} isSupplier={isSupplier} />
-                    <SupplierRoute path="/supplier-products" component={ProductScreen} isAuthenticated={isAuthenticated} isSupplier={isSupplier} />
-                    <SupplierRoute path="/add-products" component={AddProducts} isAuthenticated={isAuthenticated} isSupplier={isSupplier} />
-                    <SupplierRoute path="/product/${product._id}/edit" component={ProductsEditScreen} isAuthenticated={isAuthenticated} isSupplier={isSupplier} />
-                    <SupplierRoute path="/supplier-category" component={CategoriesScreen} isAuthenticated={isAuthenticated} isSupplier={isSupplier} />
-                    <SupplierRoute path="/supplier-orders" component={OrderScreen} isAuthenticated={isAuthenticated} isSupplier={isSupplier} />
-                    <SupplierRoute path="/orders" component={OrderDetailsScreen} isAuthenticated={isAuthenticated} isSupplier={isSupplier} />
-                    <SupplierRoute path="/supplier-users" component={UsersScreen} isAuthenticated={isAuthenticated} isSupplier={isSupplier} />
+                    <SupplierRoute exact path="/supplier-dashboard/home" component={SupplierDashboard} isAuthenticated={isAuthenticated} isSupplier={isSupplier} />
+                    <SupplierRoute path="/supplier-dashboard/supplier-products" component={ProductScreen} isAuthenticated={isAuthenticated} isSupplier={isSupplier} />
+                    <SupplierRoute path="/supplier-dashboard/add-products" component={AddProducts} isAuthenticated={isAuthenticated} isSupplier={isSupplier} />
+                    <SupplierRoute path="/supplier-dashboard/product/:id/edit" component={ProductsEditScreen} isAuthenticated={isAuthenticated} isSupplier={isSupplier} />
+                    <SupplierRoute path="/supplier-dashboard/supplier-category" component={CategoriesScreen} isAuthenticated={isAuthenticated} isSupplier={isSupplier} />
+                    <SupplierRoute path="/supplier-dashboard/supplier-orders" component={OrderScreen} isAuthenticated={isAuthenticated} isSupplier={isSupplier} />
+                    <SupplierRoute path="/supplier-dashboard/orders" component={OrderDetailsScreen} isAuthenticated={isAuthenticated} isSupplier={isSupplier} />
+                    <SupplierRoute path="/supplier-dashboard/supplier-users" component={UsersScreen} isAuthenticated={isAuthenticated} isSupplier={isSupplier} />
 
                     <Route path="*" component={NoMatch} />
                 </Switch>

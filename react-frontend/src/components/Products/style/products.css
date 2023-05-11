@@ -210,3 +210,59 @@
     width: 100px;
     height: 100px;
 }
+
+/* add to cart btn */
+
+.add-to-cart-btn {
+    font-size: 14px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.add-to-cart-btn:hover {
+    color: #ec750e;
+}
+
+.favourite-btn {
+    font-size: 14px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.custom-cart-icon {
+    margin-right: 8px !important;
+    font-size: 24px !important;
+}
+
+.favourite-btn {
+    margin-top: 5px;
+}
+
+.custom-fav-icon {
+    margin-right: 8px !important;
+    font-size: 24px !important;
+}
+
+.custom-fav-icon:hover {
+    color: #ec750e;
+    cursor: pointer;
+}
+
+.favourite-btn i:hover:before {
+    content: "\e9e1";
+    font-family: "PrimeIcons";
+}
+.favourite-btn i:before {
+    content: "\e984";
+    font-family: "PrimeIcons";
+}

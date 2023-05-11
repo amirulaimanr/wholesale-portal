@@ -65,7 +65,7 @@ const AppTopbar = (props) => {
                         items: [{ label: "Services" }, { label: "Logistic Services" }],
                     },
                     {
-                        label: "Sell on Wholesale360",
+                        label: "Sell on BigOrder.com",
                         items: [{ label: "For global suppliers" }, { label: "For chinese suppliers" }],
                     },
                 ],
@@ -94,7 +94,7 @@ const AppTopbar = (props) => {
                   {
                       label: "Cart",
                       icon: "pi pi-fw pi-shopping-cart",
-                      command: () => history.push("/buyerCenter/cart"),
+                      command: () => history.push("/shoppingCart"),
                   },
                   {
                       label: "Messages",

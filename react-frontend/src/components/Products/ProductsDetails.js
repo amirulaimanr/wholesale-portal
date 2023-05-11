@@ -62,6 +62,10 @@ const ProductsDetails = ({}) => {
         console.log(e.index);
     };
 
+    const handleFavouriteClick = () => {
+        dispatch.favouritesModel.addToFavourites(product._id);
+    };
+
     return (
         <div className="product-details-body ">
             <div className="product-info-container pt-4">
@@ -70,7 +74,10 @@ const ProductsDetails = ({}) => {
                         <Image className="" src={product.image} alt={product.image} preview />
                     </div>
                     <div className="info-desc p-3">
-                        <div className="product-info-name font-bold text-3xl mb-5">{product.name}</div>
+                        <div className="flex flex-row">
+                            <div className="product-info-name font-bold text-3xl mb-5">{product.name}</div>
+                        </div>
+
                         <div className="pricing-info p-3">
                             <div className="product-info-price mb-2">
                                 <b className="text-2xl">$ {product.price}</b> / {product.unit.toLowerCase()}
@@ -79,8 +86,17 @@ const ProductsDetails = ({}) => {
                                 <b className="text-xl">{product.minOrderQuantity}</b> <span>Minimum order</span>
                             </div>
                         </div>
-                        <div>
+                        <div className="flex flex-row">
                             <Button label="Inquire Now" icon="fa fa-envelope text-2xl text-center ml-4" className="text-center w-6 h-4rem mt-8 text-xl" onClick={() => history.push(`/send-inquiry/${product._id}`)} />
+
+                            {/* add to cart */}
+                            <div className="favourite-btn mt-8 ml-4 cursor-pointer" onClick={handleFavouriteClick}>
+                                <i className="pi pi-heart custom-fav-icon cursor-pointer" />
+                            </div>
+                            <div className="add-to-cart-btn mt-8 ml-3 cursor-pointer">
+                                <i className="pi pi-shopping-cart custom-cart-icon cursor-pointer" />
+                                {/* <span className="mt-2 font-semibold">Add To Cart</span> */}
+                            </div>
                         </div>
                         <div className="payment-info mt-3 flex font-medium ">
                             <span className="mt-1">Payment:</span>
