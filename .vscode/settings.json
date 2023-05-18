@@ -15,7 +15,7 @@
     "react-frontend/.gitattributes": true,
     "react-frontend/.editorconfig": true,
     "react-frontend/.dockerignore": true,
-    "react-frontend/public": true,
+    "react-frontend/public": false,
     "react-frontend/node_modules": true,
     "react-frontend\\src/App.test.js.demo": true,
     "react-frontend\\src/serviceWorker.js": true,
