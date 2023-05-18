@@ -2,7 +2,6 @@ import React from "react";
 import SupplierSidebar from "../SupplierSidebar";
 import SupplierHeader from "../SupplierHeader";
 import EditProductsMain from "../ProductComponents/EditProductsMain";
-import products from "../../../data/Products";
 import { useParams } from "react-router-dom";
 
 const ProductsEditScreen = ({ match }) => {
