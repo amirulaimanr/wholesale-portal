@@ -1,0 +1,46 @@
+[{
+  "_id": {
+    "$oid": "643ac78f1cbc6798783f7e7c"
+  },
+  "usersId": {
+    "$oid": "642980817389fc6c52f19de9"
+  },
+  "profileImg": "https://example.com/product.jpg",
+  "companyWebsite": "HelloWorld.com",
+  "address": "No 9 Hulu",
+  "city": "Ipoh",
+  "state": "Penang",
+  "postcode": "30002",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1681573775051"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1681573775051"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6454afaa63e0a302d49468b0"
+  },
+  "userId": {
+    "$oid": "1234e2f76d0c10d045252f8e"
+  },
+  "profileImg": "https://example.com/product.jpg",
+  "companyWebsite": "https://www.nikon.com/",
+  "address": "Shinagawa Intercity Tower C, 2-15-3, Konan, Minato-ku, Tokyo 108-6290",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683271594857"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683271594857"
+    }
+  },
+  "__v": 0
+}]

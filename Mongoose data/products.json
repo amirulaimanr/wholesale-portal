@@ -1,0 +1,3209 @@
+[{
+  "_id": {
+    "$oid": "644c96e8e3015b241e952de9"
+  },
+  "supplierId": {
+    "$oid": "567870be9a1b36aa36e835ed"
+  },
+  "name": "Nikon Camera",
+  "unit": "piece",
+  "description": "A great Nikon camera product",
+  "category": "electronics",
+  "subCategory": "photography",
+  "price": 399.99,
+  "qty": 100,
+  "image": "https://i.expansys.net/img/b/315446/nikon-d5600-dslr-camera-with-18-55mm-lens.jpg",
+  "minOrderQuantity": 1,
+  "rto": false,
+  "model": "D5100",
+  "brand": "Nikon",
+  "origin": "Japan",
+  "smallOrder": true,
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683271685109"
+    }
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1682740968401"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644c9d78e3015b241e952deb"
+  },
+  "supplierId": {
+    "$oid": "6454fee6673b5184a95e08b8"
+  },
+  "name": "Wireless Microphone",
+  "unit": "piece",
+  "description": "A great wireless microphone product",
+  "category": "electronics",
+  "subCategory": "music",
+  "price": 19.99,
+  "qty": 1200,
+  "image": "https://i.ebayimg.com/images/g/UPwAAOSwSdFfofkT/s-l1600.jpg",
+  "minOrderQuantity": 20,
+  "rto": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1682742648607"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683218521237"
+    }
+  },
+  "__v": 0,
+  "brand": "Shure",
+  "model": "LWM-318C -2.4G",
+  "smallOrder": false,
+  "origin": "China"
+},{
+  "_id": {
+    "$oid": "644f8db69cd1c3a6f3a7fb2e"
+  },
+  "supplierId": {
+    "$oid": "643970be9a1b36aa36e835ed"
+  },
+  "name": "4K Ultra HD TV",
+  "unit": "Piece",
+  "description": "A great 4K HD TV product",
+  "category": "electronics",
+  "subCategory": "Home",
+  "price": 699.99,
+  "qty": 440,
+  "image": "https://www.sony.com.my/image/88de0249f4df8101f60bccc4aaa57779?fmt=pjpeg&wid=330&bgcolor=FFFFFF&bgc=FFFFFF",
+  "minOrderQuantity": 1,
+  "rto": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1682935222137"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1682935222137"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644fe02d9cd1c3a6f3a7fbbc"
+  },
+  "supplierId": {
+    "$oid": "643970be9a1b36aa36e835ed"
+  },
+  "name": "Air conditioner",
+  "unit": "Piece",
+  "description": "A great air conditioner product",
+  "category": "electronics",
+  "subCategory": "Home",
+  "price": 109.99,
+  "qty": 2000,
+  "image": "https://www.lg.com/levant_en/images/air-conditioning-units/md07547825/gallery/D-1.jpg",
+  "minOrderQuantity": 1,
+  "rto": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1682956333529"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1682956333529"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644fe0339cd1c3a6f3a7fbbe"
+  },
+  "supplierId": {
+    "$oid": "643970be9a1b36aa36e835ed"
+  },
+  "name": "RGB LED light",
+  "unit": "Piece",
+  "description": "A great led light product",
+  "category": "electronics",
+  "subCategory": "Home",
+  "price": 9.99,
+  "qty": 2000,
+  "image": "https://images-cdn.ubuy.co.in/633aa29940c8b6722b790ee6-govee-led-strip-lights-32-8ft-rgb-led.jpg",
+  "minOrderQuantity": 20,
+  "rto": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1682956339723"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1682956339723"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644fe0379cd1c3a6f3a7fbc0"
+  },
+  "supplierId": {
+    "$oid": "643970be9a1b36aa36e835ed"
+  },
+  "name": "Wireless controller",
+  "unit": "Piece",
+  "description": "A great wireless controller for gaming product",
+  "category": "electronics",
+  "subCategory": "Gaming",
+  "price": 4.99,
+  "qty": 400,
+  "image": "https://impulse.com.my/images/com_hikashop/upload/003_548577210.jpg",
+  "minOrderQuantity": 40,
+  "rto": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1682956343184"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1682956343184"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644fe0399cd1c3a6f3a7fbc2"
+  },
+  "supplierId": {
+    "$oid": "643970be9a1b36aa36e835ed"
+  },
+  "name": "7inch Android tablet ",
+  "unit": "Piece",
+  "description": "A great android tablet product",
+  "category": "electronics",
+  "subCategory": "Gaming",
+  "price": 39.99,
+  "qty": 1500,
+  "image": "https://m.media-amazon.com/images/I/71VWqQBkPoL.jpg",
+  "minOrderQuantity": 5,
+  "rto": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1682956345958"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1682956345958"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644fe03c9cd1c3a6f3a7fbc4"
+  },
+  "supplierId": {
+    "$oid": "643970be9a1b36aa36e835ed"
+  },
+  "name": "Ring light",
+  "unit": "Piece",
+  "description": "A great ring light product",
+  "category": "electronics",
+  "subCategory": "Home",
+  "price": 9.99,
+  "qty": 600,
+  "image": "https://m.media-amazon.com/images/I/61YAs1cH9xL._SL1497_.jpg",
+  "minOrderQuantity": 50,
+  "rto": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1682956348879"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1682956348879"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644fe0419cd1c3a6f3a7fbc6"
+  },
+  "supplierId": {
+    "$oid": "643970be9a1b36aa36e835ed"
+  },
+  "name": "27 inch Monitor Full HD",
+  "unit": "Piece",
+  "description": "A great monitor for gaming product",
+  "category": "electronics",
+  "subCategory": "Gaming",
+  "price": 69.99,
+  "qty": 120,
+  "image": "https://hnsgsfp.imgix.net/9/images/detailed/73/HP_Omen_27i_27-inch_Gaming_Monitor_(IMG_1).jpg?fit=fill&bg=0FFF&w=1536&h=900&auto=format,compress",
+  "minOrderQuantity": 5,
+  "rto": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1682956353000"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1682956353000"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644fe1139cd1c3a6f3a7fc04"
+  },
+  "supplierId": {
+    "$oid": "643970be9a1b36aa36e835ed"
+  },
+  "name": "Gaming mouse",
+  "unit": "Piece",
+  "description": "A great gaming mouse product",
+  "category": "electronics",
+  "subCategory": "Gaming",
+  "price": 19.99,
+  "qty": 300,
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOVqIrTmrS42vq-LqSZo1p5lBaAFqn2K0cqg&usqp=CAU",
+  "minOrderQuantity": 20,
+  "rto": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1682956563555"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1682956563555"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644fe1179cd1c3a6f3a7fc06"
+  },
+  "supplierId": {
+    "$oid": "643970be9a1b36aa36e835ed"
+  },
+  "name": "Gaming Keyboard",
+  "unit": "Piece",
+  "description": "A great gaming keyboard product",
+  "category": "electronics",
+  "subCategory": "Gaming",
+  "price": 39.99,
+  "qty": 320,
+  "image": "https://www.energysistem.com/cdnassets/products/45210/rear_2000.jpg",
+  "minOrderQuantity": 10,
+  "rto": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1682956567265"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1682956567265"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6450bfd09cd1c3a6f3a7fee2"
+  },
+  "supplierId": {
+    "$oid": "645502c4673b5184a95e0926"
+  },
+  "name": "Cotton T-Shirt",
+  "unit": "piece",
+  "description": "Comfortable and breathable cotton t-shirt for everyday wear",
+  "category": "apparel",
+  "subCategory": "t-shirt",
+  "price": 10.99,
+  "qty": 500,
+  "image": "https://static.massimodutti.net/3/photos//2023/V/0/1/p/6823/540/251/6823540251_1_1_16.jpg?t=1659000423700&impolicy=massimodutti-itxmediumhigh&imwidth=400&imformat=chrome",
+  "minOrderQuantity": 100,
+  "rto": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683013584047"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683294155733"
+    }
+  },
+  "__v": 0,
+  "brand": "Uniqlo",
+  "model": "064702",
+  "origin": "Japan",
+  "smallOrder": true
+},{
+  "_id": {
+    "$oid": "6450c04f9cd1c3a6f3a7fee6"
+  },
+  "supplierId": {
+    "$oid": "645504ee673b5184a95e0960"
+  },
+  "name": "Denim Jeans",
+  "unit": "pair",
+  "description": "Stylish and durable denim jeans with a comfortable fit",
+  "category": "apparel",
+  "subCategory": "jeans",
+  "price": 34.99,
+  "qty": 300,
+  "image": "https://cdn.shopify.com/s/files/1/0693/6435/1249/products/63d896d16b786_1675138769.jpg?v=1675144447&width=1445",
+  "minOrderQuantity": 50,
+  "rto": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683013711915"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683294737092"
+    }
+  },
+  "__v": 0,
+  "brand": " Levi Strauss & Co.",
+  "model": "501",
+  "origin": "San-Franco",
+  "smallOrder": true
+},{
+  "_id": {
+    "$oid": "6450c08d9cd1c3a6f3a7fee8"
+  },
+  "supplierId": {
+    "$oid": "60bfa72a10e57f2d2c9dc438"
+  },
+  "name": "Hooded Sweatshirt",
+  "unit": "piece",
+  "description": "Warm and comfortable hooded sweatshirt for cold weather",
+  "category": "apparel",
+  "subCategory": "sweatshirts",
+  "price": 29.99,
+  "qty": 400,
+  "image": "https://www.myshirt.com.my/wp-content/uploads/2016/01/88500-Gildan-Heavy-Blend-Hooded-Sweatshirt-Sport-Grey.jpg",
+  "minOrderQuantity": 75,
+  "rto": true,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683013773353"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683013773353"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6450c0ca9cd1c3a6f3a7feea"
+  },
+  "supplierId": {
+    "$oid": "60bfa72a10e57f2d2c9dc438"
+  },
+  "name": "Leather Jacket",
+  "unit": "piece",
+  "description": "Stylish and durable leather jacket for all occasions",
+  "category": "apparel",
+  "subCategory": "jackets",
+  "price": 89.99,
+  "qty": 150,
+  "image": "https://dynamic.zacdn.com/XUysaIQd0XH6P2Hl6V6PAyyal2E=/fit-in/346x500/filters:quality(95):fill(ffffff)/https://static-my.zacdn.com/p/mango-kids-9790-8680703-1.jpg",
+  "minOrderQuantity": 25,
+  "rto": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683013834322"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683013834322"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6450c1189cd1c3a6f3a7feec"
+  },
+  "supplierId": {
+    "$oid": "60bfa72a10e57f2d2c9dc438"
+  },
+  "name": "Running Shoes",
+  "unit": "pair",
+  "description": "Comfortable and supportive running shoes for athletes",
+  "category": "apparel",
+  "subCategory": "shoes",
+  "price": 69.99,
+  "qty": 200,
+  "image": "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/585e2cd2-4f2a-408c-a8ba-f89952cdf332/revolution-6-road-running-shoes-NC0P7k.png",
+  "minOrderQuantity": 50,
+  "rto": true,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683013912102"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683013912102"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6450c57c9cd1c3a6f3a7fefa"
+  },
+  "supplierId": {
+    "$oid": "60bfa72a10e57f2d2c9dc438"
+  },
+  "name": "Formal Dress",
+  "unit": "piece",
+  "description": "Elegant and stylish formal dress for special occasions",
+  "category": "apparel",
+  "subCategory": "dresses",
+  "price": 129.99,
+  "qty": 75,
+  "image": "\thttps://img.fruugo.com/product/6/00/185947006_max.jpg",
+  "minOrderQuantity": 10,
+  "rto": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683015036714"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683015036714"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6450c5d49cd1c3a6f3a7fefc"
+  },
+  "supplierId": {
+    "$oid": "609f12cf8b834c48e4d4f295"
+  },
+  "name": "Women's Graphic Tee",
+  "unit": "piece",
+  "description": "A stylish and comfortable graphic tee for women",
+  "category": "apparel",
+  "subCategory": "tops",
+  "price": 20.99,
+  "qty": 50,
+  "image": "https://i8.amplience.net/i/jpl/jd_FD1765-664_a?qlt=92&w=600&h=765&v=1&fmt=auto",
+  "minOrderQuantity": 10,
+  "rto": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683015124688"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683015124688"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6450c6299cd1c3a6f3a7ff02"
+  },
+  "supplierId": {
+    "$oid": "609f12cf8b834c48e4d4f295"
+  },
+  "name": "Men's Denim Jacket",
+  "unit": "piece",
+  "description": "A trendy and durable denim jacket for men",
+  "category": "apparel",
+  "subCategory": "jackets",
+  "price": 79.99,
+  "qty": 200,
+  "image": "\thttps://cf.shopee.com.my/file/1f4d23aee70781b6651e0ad59e69f02d",
+  "minOrderQuantity": 5,
+  "rto": true,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683015209679"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683015209679"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6450c66d9cd1c3a6f3a7ff04"
+  },
+  "supplierId": {
+    "$oid": "609f12cf8b834c48e4d4f295"
+  },
+  "name": "Women's Leggings",
+  "unit": "piece",
+  "description": "Comfortable leggings for women",
+  "category": "apparel",
+  "subCategory": "bottoms",
+  "price": 14.99,
+  "qty": 100,
+  "image": "https://contents.mediadecathlon.com/p1786456/k$c5530688cb0962b82dd4b7951a92282f/women-s-organic-cotton-gentle-yoga-leggings-blackslashgrey.jpg?format=auto&quality=40&f=800x800",
+  "minOrderQuantity": 20,
+  "rto": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683015277325"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683015277325"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6450c6aa9cd1c3a6f3a7ff06"
+  },
+  "supplierId": {
+    "$oid": "609f12cf8b834c48e4d4f295"
+  },
+  "name": "Men's Dress Shirt",
+  "unit": "piece",
+  "description": "A formal dress shirt for men",
+  "category": "apparel",
+  "subCategory": "shirts",
+  "price": 49.99,
+  "qty": 400,
+  "image": "https://s7.landsend.com/is/image/LandsEnd/499720_LEPP_FF_BLU?$sm$",
+  "minOrderQuantity": 5,
+  "rto": true,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683015338270"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683015338270"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6450c7099cd1c3a6f3a7ff0e"
+  },
+  "supplierId": {
+    "$oid": "609f12cf8b834c48e4d4f295"
+  },
+  "name": "Women's Hoodie",
+  "unit": "piece",
+  "description": "A comfortable and stylish hoodie for women",
+  "category": "apparel",
+  "subCategory": "sweaters",
+  "price": 39.99,
+  "qty": 300,
+  "image": "https://cdn.shopify.com/s/files/1/1321/0493/products/CRAFT-Spartan-Womens-Strong-Flag-Hoodie-Grey-1_350x.jpg?v=1668619812",
+  "minOrderQuantity": 5,
+  "rto": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683015433240"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683015433240"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6450c7459cd1c3a6f3a7ff10"
+  },
+  "supplierId": {
+    "$oid": "609f12cf8b834c48e4d4f295"
+  },
+  "name": "Men's Athletic Shorts",
+  "unit": "piece",
+  "description": "Breathable and stretchy athletic shorts for men",
+  "category": "apparel",
+  "subCategory": "shorts",
+  "price": 24.99,
+  "qty": 320,
+  "image": "https://pyxis.nymag.com/v1/imgs/41d/54d/d3c876e6f5293d48962f842d60093edcdf-Vuori.2x.rsquare.w600.jpg",
+  "minOrderQuantity": 10,
+  "rto": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683015493883"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683015493883"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6450c79e9cd1c3a6f3a7ff1c"
+  },
+  "supplierId": {
+    "$oid": "609f12cf8b834c48e4d4f295"
+  },
+  "name": "Portable Fan",
+  "unit": "piece",
+  "description": "Say no more to hot weather",
+  "category": "electronics",
+  "subCategory": "portable",
+  "price": 24.99,
+  "qty": 320,
+  "image": "https://opolar.com.my/images/com_hikashop/upload/10k_stand_fan.png",
+  "minOrderQuantity": 10,
+  "rto": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683015582501"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683015582501"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6450cba7a5a602a6683db4d2"
+  },
+  "supplierId": {
+    "$oid": "609f12cf8b834c48e4d4f295"
+  },
+  "name": "Women's Athletic Shorts",
+  "unit": "piece",
+  "description": "Breathable and stretchy athletic shorts for men",
+  "category": "apparel",
+  "subCategory": "shorts",
+  "price": 24.99,
+  "qty": 320,
+  "image": "\thttps://www.discraft.com/product/image/medium/wshorts_3.png",
+  "minOrderQuantity": 10,
+  "rto": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683016615588"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683016615588"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6450dcd8f2a0a0a93f69badb"
+  },
+  "supplierId": {
+    "$oid": "6123516598d9f3b3f0b3c0ec"
+  },
+  "name": "Football Helmet",
+  "unit": "piece",
+  "description": "A classic football helmet for sports enthusiasts.",
+  "category": "sports",
+  "subCategory": "football",
+  "price": 15.99,
+  "qty": 50,
+  "image": "https://cdn.shopify.com/s/files/1/0655/4509/products/product-photo__shadow-xr-xrs-21s-black-shell-black-facemask--front_6ca3b2fa-2fe9-46ed-b009-8d91958963fe.png?v=1651869696",
+  "minOrderQuantity": 1,
+  "rto": true,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683021016595"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683021016595"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6450dcedf2a0a0a93f69badf"
+  },
+  "supplierId": {
+    "$oid": "6123516598d9f3b3f0b3c0ec"
+  },
+  "name": "Basketball Net",
+  "unit": "piece",
+  "description": "A high-quality basketball net for indoor and outdoor use.",
+  "category": "sports",
+  "subCategory": "basketball",
+  "price": 25.99,
+  "qty": 40,
+  "image": "\thttps://cf.shopee.com.my/file/e9082bbc8ea633bf23c5d913d5836032",
+  "minOrderQuantity": 1,
+  "rto": true,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683021037337"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683021037337"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6450dcf6f2a0a0a93f69bae1"
+  },
+  "supplierId": {
+    "$oid": "6123516598d9f3b3f0b3c0ec"
+  },
+  "name": "Baseball Bat",
+  "unit": "piece",
+  "description": "A durable baseball bat for practice and games.",
+  "category": "sports",
+  "subCategory": "baseball",
+  "price": 10.99,
+  "qty": 30,
+  "image": "https://i5.walmartimages.com/asr/3a1a3c7c-1bd4-4682-a4b5-c3d450410aa3.ff08ca0a341a5a5f69e792817180149d.jpeg",
+  "minOrderQuantity": 1,
+  "rto": true,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683021046515"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683021046515"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6450dd02f2a0a0a93f69bae3"
+  },
+  "supplierId": {
+    "$oid": "6123516598d9f3b3f0b3c0ec"
+  },
+  "name": "Soccer ball",
+  "unit": "piece",
+  "description": "A premium soccer ball for professional players.",
+  "category": "sports",
+  "subCategory": "soccer",
+  "price": 29.99,
+  "qty": 20,
+  "image": "https://static.nike.com/a/images/t_default/d778ae8f-fc83-4dea-be34-e865c93a4968/academy-soccer-ball-vCRq1M.png",
+  "minOrderQuantity": 1,
+  "rto": true,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683021058518"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683021058518"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6450dd0af2a0a0a93f69bae5"
+  },
+  "supplierId": {
+    "$oid": "6123516598d9f3b3f0b3c0ec"
+  },
+  "name": "Hockey stick",
+  "unit": "piece",
+  "description": "A high-performance hockey stick for beginners and professionals.",
+  "category": "sports",
+  "subCategory": "hockey",
+  "price": 49.99,
+  "qty": 10,
+  "image": "https://m.media-amazon.com/images/I/61kbwF1qezL._AC_UF1000,1000_QL80_.jpg",
+  "minOrderQuantity": 1,
+  "rto": true,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683021066386"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683021066386"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6450dd12f2a0a0a93f69bae7"
+  },
+  "supplierId": {
+    "$oid": "6123516598d9f3b3f0b3c0ec"
+  },
+  "name": "Golf club",
+  "unit": "piece",
+  "description": "A sleek and stylish golf club for experienced golfers.",
+  "category": "sports",
+  "subCategory": "golf",
+  "price": 99.99,
+  "qty": 5,
+  "image": "https://firstclasse.com.my/wp-content/uploads/2022/04/main-13.jpg",
+  "minOrderQuantity": 1,
+  "rto": true,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683021074560"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683021074560"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6450dd56f2a0a0a93f69baed"
+  },
+  "supplierId": {
+    "$oid": "6090f4d78e76c22e743e86f7"
+  },
+  "name": "Sweatband",
+  "unit": "piece",
+  "description": "Absorbent headband made of soft and comfortable material.",
+  "category": "sports",
+  "subCategory": "accessories",
+  "price": 8.99,
+  "qty": 20,
+  "image": "https://cdn.shopify.com/s/files/1/0320/3277/products/yellow_cotton_headband_288x.jpeg?v=1659732432",
+  "minOrderQuantity": 1,
+  "rto": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683021142077"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683021142077"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6450dd6af2a0a0a93f69baef"
+  },
+  "supplierId": {
+    "$oid": "6090f4d78e76c22e743e86f7"
+  },
+  "name": "Pedometer",
+  "unit": "piece",
+  "description": "A small device that counts your steps and helps you keep track of your daily activity.",
+  "category": "sports",
+  "subCategory": "electronics",
+  "price": 12.99,
+  "qty": 15,
+  "image": "https://img.fruugo.com/product/9/33/477292339_max.jpg",
+  "minOrderQuantity": 1,
+  "rto": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683021162181"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683021162181"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6450dd79f2a0a0a93f69baf1"
+  },
+  "supplierId": {
+    "$oid": "6090f4d78e76c22e743e86f7"
+  },
+  "name": "Sports Watch",
+  "unit": "piece",
+  "description": "A durable and waterproof watch with various sports modes, heart rate monitor, and GPS.",
+  "category": "sports",
+  "subCategory": "electronics",
+  "price": 129.99,
+  "qty": 10,
+  "image": "https://i5.walmartimages.com/asr/25f0ffcc-d0bc-48c4-ad62-6ab6ce6f6426.aee43132a97d3ab8754977e26921ef6e.jpeg?odnHeight=784&odnWidth=580&odnBg=FFFFFF",
+  "minOrderQuantity": 1,
+  "rto": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683021177373"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683021177373"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6450dd87f2a0a0a93f69baf3"
+  },
+  "supplierId": {
+    "$oid": "6090f4d78e76c22e743e86f7"
+  },
+  "name": "Yoga Mat",
+  "unit": "piece",
+  "description": "A thick and comfortable mat for yoga, pilates, or any other floor exercise.",
+  "category": "sports",
+  "subCategory": "fitness",
+  "price": 29.99,
+  "qty": 12,
+  "image": "https://cdn.shopify.com/s/files/1/1094/9610/products/Uluwatu_02067866-abd5-4723-bc0c-95a57d9421e1_1200x1200.jpg?v=1640750821",
+  "minOrderQuantity": 1,
+  "rto": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683021191023"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683021191023"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6450dd91f2a0a0a93f69baf5"
+  },
+  "supplierId": {
+    "$oid": "6090f4d78e76c22e743e86f7"
+  },
+  "name": "Skipping Rope",
+  "unit": "piece",
+  "description": "A lightweight and adjustable skipping rope for cardio workout.",
+  "category": "sports",
+  "subCategory": "fitness",
+  "price": 9.99,
+  "qty": 25,
+  "image": "https://cf.shopee.com.my/file/a2af7c41984d906f262bbaa3d39c095c",
+  "minOrderQuantity": 1,
+  "rto": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683021201554"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683021201554"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6450ddeef2a0a0a93f69baf7"
+  },
+  "supplierId": {
+    "$oid": "61096a20c8d5f2096cb1c6f9"
+  },
+  "name": "Racket",
+  "unit": "piece",
+  "description": "A lightweight and durable racket for tennis players.",
+  "category": "sports",
+  "subCategory": "tennis",
+  "price": 50.99,
+  "qty": 100,
+  "image": "https://shashinki.com/blog/wp-content/uploads/2009/03/musclepower45.jpg",
+  "minOrderQuantity": 1,
+  "rto": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683021294979"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683021294979"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6450dee0f2a0a0a93f69bafb"
+  },
+  "supplierId": {
+    "$oid": "6158fa1ccdf631c43dfe8597"
+  },
+  "name": "Lightweight Running Shoes",
+  "unit": "pair",
+  "description": "Comfortable and breathable running shoes suitable for both men and women",
+  "category": "sports",
+  "subCategory": "running",
+  "price": 59.99,
+  "qty": 300,
+  "image": "https://static.runnea.com/images/202304/nike-pegasus40-ficha-foto6-800x800x80.jpg?1",
+  "minOrderQuantity": 1,
+  "rto": true,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683021536839"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683021536839"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6450defcf2a0a0a93f69baff"
+  },
+  "supplierId": {
+    "$oid": "6158fa1ccdf631c43dfe8597"
+  },
+  "name": "All-Terrain Hiking Boots",
+  "unit": "pair",
+  "description": "Durable and waterproof hiking boots with excellent traction",
+  "category": "sports",
+  "subCategory": "hiking",
+  "price": 89.99,
+  "qty": 250,
+  "image": "https://www.eco-vegan-shoes.com/serverspecific/default/modules/webshop_light/product_images/762-all-terrain-pro-waterproof-hiker-black.jpg",
+  "minOrderQuantity": 1,
+  "rto": true,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683021564715"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683021564715"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6450df08f2a0a0a93f69bb01"
+  },
+  "supplierId": {
+    "$oid": "6158fa1ccdf631c43dfe8597"
+  },
+  "name": "Adjustable Dumbbell Set",
+  "unit": "set",
+  "description": "Versatile dumbbell set with adjustable weight for different exercises",
+  "category": "sports",
+  "subCategory": "fitness",
+  "price": 199.99,
+  "qty": 350,
+  "image": "https://m.media-amazon.com/images/S/aplus-media/vc/3351ef5e-59e6-4c78-9b34-efb051b7619d._SL300__.jpg",
+  "minOrderQuantity": 1,
+  "rto": true,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683021576236"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683021576236"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6450df12f2a0a0a93f69bb03"
+  },
+  "supplierId": {
+    "$oid": "6158fa1ccdf631c43dfe8597"
+  },
+  "name": "Compression Leggings",
+  "unit": "piece",
+  "description": "Breathable and stretchy leggings with compression technology for improved performance",
+  "category": "sports",
+  "subCategory": "fitness",
+  "price": 49.99,
+  "qty": 300,
+  "image": "https://i.ebayimg.com/images/g/G8IAAOSwgY9j22-8/s-l500.jpg",
+  "minOrderQuantity": 1,
+  "rto": true,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683021586192"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683021586192"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6450df1af2a0a0a93f69bb05"
+  },
+  "supplierId": {
+    "$oid": "6158fa1ccdf631c43dfe8597"
+  },
+  "name": "Weightlifting Belt",
+  "unit": "piece",
+  "description": "Heavy-duty weightlifting belt for maximum support and comfort during lifts",
+  "category": "sports",
+  "subCategory": "fitness",
+  "price": 29.99,
+  "qty": 300,
+  "image": "https://sep.turbifycdn.com/ay/yhst-59118648745518/power-weight-lifting-belt-nylon-wide-back-contour-xxl-44-51-waist-1.gif",
+  "minOrderQuantity": 1,
+  "rto": true,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683021594764"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683021594764"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6450e022f2a0a0a93f69bb0d"
+  },
+  "supplierId": {
+    "$oid": "61235658d8f3b3f0b3c0ec99"
+  },
+  "name": "Lathe Machine",
+  "unit": "piece",
+  "description": "A heavy-duty lathe machine for industrial use.",
+  "category": "machinery",
+  "subCategory": "lathe",
+  "price": 4999.99,
+  "qty": 300,
+  "image": "https://cdn.emag.com/fileadmin/_processed_/8/3/csm_p_2891_1_usc-27_oil-field_x_overview-left-side_a42b44c168.jpg",
+  "minOrderQuantity": 1,
+  "rto": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683021858207"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683021858207"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6450e035f2a0a0a93f69bb11"
+  },
+  "supplierId": {
+    "$oid": "61235658d8f3b3f0b3c0ec99"
+  },
+  "name": "Drilling Machine",
+  "unit": "piece",
+  "description": "A powerful drilling machine for precision drilling.",
+  "category": "machinery",
+  "subCategory": "drilling",
+  "price": 2999.99,
+  "qty": 250,
+  "image": "https://kapasitools.com/wp-content/uploads/2020/08/GBH-3-28-DFR.jpg",
+  "minOrderQuantity": 1,
+  "rto": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683021877560"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683021877560"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6450e03df2a0a0a93f69bb13"
+  },
+  "supplierId": {
+    "$oid": "61235658d8f3b3f0b3c0ec99"
+  },
+  "name": "CNC Machine",
+  "unit": "piece",
+  "description": "A state-of-the-art CNC machine for automated machining.",
+  "category": "machinery",
+  "subCategory": "cnc",
+  "price": 9999.99,
+  "qty": 200,
+  "image": "https://sc04.alicdn.com/kf/Sacc6be9a2d134d15bcc8f548a06758303.jpg",
+  "minOrderQuantity": 1,
+  "rto": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683021885267"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683021885267"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6450e045f2a0a0a93f69bb15"
+  },
+  "supplierId": {
+    "$oid": "61235658d8f3b3f0b3c0ec99"
+  },
+  "name": "Welding Machine",
+  "unit": "piece",
+  "description": "A robust welding machine for heavy-duty welding.",
+  "category": "machinery",
+  "subCategory": "welding",
+  "price": 3999.99,
+  "qty": 150,
+  "image": "https://www.techno.com.my/online/images/Mello%20MIG160S-1b.png",
+  "minOrderQuantity": 1,
+  "rto": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683021893462"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683021893462"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6450e053f2a0a0a93f69bb17"
+  },
+  "supplierId": {
+    "$oid": "61235658d8f3b3f0b3c0ec99"
+  },
+  "name": "Cutting Machine",
+  "unit": "piece",
+  "description": "A versatile cutting machine for metal and other materials.",
+  "category": "machinery",
+  "subCategory": "cutting",
+  "price": 5999.99,
+  "qty": 100,
+  "image": "https://lzd-img-global.slatic.net/g/p/7b029fb2f8e301312f91133b0878d6c4.jpg_720x720q80.jpg",
+  "minOrderQuantity": 1,
+  "rto": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683021907532"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683021907532"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6450e061f2a0a0a93f69bb19"
+  },
+  "supplierId": {
+    "$oid": "61235658d8f3b3f0b3c0ec99"
+  },
+  "name": "Milling Machine",
+  "unit": "piece",
+  "description": "A high-precision milling machine for precision machining.",
+  "category": "machinery",
+  "subCategory": "milling",
+  "price": 7999.99,
+  "qty": 50,
+  "image": "https://www.hotonmc.com/uploads/X64361-300x300.jpg",
+  "minOrderQuantity": 1,
+  "rto": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683021921312"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683021921312"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6450e08af2a0a0a93f69bb1b"
+  },
+  "supplierId": {
+    "$oid": "615a01c7a34f500016711b1a"
+  },
+  "name": "Electric Saw",
+  "unit": "piece",
+  "description": "A high-powered electric saw for cutting through wood, metal, and other materials.",
+  "category": "machinery",
+  "subCategory": "cutting tools",
+  "price": 199.99,
+  "qty": 150,
+  "image": "https://ae01.alicdn.com/kf/S055b10102ab941e6976e3d7e82b113cfp/High-quality-brushless-motor-lithium-battery-circular-saw-ultra-long-service-life-electric-circular-saw.jpg_.webp",
+  "minOrderQuantity": 1,
+  "rto": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683021962965"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683021962965"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6450e0a7f2a0a0a93f69bb1f"
+  },
+  "supplierId": {
+    "$oid": "615a01c7a34f500016711b1a"
+  },
+  "name": "Hydraulic Press",
+  "unit": "piece",
+  "description": "A powerful hydraulic press for compressing and molding metal sheets and other materials.",
+  "category": "machinery",
+  "subCategory": "presses",
+  "price": 499.99,
+  "qty": 50,
+  "image": "https://d2qc09rl1gfuof.cloudfront.net/product/YYJ12TDYLBZHRED01/hydraulic-press-m100-1.2.jpg",
+  "minOrderQuantity": 1,
+  "rto": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683021991175"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683021991175"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6450e133f2a0a0a93f69bb23"
+  },
+  "supplierId": {
+    "$oid": "61503b87bb16a33d682e2512"
+  },
+  "name": "High-speed Industrial Drilling Machine",
+  "unit": "piece",
+  "description": "This high-speed industrial drilling machine is perfect for use in factories and workshops. With a powerful motor and adjustable drilling speed, it can handle even the toughest materials with ease.",
+  "category": "machinery",
+  "subCategory": "drilling machine",
+  "price": 4500,
+  "qty": 300,
+  "image": "https://5.imimg.com/data5/SELLER/Default/2022/3/WC/WG/SS/46704934/6mm-high-speed-drill-machine-500x500.jpg",
+  "minOrderQuantity": 5,
+  "rto": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683022131760"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683022131760"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6450e13ef2a0a0a93f69bb25"
+  },
+  "supplierId": {
+    "$oid": "61503b87bb16a33d682e2512"
+  },
+  "name": "Heavy-duty Hydraulic Press",
+  "unit": "piece",
+  "description": "This heavy-duty hydraulic press is designed for use in manufacturing and repair shops. With a large working area and high pressing force, it can handle even the biggest jobs with ease.",
+  "category": "machinery",
+  "subCategory": "hydraulic press",
+  "price": 8000,
+  "qty": 250,
+  "image": "https://www.techno.com.my/online/images/2020/TOYO%20HYDRAULIC%20PRESS%20-%20MANUAL.jpg",
+  "minOrderQuantity": 1,
+  "rto": true,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683022142776"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683022142776"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6450e15ff2a0a0a93f69bb27"
+  },
+  "supplierId": {
+    "$oid": "61503b87bb16a33d682e2512"
+  },
+  "name": "Automatic Industrial Welding Machine",
+  "unit": "piece",
+  "description": "This automatic industrial welding machine is designed for use in factories and workshops. With programmable controls and a high-speed welding head, it can handle even the toughest welding jobs with ease.",
+  "category": "machinery",
+  "subCategory": "welding machine",
+  "price": 12000,
+  "qty": 300,
+  "image": "https://img.directindustry.com/images_di/photo-m2/33645-17742480.jpg",
+  "minOrderQuantity": 1,
+  "rto": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683022175514"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683022175514"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6450e19bf2a0a0a93f69bb2b"
+  },
+  "supplierId": {
+    "$oid": "6202cb8f28d7260015bbf7c3"
+  },
+  "name": "Automated Conveyor Belt",
+  "unit": "pcs",
+  "description": "An industrial conveyor belt with automated controls for increased efficiency and productivity.",
+  "category": "machinery",
+  "subCategory": "conveyor systems",
+  "price": 12500,
+  "qty": 500,
+  "image": "https://conveyormag.com/wp-content/uploads/2022/03/continentalanalysis.jpg",
+  "minOrderQuantity": 1,
+  "rto": true,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683022235314"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683022235314"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6450e1bbf2a0a0a93f69bb2d"
+  },
+  "supplierId": {
+    "$oid": "6202cb8f28d7260015bbf7c3"
+  },
+  "name": "Industrial Robot Arm",
+  "unit": "pcs",
+  "description": "A robotic arm for automated assembly, welding, and material handling in industrial applications.",
+  "category": "machinery",
+  "subCategory": "robotics",
+  "price": 85000,
+  "qty": 200,
+  "image": "https://5.imimg.com/data5/EE/EM/MY-4370182/robot-arm-500x500.jpg",
+  "minOrderQuantity": 1,
+  "rto": true,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683022267345"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683022267345"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6450e2a6f2a0a0a93f69bb53"
+  },
+  "supplierId": {
+    "$oid": "6137a59f84e381a84a00a238"
+  },
+  "name": "Organic Lip Balm Set",
+  "unit": "set",
+  "description": "A set of 3 organic lip balms made from natural ingredients such as beeswax, coconut oil, and shea butter. Provides long-lasting moisture and protection for dry and chapped lips.",
+  "category": "beauty",
+  "subCategory": "lip care",
+  "price": 15.99,
+  "qty": 500,
+  "image": "https://cdn11.bigcommerce.com/s-bz1dwqfh8m/images/stencil/1000x1000/products/116/398/27__86883.1612988158.png?c=2\n",
+  "minOrderQuantity": 10,
+  "rto": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683022502798"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683022502798"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6450e2b2f2a0a0a93f69bb55"
+  },
+  "supplierId": {
+    "$oid": "6137a59f84e381a84a00a238"
+  },
+  "name": "Anti-Aging Night Cream",
+  "unit": "jar",
+  "description": "An anti-aging night cream that helps to reduce the appearance of fine lines and wrinkles. Enriched with retinol, hyaluronic acid, and vitamin E, this cream nourishes and rejuvenates the skin while you sleep.",
+  "category": "beauty",
+  "subCategory": "skin care",
+  "price": 39.99,
+  "qty": 300,
+  "image": "https://static.beautytocare.com/media/catalog/product/cache/global/image/1300x1300/85e4522595efc69f496374d01ef2bf13/s/k/skinerie-youth-activator-night-cream-50ml.jpg",
+  "minOrderQuantity": 5,
+  "rto": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683022514127"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683022514127"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6450e2bbf2a0a0a93f69bb57"
+  },
+  "supplierId": {
+    "$oid": "6137a59f84e381a84a00a238"
+  },
+  "name": "Cruelty-Free Mascara",
+  "unit": "tube",
+  "description": "A cruelty-free mascara that adds volume and length to your lashes without clumping or flaking. Infused with nourishing ingredients such as aloe vera and vitamin E, this mascara is gentle on your lashes and eyes.",
+  "category": "beauty",
+  "subCategory": "makeup",
+  "price": 12.99,
+  "qty": 400,
+  "image": "https://media1.popsugar-assets.com/files/thumbor/twfQsbtP9N7aULSw9MRC0tyjp7w/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2018/03/21/976/n/1922153/f52d7a905ab2dc13d30699.80137013_/i/Best-Cruelty-Free-Mascara.jpg",
+  "minOrderQuantity": 10,
+  "rto": true,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683022523846"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683022523846"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6450e2c6f2a0a0a93f69bb59"
+  },
+  "supplierId": {
+    "$oid": "6137a59f84e381a84a00a238"
+  },
+  "name": "Hydrating Face Mist",
+  "unit": "bottle",
+  "description": "A hydrating face mist that refreshes and revitalizes your skin throughout the day. Formulated with rose water and witch hazel, this mist soothes and calms your skin while providing hydration and antioxidants.",
+  "category": "beauty",
+  "subCategory": "skin care",
+  "price": 18.99,
+  "qty": 250,
+  "image": "https://cdn.shopify.com/s/files/1/0331/5705/4602/products/Facemist_Radiant2.jpg?v=1626697761",
+  "minOrderQuantity": 5,
+  "rto": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683022534688"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683022534688"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6450e2d5f2a0a0a93f69bb5b"
+  },
+  "supplierId": {
+    "$oid": "6137a59f84e381a84a00a238"
+  },
+  "name": "Vegan Lipstick",
+  "unit": "tube",
+  "description": "A vegan lipstick made from natural and organic ingredients. Provides long-lasting color and hydration for your lips without any animal-derived ingredients or harmful chemicals.",
+  "category": "beauty",
+  "subCategory": "makeup",
+  "price": 21.99,
+  "qty": 350,
+  "image": "https://drkoskincare.com/wp-content/uploads/2019/08/kiss-mineral-premium-vegan-lipstick-01.jpg",
+  "minOrderQuantity": 5,
+  "rto": true,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683022549814"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683022549814"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6450e2f9f2a0a0a93f69bb5d"
+  },
+  "supplierId": {
+    "$oid": "62147d9b98df32fca8a654d5"
+  },
+  "name": "Facial Cleansing Brush",
+  "unit": "piece",
+  "description": "This facial cleansing brush helps remove dirt, oil, and makeup residue, leaving your skin feeling clean and refreshed.",
+  "category": "beauty",
+  "subCategory": "skincare",
+  "price": 25.99,
+  "qty": 300,
+  "image": "https://static.beautytocare.com/media/catalog/product/cache/global/image/1300x1300/85e4522595efc69f496374d01ef2bf13/f/o/foreo-lunatm-fofo-facial-cleansing-massager-pearl-pink.jpg",
+  "minOrderQuantity": 50,
+  "rto": true,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683022585837"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683022585837"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6450e306f2a0a0a93f69bb5f"
+  },
+  "supplierId": {
+    "$oid": "7268a1f54dc1b2a2e4a4e8c7"
+  },
+  "name": "Hair Straightener",
+  "unit": "piece",
+  "description": "This hair straightener features ceramic plates that distribute heat evenly for a sleek, frizz-free look.",
+  "category": "beauty",
+  "subCategory": "haircare",
+  "price": 49.99,
+  "qty": 250,
+  "image": "https://m.media-amazon.com/images/I/41KtWacjX6L._SL1200_.jpg",
+  "minOrderQuantity": 10,
+  "rto": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683022598871"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683022598871"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6450e313f2a0a0a93f69bb61"
+  },
+  "supplierId": {
+    "$oid": "ac0d0e69c3c3f0e6d356b6e5"
+  },
+  "name": "Lipstick Set",
+  "unit": "set",
+  "description": "This set includes five high-quality lipsticks in various shades, perfect for any occasion.",
+  "category": "beauty",
+  "subCategory": "makeup",
+  "price": 35.99,
+  "qty": 400,
+  "image": "https://images-cdn.ubuy.co.in/634005ee2daed3039e7e2ec8-clinique-5-pc-kisses-lipstick-gift-set.jpg",
+  "minOrderQuantity": 20,
+  "rto": true,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683022611175"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683022611175"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6450e322f2a0a0a93f69bb63"
+  },
+  "supplierId": {
+    "$oid": "67f365f5cb5f5d03bfcb1a3f"
+  },
+  "name": "Eyebrow Razor",
+  "unit": "piece",
+  "description": "This eyebrow razor features a stainless steel blade that easily removes unwanted hair and shapes your eyebrows.",
+  "category": "beauty",
+  "subCategory": "tools",
+  "price": 9.99,
+  "qty": 300,
+  "image": "https://i5.walmartimages.com/asr/c2c1120e-f0b9-4936-865a-a1bacf74cdc0_1.5e5de443637b368176b589f48f352b73.jpeg",
+  "minOrderQuantity": 50,
+  "rto": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683022626570"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683022626570"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6450e346f2a0a0a93f69bb65"
+  },
+  "supplierId": {
+    "$oid": "6179fa6a8d53b773a7b5830a"
+  },
+  "name": "Facial Cleanser",
+  "unit": "bottle",
+  "description": "Gentle and effective facial cleanser that removes impurities and leaves skin feeling fresh and clean.",
+  "category": "beauty",
+  "subCategory": "skin care",
+  "price": 15.99,
+  "qty": 350,
+  "image": "https://www.kiehls.com.my/dw/image/v2/BFZM_PRD/on/demandware.static/-/Sites-kiehls-master-catalog/default/dw9ab9a786/nextgen/skin-care/face-cleansers/ultra-facial/ultra-facial-cleanser/kiehls-face-cleanser-ultra-facial-cleanser-150ml-000-3605970024192-front.jpg?sw=465&sh=465&sm=cut&sfrm=png&q=70",
+  "minOrderQuantity": 1,
+  "rto": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683022662571"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683022662571"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6450e367f2a0a0a93f69bb69"
+  },
+  "supplierId": {
+    "$oid": "6179fa6a8d53b773a7b5830a"
+  },
+  "name": "Hair Serum",
+  "unit": "bottle",
+  "description": "A nourishing and lightweight hair serum that helps to repair and protect damaged hair.",
+  "category": "beauty",
+  "subCategory": "hair care",
+  "price": 24.99,
+  "qty": 300,
+  "image": "https://www.reana.pk/wp-content/uploads/2022/09/6923700970449_95a24830-6c29-484e-8264-9a8b2fcc6a7f.webp",
+  "minOrderQuantity": 1,
+  "rto": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683022695188"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683022695188"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6450e36ef2a0a0a93f69bb6b"
+  },
+  "supplierId": {
+    "$oid": "6179fa6a8d53b773a7b5830a"
+  },
+  "name": "Eyelash Curler",
+  "unit": "piece",
+  "description": "A professional-grade eyelash curler that helps to curl and lengthen lashes.",
+  "category": "beauty",
+  "subCategory": "tools",
+  "price": 9.99,
+  "qty": 400,
+  "image": "https://static.beautytocare.com/media/catalog/product/cache/global/image/85e4522595efc69f496374d01ef2bf13/t/w/tweezerman-classic-lash-curler.jpg",
+  "minOrderQuantity": 1,
+  "rto": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683022702525"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683022702525"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6450fd23f2a0a0a93f69bb89"
+  },
+  "supplierId": {
+    "$oid": "614e540f2fc55e9a7345d648"
+  },
+  "name": "Power Steering Pump",
+  "unit": "each",
+  "description": "A power steering pump is a device that provides the hydraulic pressure and flow that turns the steering wheel.",
+  "category": "vehicle_parts",
+  "subCategory": "steering",
+  "price": 85.99,
+  "qty": 300,
+  "image": "https://cf.shopee.com.my/file/acb6ccf89dae2b6c57d53698ecc47edc",
+  "minOrderQuantity": 10,
+  "rto": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683029283039"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683029283039"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6450fd2df2a0a0a93f69bb8b"
+  },
+  "supplierId": {
+    "$oid": "614e540f2fc55e9a7345d648"
+  },
+  "name": "Brake Caliper",
+  "unit": "each",
+  "description": "A brake caliper is a part of a disc brake assembly that squeezes the brake pads against the rotor to slow or stop the vehicle.",
+  "category": "vehicle_parts",
+  "subCategory": "brakes",
+  "price": 42.99,
+  "qty": 500,
+  "image": "https://www.familyhandyman.com/wp-content/uploads/2020/03/Brake-Caliper-GettyImages-691429614.jpg",
+  "minOrderQuantity": 5,
+  "rto": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683029293058"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683029293058"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6450fd35f2a0a0a93f69bb8d"
+  },
+  "supplierId": {
+    "$oid": "614e540f2fc55e9a7345d648"
+  },
+  "name": "Timing Belt Kit",
+  "unit": "each",
+  "description": "A timing belt kit includes a timing belt, tensioner, and idler pulleys, and is used to keep the engine's timing system in sync.",
+  "category": "vehicle_parts",
+  "subCategory": "engine",
+  "price": 64.99,
+  "qty": 250,
+  "image": "https://cf.shopee.com.my/file/59e8364a6400c910849d0d661efa794c",
+  "minOrderQuantity": 5,
+  "rto": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683029301673"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683029301673"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6450fd3ff2a0a0a93f69bb8f"
+  },
+  "supplierId": {
+    "$oid": "614e540f2fc55e9a7345d648"
+  },
+  "name": "Fuel Pump Assembly",
+  "unit": "each",
+  "description": "A fuel pump assembly is a device that pumps fuel from the gas tank to the engine.",
+  "category": "vehicle_parts",
+  "subCategory": "fuel_system",
+  "price": 89.99,
+  "qty": 350,
+  "image": "https://newparts.com/wp-content/uploads/2021/03/Fuel_Pump_Assembly.jpg",
+  "minOrderQuantity": 10,
+  "rto": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683029311155"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683029311155"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6450fd48f2a0a0a93f69bb91"
+  },
+  "supplierId": {
+    "$oid": "614e540f2fc55e9a7345d648"
+  },
+  "name": "Shock Absorber",
+  "unit": "each",
+  "description": "A shock absorber is a hydraulic device that absorbs and dissipates energy from the vehicle's suspension system.",
+  "category": "vehicle_parts",
+  "subCategory": "suspension",
+  "price": 38.99,
+  "qty": 400,
+  "image": "https://static.wixstatic.com/media/e204d6_6c8f955eb1b8435e823ffc1823b80fe8~mv2.jpg/v1/fill/w_572,h_572,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/GSP_CategoryImages_ShockAbsorbers.jpg",
+  "minOrderQuantity": 5,
+  "rto": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683029320827"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683029320827"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6450fe13f2a0a0a93f69bb95"
+  },
+  "supplierId": {
+    "$oid": "615fbd7866d44d9f3d6b3ed6"
+  },
+  "name": "Transmission",
+  "unit": "piece",
+  "description": "High-quality automatic transmission for most cars",
+  "category": "vehicle_parts",
+  "subCategory": "transmission",
+  "price": 2500,
+  "qty": 350,
+  "image": "https://spprecision.com/574-large_default/allison-1000-transmission-for-sale.jpg",
+  "minOrderQuantity": 1,
+  "rto": true,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683029523379"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683029523379"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6450fe24f2a0a0a93f69bb97"
+  },
+  "supplierId": {
+    "$oid": "615fbd7866d44d9f3d6b3ed6"
+  },
+  "name": "Radiator",
+  "unit": "piece",
+  "description": "Aluminum radiator for most cars",
+  "category": "vehicle_parts",
+  "subCategory": "cooling_system",
+  "price": 1500,
+  "qty": 500,
+  "image": "https://my-live-01.slatic.net/p/9901f27470f9f03a12f0850a96c3fb89.jpg",
+  "minOrderQuantity": 1,
+  "rto": true,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683029540088"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683029540088"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6450fe41f2a0a0a93f69bb99"
+  },
+  "supplierId": {
+    "$oid": "615fbd7866d44d9f3d6b3ed6"
+  },
+  "name": "Brake Pad",
+  "unit": "set",
+  "description": "High-performance brake pad for most sports cars",
+  "category": "vehicle_parts",
+  "subCategory": "brake_system",
+  "price": 3500,
+  "qty": 300,
+  "image": "https://carzey.com/wp-content/uploads/2019/03/proton_pad.jpg",
+  "minOrderQuantity": 1,
+  "rto": true,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683029569383"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683029569383"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6450fe48f2a0a0a93f69bb9b"
+  },
+  "supplierId": {
+    "$oid": "615fbd7866d44d9f3d6b3ed6"
+  },
+  "name": "Fuel Pump",
+  "unit": "piece",
+  "description": "Electric fuel pump for most cars",
+  "category": "vehicle_parts",
+  "subCategory": "fuel_system",
+  "price": 1200,
+  "qty": 400,
+  "image": "https://m.media-amazon.com/images/I/61iwjuPwAKL.jpg",
+  "minOrderQuantity": 1,
+  "rto": true,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683029576172"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683029576172"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6450fecaf2a0a0a93f69bb9f"
+  },
+  "supplierId": {
+    "$oid": "61256f0e8e5a1320f854e9c7"
+  },
+  "name": "Catalytic Converter",
+  "unit": "piece",
+  "description": "A catalytic converter is an exhaust emission control device that reduces toxic gases and pollutants in exhaust gas from an internal combustion engine into less-toxic pollutants.",
+  "category": "vehicle_parts",
+  "subCategory": "exhaust_system",
+  "price": 250,
+  "qty": 500,
+  "image": "\thttps://m.media-amazon.com/images/I/61K4r3uA-0L.jpg",
+  "minOrderQuantity": 50,
+  "rto": true,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683029706499"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683029706499"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6450fedbf2a0a0a93f69bba1"
+  },
+  "supplierId": {
+    "$oid": "61256f0e8e5a1320f854e9c7"
+  },
+  "name": "Spark Plugs",
+  "unit": "set",
+  "description": "A spark plug is a device that delivers electric current to the combustion chamber to ignite the compressed fuel/air mixture.",
+  "category": "vehicle_parts",
+  "subCategory": "ignition_system",
+  "price": 15,
+  "qty": 1000,
+  "image": "\thttps://cf.shopee.com.my/file/a4f5dc261926c043c9d49ce22e55b22c",
+  "minOrderQuantity": 100,
+  "rto": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683029723892"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683029723892"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6450ff4df2a0a0a93f69bba3"
+  },
+  "supplierId": {
+    "$oid": "615a1b70a031fd783d99706a"
+  },
+  "name": "Suspension Coil Springs",
+  "unit": "piece",
+  "description": "These Suspension Coil Springs are designed to provide excellent handling performance and a comfortable ride. They are made from high-quality materials that are designed to withstand extreme temperatures and harsh driving conditions.",
+  "category": "vehicle_parts",
+  "subCategory": "suspension",
+  "price": 35.99,
+  "qty": 300,
+  "image": "https://www.moogparts.com/content/loc-na/loc-us/fmmp-moog/en_US/parts/suspension/coil-springs/_jcr_content/product-feature/featureContent1/image.img.png/1605564302341.png",
+  "minOrderQuantity": 50,
+  "rto": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683029837093"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683029837093"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6450ff5ff2a0a0a93f69bba5"
+  },
+  "supplierId": {
+    "$oid": "615a1b70a031fd783d99706a"
+  },
+  "name": "Brake Pads and Rotors",
+  "unit": "set",
+  "description": "These Brake Pads and Rotors are designed to provide superior stopping power and long-lasting performance. They are made from high-quality materials that are designed to withstand extreme temperatures and heavy use.",
+  "category": "vehicle_parts",
+  "subCategory": "brakes",
+  "price": 99.99,
+  "qty": 250,
+  "image": "\thttps://m.media-amazon.com/images/I/81qnYyBFveS.jpg",
+  "minOrderQuantity": 25,
+  "rto": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683029855189"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683029855189"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64511e29f2a0a0a93f69bbc7"
+  },
+  "supplierId": {
+    "$oid": "609d5f4c8d7e4c4dd4f4d82a"
+  },
+  "name": "Ceramic Planter with Stand",
+  "unit": "set",
+  "description": "This ceramic planter comes with a sturdy iron stand. It's perfect for displaying your favorite indoor plants.",
+  "category": "home_garden",
+  "subCategory": "home_decor",
+  "price": 25.99,
+  "qty": 250,
+  "image": "https://st.hzcdn.com/simgs/c311e7a90de53469_4-7441/home-design.jpg",
+  "minOrderQuantity": 1,
+  "rto": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683037737672"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683037737672"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64511e32f2a0a0a93f69bbc9"
+  },
+  "supplierId": {
+    "$oid": "609d5f4c8d7e4c4dd4f4d82a"
+  },
+  "name": "Rattan Storage Basket",
+  "unit": "piece",
+  "description": "This handwoven rattan basket is perfect for storing blankets, magazines, or other items. It adds a natural touch to any room.",
+  "category": "home_garden",
+  "subCategory": "storage",
+  "price": 32.99,
+  "qty": 300,
+  "image": "https://m.media-amazon.com/images/I/91SP6OvA5WL.jpg",
+  "minOrderQuantity": 1,
+  "rto": true,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683037746032"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683037746032"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64511e3cf2a0a0a93f69bbcb"
+  },
+  "supplierId": {
+    "$oid": "609d5f4c8d7e4c4dd4f4d82a"
+  },
+  "name": "Bohemian Area Rug",
+  "unit": "piece",
+  "description": "This colorful area rug adds a bohemian touch to any living space. It's made of durable materials and is easy to clean.",
+  "category": "home_garden",
+  "subCategory": "flooring",
+  "price": 89.99,
+  "qty": 220,
+  "image": "https://m.media-amazon.com/images/I/91uEo0QmiTL.jpg",
+  "minOrderQuantity": 1,
+  "rto": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683037756661"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683037756661"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64511e47f2a0a0a93f69bbcd"
+  },
+  "supplierId": {
+    "$oid": "609d5f4c8d7e4c4dd4f4d82a"
+  },
+  "name": "Bamboo Cutting Board Set",
+  "unit": "set",
+  "description": "This set of bamboo cutting boards includes three different sizes for all your kitchen needs. They're eco-friendly and easy to clean.",
+  "category": "home_garden",
+  "subCategory": "kitchen",
+  "price": 18.99,
+  "qty": 280,
+  "image": "https://cf.shopee.com.my/file/3adc4407dfee83d42e7af21837b5dc60",
+  "minOrderQuantity": 1,
+  "rto": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683037767821"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683037767821"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64511e4ff2a0a0a93f69bbcf"
+  },
+  "supplierId": {
+    "$oid": "609d5f4c8d7e4c4dd4f4d82a"
+  },
+  "name": "Wooden Picture Frame Set",
+  "unit": "set",
+  "description": "This set of wooden picture frames includes three different sizes. They're perfect for displaying your favorite memories.",
+  "category": "home_garden",
+  "subCategory": "home_decor",
+  "price": 12.99,
+  "qty": 300,
+  "image": "https://static.vecteezy.com/system/resources/previews/001/437/886/original/set-of-blank-realistic-wooden-picture-frames-free-vector.jpg",
+  "minOrderQuantity": 1,
+  "rto": true,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683037775797"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683037775797"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64511ec8f2a0a0a93f69bbdd"
+  },
+  "supplierId": {
+    "$oid": "616cb5d8b45f5f41aa1bb79e"
+  },
+  "name": "Decorative Cushion Cover",
+  "unit": "piece",
+  "description": "This beautiful cushion cover will add a touch of elegance to your living room.",
+  "category": "home_garden",
+  "subCategory": "decor",
+  "price": 12.99,
+  "qty": 350,
+  "image": "https://cf.shopee.com.my/file/2bb299bc2f0d49d13d2ef38fe81aa222",
+  "minOrderQuantity": 10,
+  "rto": true,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683037896633"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683037896633"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64511ed2f2a0a0a93f69bbdf"
+  },
+  "supplierId": {
+    "$oid": "616cb5d8b45f5f41aa1bb79e"
+  },
+  "name": "Foldable Laundry Hamper",
+  "unit": "piece",
+  "description": "This laundry hamper is perfect for organizing your dirty clothes and folds up for easy storage.",
+  "category": "home_garden",
+  "subCategory": "laundry",
+  "price": 29.99,
+  "qty": 250,
+  "image": "https://img.fruugo.com/product/2/96/458502962_max.jpg",
+  "minOrderQuantity": 5,
+  "rto": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683037906227"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683037906227"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64511edaf2a0a0a93f69bbe1"
+  },
+  "supplierId": {
+    "$oid": "616cb5d8b45f5f41aa1bb79e"
+  },
+  "name": "Wall Mounted Coat Rack",
+  "unit": "piece",
+  "description": "This coat rack features a stylish design and is perfect for organizing your entryway or mudroom.",
+  "category": "home_garden",
+  "subCategory": "storage",
+  "price": 34.99,
+  "qty": 300,
+  "image": "https://m.media-amazon.com/images/I/71h3-BQUU0L._AC_UF894,1000_QL80_.jpg",
+  "minOrderQuantity": 10,
+  "rto": true,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683037914163"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683037914163"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64511ee2f2a0a0a93f69bbe3"
+  },
+  "supplierId": {
+    "$oid": "616cb5d8b45f5f41aa1bb79e"
+  },
+  "name": "Kitchen Utensil Set",
+  "unit": "set",
+  "description": "This 5-piece utensil set includes all the essential tools you need for cooking and serving.",
+  "category": "home_garden",
+  "subCategory": "kitchen",
+  "price": 24.99,
+  "qty": 400,
+  "image": "https://m.media-amazon.com/images/I/71RT8tqAjRL._AC_UF894,1000_QL80_.jpg",
+  "minOrderQuantity": 5,
+  "rto": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683037922231"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683037922231"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64511eebf2a0a0a93f69bbe5"
+  },
+  "supplierId": {
+    "$oid": "616cb5d8b45f5f41aa1bb79e"
+  },
+  "name": "Artificial Plant",
+  "unit": "piece",
+  "description": "This realistic looking artificial plant is a low maintenance way to add some greenery to your home.",
+  "category": "home_garden",
+  "subCategory": "decor",
+  "price": 19.99,
+  "qty": 300,
+  "image": "https://m.media-amazon.com/images/I/71WmcovWwtL.jpg",
+  "minOrderQuantity": 10,
+  "rto": true,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683037931170"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683037931170"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64511f22f2a0a0a93f69bbe9"
+  },
+  "supplierId": {
+    "$oid": "613daaf9d1e0e514b0a4dcf1"
+  },
+  "name": "Decorative Throw Pillow Cover",
+  "unit": "piece",
+  "description": "This decorative throw pillow cover is made from high-quality cotton fabric and features an intricate pattern of flowers and leaves. It is perfect for adding a touch of elegance to any living space.",
+  "category": "home_garden",
+  "subCategory": "home_decor",
+  "price": 12.99,
+  "qty": 250,
+  "image": "https://www.lacenembroidery.com/image/donot456/image/cache/data/all_product_images/product-602/Hg3GJ3Vf1637656294-2000x2000.jpg",
+  "minOrderQuantity": 10,
+  "rto": true,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683037986645"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683037986645"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64511f35f2a0a0a93f69bbeb"
+  },
+  "supplierId": {
+    "$oid": "613daaf9d1e0e514b0a4dcf1"
+  },
+  "name": "Indoor Plant Pot",
+  "unit": "piece",
+  "description": "This indoor plant pot is made from high-quality ceramic and features a beautiful glazed finish. It is perfect for showcasing your favorite indoor plants and adding a touch of greenery to any room.",
+  "category": "home_garden",
+  "subCategory": "gardening",
+  "price": 16.99,
+  "qty": 300,
+  "image": "https://www.ikea.com/my/en/images/products/muskot-plant-pot-white__0640993_pe700173_s5.jpg?f=s",
+  "minOrderQuantity": 5,
+  "rto": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683038005183"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683038005183"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64511f42f2a0a0a93f69bbed"
+  },
+  "supplierId": {
+    "$oid": "613daaf9d1e0e514b0a4dcf1"
+  },
+  "name": "Framed Wall Art",
+  "unit": "piece",
+  "description": "This beautiful framed wall art features an abstract design in shades of blue and green. It is the perfect addition to any modern living space and is sure to make a statement on any wall.",
+  "category": "home_garden",
+  "subCategory": "wall_decor",
+  "price": 49.99,
+  "qty": 225,
+  "image": "https://cb.scene7.com/is/image/Crate/ImmersionISSF22/$web_pdp_main_carousel_zoom_med$/220323145408/immersion-i.jpg\n",
+  "minOrderQuantity": 1,
+  "rto": true,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683038018144"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683038018144"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64511f54f2a0a0a93f69bbef"
+  },
+  "supplierId": {
+    "$oid": "613daaf9d1e0e514b0a4dcf1"
+  },
+  "name": "Decorative Lantern",
+  "unit": "piece",
+  "description": "This decorative lantern is made from high-quality metal and features an intricate cut-out design. It is perfect for adding a touch of ambiance to any living space and is sure to be a conversation starter.",
+  "category": "home_garden",
+  "subCategory": "outdoor_decor",
+  "price": 29.99,
+  "qty": 275,
+  "image": "https://ak1.ostkcdn.com/images/products/is/images/direct/bfaab900f4b605b55e962956e6ee102ce5225731/26%E2%80%9D-Elegant-Rectangle-Panel-Rustic-Finish-Wooden-Lanterns.jpg?impolicy=medium",
+  "minOrderQuantity": 3,
+  "rto": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683038036768"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683038036768"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6451206df2a0a0a93f69bc07"
+  },
+  "supplierId": {
+    "$oid": "60b107ecf50c08aeb90fa14e"
+  },
+  "name": "Smartphone",
+  "unit": "piece",
+  "description": "High-end smartphone with advanced features and functionalities.",
+  "category": "electronics",
+  "subCategory": "mobile",
+  "price": 900,
+  "qty": 350,
+  "image": "https://images.samsung.com/is/image/samsung/p6pim/my/2302/gallery/my-galaxy-s23-s916-sm-s916blicxme-thumb-534843445?$264_264_PNG$",
+  "minOrderQuantity": 1,
+  "rto": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683038317150"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683038317150"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6451208df2a0a0a93f69bc0b"
+  },
+  "supplierId": {
+    "$oid": "60b107ecf50c08aeb90fa14e"
+  },
+  "name": "Laptop",
+  "unit": "piece",
+  "description": "Powerful laptop with high-performance processor and graphics card.",
+  "category": "electronics",
+  "subCategory": "computer",
+  "price": 1500,
+  "qty": 250,
+  "image": "https://www.lenovo.com/medias/?context=bWFzdGVyfHJvb3R8MjAyMjE5fGltYWdlL3BuZ3xoY2YvaDEyLzE0NzMwMTY4MDc0MjcwLnBuZ3w1NzFhNmVlYjQ0ODFmMDgxYzA3NWQ2YWQ5ZDZlOWQ2ODFmOTA5YTYxYTVjZGIyMTRmNzI2ZWI3MGMzOTNlZjE4",
+  "minOrderQuantity": 1,
+  "rto": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683038349210"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683038349210"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64512095f2a0a0a93f69bc0d"
+  },
+  "supplierId": {
+    "$oid": "60b107ecf50c08aeb90fa14e"
+  },
+  "name": "Smartwatch",
+  "unit": "piece",
+  "description": "Stylish and feature-packed smartwatch with health and fitness tracking.",
+  "category": "electronics",
+  "subCategory": "wearable",
+  "price": 40,
+  "qty": 300,
+  "image": "https://cdn.shopify.com/s/files/1/2211/0259/products/RE-LS02-BL-SQUARE-_2.jpg?v=1631873231",
+  "minOrderQuantity": 1,
+  "rto": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683038357854"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683038357854"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6451209ef2a0a0a93f69bc0f"
+  },
+  "supplierId": {
+    "$oid": "60b107ecf50c08aeb90fa14e"
+  },
+  "name": "Soundbar",
+  "unit": "piece",
+  "description": "High-quality soundbar with immersive audio experience for movies and music.",
+  "category": "electronics",
+  "subCategory": "audio",
+  "price": 500,
+  "qty": 400,
+  "image": "https://d287ku8w5owj51.cloudfront.net/images/products/hero/others/hero-creative-stage-360.jpg?width=800&height=800\"",
+  "minOrderQuantity": 1,
+  "rto": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683038366429"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683038366429"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645120a5f2a0a0a93f69bc11"
+  },
+  "supplierId": {
+    "$oid": "60b107ecf50c08aeb90fa14e"
+  },
+  "name": "Wireless Earbuds",
+  "unit": "piece",
+  "description": "Sleek and compact wireless earbuds with noise cancellation and long battery life.",
+  "category": "electronics",
+  "subCategory": "audio",
+  "price": 10,
+  "qty": 500,
+  "image": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MK2H3?wid=1144&hei=1144&fmt=jpeg&qlt=95&.v=1634663497000",
+  "minOrderQuantity": 1,
+  "rto": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683038373877"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683038373877"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645120aef2a0a0a93f69bc13"
+  },
+  "supplierId": {
+    "$oid": "60b107ecf50c08aeb90fa14e"
+  },
+  "name": "Smart Speaker",
+  "unit": "piece",
+  "description": "Voice-controlled smart speaker with premium sound and virtual assistant.",
+  "category": "electronics",
+  "subCategory": "audio",
+  "price": 400,
+  "qty": 350,
+  "image": "https://cdn.shopify.com/s/files/1/0265/5619/products/Bose-Portable-Home-Speaker-Luxe-Silver.png?v=1652256161",
+  "minOrderQuantity": 1,
+  "rto": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683038382433"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683038382433"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645120d9f2a0a0a93f69bc17"
+  },
+  "supplierId": {
+    "$oid": "6124820f85f731001e8529a0"
+  },
+  "name": "Smart TV",
+  "unit": "piece",
+  "description": "A high-quality 4K smart TV with built-in streaming services.",
+  "category": "electronics",
+  "subCategory": "television",
+  "price": 800,
+  "qty": 300,
+  "image": "https://mobile2go.com.my/images/thumbs/0019804_infinix-smart-tv-x1-32-framelss-design-android-90-epic-20-image-engine-dolby-audio-original-infinix-_511.png",
+  "minOrderQuantity": 1,
+  "rto": true,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683038425825"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683038425825"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645120e8f2a0a0a93f69bc19"
+  },
+  "supplierId": {
+    "$oid": "6124820f85f731001e8529a0"
+  },
+  "name": "Wireless Headphones",
+  "unit": "pair",
+  "description": "Noise-cancelling wireless headphones with excellent sound quality.",
+  "category": "electronics",
+  "subCategory": "audio",
+  "price": 150,
+  "qty": 400,
+  "image": "https://www.sony.com.my/image/dd18cf93606d238305a733d336c45537?fmt=pjpeg&wid=330&bgcolor=FFFFFF&bgc=FFFFFF",
+  "minOrderQuantity": 1,
+  "rto": true,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683038440080"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683038440080"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645120fff2a0a0a93f69bc1b"
+  },
+  "supplierId": {
+    "$oid": "6124820f85f731001e8529a0"
+  },
+  "name": "Refrubished Laptop",
+  "unit": "piece",
+  "description": "A powerful laptop with high-end specifications for business and personal use.",
+  "category": "electronics",
+  "subCategory": "computer",
+  "price": 1200,
+  "qty": 250,
+  "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5713/5713562_sd.jpg",
+  "minOrderQuantity": 1,
+  "rto": true,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683038463109"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683038463109"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64512114f2a0a0a93f69bc1d"
+  },
+  "supplierId": {
+    "$oid": "6124820f85f731001e8529a0"
+  },
+  "name": "Leather Watch",
+  "unit": "piece",
+  "description": "A sleek and stylish smartwatch with fitness tracking and smart features.",
+  "category": "electronics",
+  "subCategory": "wearable",
+  "price": 250,
+  "qty": 350,
+  "image": "https://cdn.shopify.com/s/files/1/0577/0379/2701/products/3246-002_1_700x.jpg?v=1658375250",
+  "minOrderQuantity": 1,
+  "rto": true,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683038484644"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683038484644"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64512130f2a0a0a93f69bc21"
+  },
+  "supplierId": {
+    "$oid": "6124820f85f731001e8529a0"
+  },
+  "name": "Drone",
+  "unit": "piece",
+  "description": "A high-quality drone with a built-in camera and GPS capabilities.",
+  "category": "electronics",
+  "subCategory": "gadget",
+  "price": 600,
+  "qty": 300,
+  "image": "\thttps://i.expansys.net/img/b/366089/dji-mini-2-drone.jpg",
+  "minOrderQuantity": 1,
+  "rto": true,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683038512290"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683038512290"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645121a0f2a0a0a93f69bc25"
+  },
+  "supplierId": {
+    "$oid": "6157d237453f243ef3b3e3b8"
+  },
+  "name": "Refurbished Smartphone",
+  "unit": "piece",
+  "description": "A high-end smartphone with latest features",
+  "category": "electronics",
+  "subCategory": "mobile",
+  "price": 950,
+  "qty": 300,
+  "image": "https://refurbiphones.ie/wp-content/uploads/2020/10/slideh4-i-4.png",
+  "minOrderQuantity": 10,
+  "rto": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683038624623"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683038624623"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6451221bf2a0a0a93f69bc27"
+  },
+  "supplierId": {
+    "$oid": "615fca2d83785d5c8ca5bda1"
+  },
+  "name": "Gaming Laptop",
+  "unit": "piece",
+  "description": "A high-performance gaming laptop with a fast processor and dedicated graphics card.",
+  "category": "electronics",
+  "subCategory": "Gaming",
+  "price": 1499.99,
+  "qty": 200,
+  "image": "https://m.media-amazon.com/images/I/81fZmxBbQgL._AC_SL1500_.jpg",
+  "minOrderQuantity": 1,
+  "rto": true,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683038747430"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683038747430"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6453c42be79d5b2e653cc39d"
+  },
+  "supplierId": {
+    "$oid": "615fca2d83785d5c8ca5bda1"
+  },
+  "name": "Wireless Bluetooth Speaker",
+  "unit": "piece",
+  "description": "A high-performance wireless Bluetooth speaker",
+  "category": "electronics",
+  "subCategory": "music",
+  "price": 5.99,
+  "qty": 10000,
+  "image": "https://p.globalsources.com/IMAGES/PDT/S1198656975/Pet-Stockings.jpg",
+  "minOrderQuantity": 60,
+  "rto": true,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683211307042"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683211307042"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6453c4a7e79d5b2e653cc3a5"
+  },
+  "supplierId": {
+    "$oid": "615fca2d83785d5c8ca5bda1"
+  },
+  "name": "Flexible Mobile Phone Mount Cup Car Holder",
+  "unit": "piece",
+  "description": "A Flexible Mobile Phone Mount Cup Car Holder make your life easier",
+  "category": "electronics",
+  "subCategory": "gadget",
+  "price": 2.5,
+  "qty": 2000,
+  "image": "https://p.globalsources.com/IMAGES/PDT/S1178582833/car-vent.jpg",
+  "minOrderQuantity": 120,
+  "rto": true,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683211431682"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683211431682"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6453c6abe79d5b2e653cc3f9"
+  },
+  "supplierId": {
+    "$oid": "615fca2d83785d5c8ca5bda1"
+  },
+  "name": "Handled eco shopping cotton canvas bag",
+  "unit": "piece",
+  "description": "A Handled eco shopping cotton canvas bag that can hold up to 5kg",
+  "category": "apparel",
+  "subCategory": "bag",
+  "price": 1.76,
+  "qty": 3000,
+  "image": "https://p.globalsources.com/IMAGES/PDT/S1198600655/canvas-bags.jpg",
+  "minOrderQuantity": 120,
+  "rto": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683211947499"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683211947499"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6453c840e79d5b2e653cc40f"
+  },
+  "supplierId": {
+    "$oid": "615fca2d83785d5c8ca5bda1"
+  },
+  "name": "Hot Sale Funny Animal Kids' LED Night",
+  "unit": "piece",
+  "description": "A Funny Animal Kids' LED Night for your kids",
+  "category": "electronics",
+  "subCategory": "gadget",
+  "price": 1.76,
+  "qty": 2000,
+  "image": "https://p.globalsources.com/IMAGES/PDT/S1180709116/LED-Night-Light.jpg",
+  "minOrderQuantity": 10,
+  "rto": true,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683212352026"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683212352026"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6453c8abe79d5b2e653cc417"
+  },
+  "supplierId": {
+    "$oid": "615fca2d83785d5c8ca5bda1"
+  },
+  "name": "Hot Selling M30 Smart Watch",
+  "unit": "piece",
+  "description": "A M30 Smart Watch with Android supported",
+  "category": "electronics",
+  "subCategory": "wearable",
+  "price": 25.99,
+  "qty": 1000,
+  "image": "https://p.globalsources.com/IMAGES/PDT/S1188084883/Amoled-smart-watch.jpg",
+  "minOrderQuantity": 10,
+  "rto": true,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683212459101"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683212459101"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6453c91ae79d5b2e653cc41f"
+  },
+  "supplierId": {
+    "$oid": "615fca2d83785d5c8ca5bda1"
+  },
+  "name": "Creative diamond anklet butterfly pendant anklet",
+  "unit": "piece",
+  "description": "A creative diamond anklet butterfly pendant anklet original made in butterfly",
+  "category": "apparel",
+  "subCategory": "accesories",
+  "price": 25.99,
+  "qty": 2200,
+  "image": "https://p.globalsources.com/IMAGES/PDT/S1191036775/anklet.jpg",
+  "minOrderQuantity": 10,
+  "rto": true,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683212570393"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683212570393"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6453c980e79d5b2e653cc421"
+  },
+  "supplierId": {
+    "$oid": "615fca2d83785d5c8ca5bda1"
+  },
+  "name": "Water Dispenser, Made of Ceramic",
+  "unit": "piece",
+  "description": "A Hot Water Dispenser, Made of Ceramic prevent your water from leaking",
+  "category": "home_garden",
+  "subCategory": "kitchen",
+  "price": 21.99,
+  "qty": 2200,
+  "image": "https://p.globalsources.com/IMAGES/PDT/S1149862504/Water-Dispenser.jpg",
+  "minOrderQuantity": 20,
+  "rto": true,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683212672226"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683217399056"
+    }
+  },
+  "__v": 0
+}]

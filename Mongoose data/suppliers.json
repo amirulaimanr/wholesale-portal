@@ -1,0 +1,123 @@
+[{
+  "_id": {
+    "$oid": "567870be9a1b36aa36e835ed"
+  },
+  "userId": {
+    "$oid": "1234e2f76d0c10d045252f8e"
+  },
+  "type": "Manufacturers",
+  "businessType": "corporation",
+  "employees": 18.437,
+  "logo": "",
+  "leadTime": "10-15 days",
+  "paymentTerms": "CBS",
+  "yearEstablished": 1917,
+  "country": "Japan",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683273660309"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683291265658"
+    }
+  },
+  "__v": 0,
+  "verified": true,
+  "responseTime": "24–48 h",
+  "about": "Nikon is the world leader in digital imaging, precision optics and photo imaging technology and is globally recognized for setting new standards in product design and performance.",
+  "name": "Nikon Corporation",
+  "address": "Shinagawa Intercity Tower C, 2-15-3, Konan, Minato-ku, Tokyo 108-6290",
+  "website": "https://www.nikon.com/"
+},{
+  "_id": {
+    "$oid": "6454fee6673b5184a95e08b8"
+  },
+  "userId": {
+    "$oid": "6454feae673b5184a95e08b5"
+  },
+  "name": "Shure Incorporated",
+  "type": "Manufacturers",
+  "businessType": "corporation",
+  "employees": 5000,
+  "logo": "",
+  "leadTime": "3-5days",
+  "paymentTerms": "CBS",
+  "yearEstablished": 1925,
+  "country": "Chicago",
+  "verified": true,
+  "responseTime": "24–48 h",
+  "about": "Shure is the most popular dynamic microphone in the world. This microphone is the choice of the both legends and top artist. ",
+  "address": "5800 W Touhy Ave, United States",
+  "website": "https://www.shure.com/",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683291878960"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683291878960"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645502c4673b5184a95e0926"
+  },
+  "name": "Uniqlo",
+  "type": "Retailer",
+  "businessType": "corporation",
+  "employees": 5000,
+  "logo": "",
+  "leadTime": "1-2days",
+  "paymentTerms": "Debit Card",
+  "yearEstablished": 1949,
+  "country": "Japan",
+  "verified": true,
+  "responseTime": "10–15 h",
+  "about": "Uniqlo cotton t-shirt are made from the luxurious texture and stunning coloring of 100% premium cotton that has high-quality cotton fabric. ",
+  "address": "G-011&L1-011,Ground Floor&Level 1, MyTOWN Shopping Centre,No. 6, Jalan Cochrane Seksyen 90,Kuala Lumpur,55100,Kuala Lumpur",
+  "website": "https://www.uniqlo.com/my/en/",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683292868440"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683292868440"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645504ee673b5184a95e0960"
+  },
+  "name": "Levi Strauss & Co.",
+  "type": "Retailer",
+  "businessType": "corporation",
+  "employees": 16000,
+  "logo": "",
+  "leadTime": "5-7days",
+  "paymentTerms": "Debit Card",
+  "yearEstablished": 1853,
+  "country": "San Franco",
+  "verified": true,
+  "responseTime": "10–16 h",
+  "about": "Levi's is now the most sustainable brand of jeans in the world when it comes to water usage. ",
+  "address": "Levis @ 1-Utama Shopping Centre is located at Lot G8, 1-Utama Shopping Centre, 47800, Petaling Jaya, Selangor",
+  "website": "https://www.levi.com.my/",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683293422743"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683293422743"
+    }
+  },
+  "__v": 0
+}]
