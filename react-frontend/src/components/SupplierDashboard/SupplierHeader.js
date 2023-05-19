@@ -30,7 +30,7 @@ const SupplierHeader = () => {
         <header className="main-header navbar">
             <div className="col-search">
                 <form className="searchform">
-                    <div className="p-inputgroup">
+                    <div className="p-inputgroup-s">
                         <InputText list="search_terms" type="text" placeholder="Search term" />
                         <Button icon="pi pi-search" className="p-button-warning" />
                     </div>
