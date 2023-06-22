@@ -1,0 +1,126 @@
+[{
+  "_id": {
+    "$oid": "644f77df9cd1c3a6f3a7fa37"
+  },
+  "selectedCountry": {
+    "name": "Australia",
+    "code": "AU"
+  },
+  "role": "Buyer",
+  "name": "Buyer 1",
+  "email": "buyer@gmail.com",
+  "companyName": "Buyer 1 Company",
+  "phoneNo": "01234567891",
+  "password": "$2a$10$52BgFfzKd.cio4yxwPss6uEbuid.j/U/t32LVQQyTV/8xh6DBf2LK",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1682929631591"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1682929631591"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6453e2f76d0c10d045252f8e"
+  },
+  "selectedCountry": {
+    "name": "Australia",
+    "code": "AU"
+  },
+  "role": "Supplier",
+  "name": "supplier",
+  "email": "supplier@gmail.com",
+  "companyName": "SUUPP.com",
+  "phoneNo": "01231234344",
+  "password": "$2a$10$fz8ZjEwx95m38AQ94eRdrOZsR.aRqUGzL4wf7xXGBSyPH9tAXXDpK",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683219191266"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683219191266"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "1234e2f76d0c10d045252f8e"
+  },
+  "selectedCountry": {
+    "name": "Japan",
+    "code": "JP"
+  },
+  "role": "Supplier",
+  "name": "Kiyosaki",
+  "email": "nikon@gmail.com",
+  "companyName": "Nikon",
+  "phoneNo": "0123123434",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683271473428"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683271560335"
+    }
+  },
+  "__v": 0,
+  "password": "$2a$10$i/SN46D8qQvy2tOika5qpeX8xx.zb2ckF6V8xfkvbCi.BF60U/JW."
+},{
+  "_id": {
+    "$oid": "6454feae673b5184a95e08b5"
+  },
+  "selectedCountry": {
+    "name": "USA",
+    "code": "US"
+  },
+  "role": "Supplier",
+  "name": "Shuriram",
+  "email": "shure@gmail.com",
+  "companyName": "Shure Incorporated",
+  "phoneNo": "012312456664",
+  "password": "$2a$10$r8QIxYu9StHbzR7JPqeb4eecI041iGttpaj2Yp0ncQVUOXKiEih6K",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683291822742"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683291822742"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645a598e475e8fb8c49a1640"
+  },
+  "selectedCountry": {
+    "name": "Australia",
+    "code": "AU"
+  },
+  "role": "Buyer",
+  "name": "Buyer 2",
+  "email": "buyer2@gmail.com",
+  "companyName": "Buyer 2.com",
+  "phoneNo": "01232134454",
+  "password": "$2a$10$o6sUb/8JdcnjZxbc0jgYAurUTHSKh3TmtRBcdfUUiYKz7LiPa4GLG",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1683642766571"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1683642766571"
+    }
+  },
+  "__v": 0
+}]
