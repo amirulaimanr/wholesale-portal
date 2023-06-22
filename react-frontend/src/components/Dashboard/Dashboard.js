@@ -18,6 +18,7 @@ const Dashboard = (props) => {
     const dispatch = useDispatch();
 
     const { productList, id } = useSelector((state) => state.productsModel);
+    console.log("ini pl", productList);
 
     useEffect(() => {
         dispatch.productsModel.fetchProducts(id);
@@ -37,6 +38,7 @@ const Dashboard = (props) => {
     });
 
     const rtoProducts = productList.filter((product) => product.rto);
+    console.log("ini rto", rtoProducts);
 
     // vertical dropdown menu
 
