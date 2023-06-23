@@ -29,7 +29,7 @@ export const productsModel = {
                 // dispatch.products.setLoading(true);
                 const query = {
                     query: {
-                        $and: [{ category }, { id: id }],
+                        $and: [{ category }],
                     },
                 };
 

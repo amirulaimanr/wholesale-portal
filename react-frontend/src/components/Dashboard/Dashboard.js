@@ -33,7 +33,7 @@ const Dashboard = (props) => {
         const productDate = new Date(product.createdAt);
         const today = new Date();
         const daysDifference = (today.getTime() - productDate.getTime()) / (1000 * 3600 * 24);
-        return daysDifference <= 30; // Return true for products created within the last 7 days
+        return daysDifference <= 33330; // Return true for products created within the last 7 days
     });
 
     const rtoProducts = productList.filter((product) => product.rto);
