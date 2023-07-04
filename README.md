@@ -1,5 +1,7 @@
 # wholesale-portal
 
+Software Project Management Plan : https://docs.google.com/document/d/17twld9H170ud4XX8LAT86WM3sdAC0KnukLwYe0OtL8E/edit?usp=sharing
+
 ## Available Scripts
 
 In the project directory, you can run:
