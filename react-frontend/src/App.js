@@ -3,6 +3,7 @@
 import React, { Component } from "react";
 import { init } from "@rematch/core";
 import { Provider } from "react-redux";
+import "react-loading-skeleton/dist/skeleton.css";
 
 import * as models from "./models";
 import MyRouter from "./MyRouter/MyRouter";
