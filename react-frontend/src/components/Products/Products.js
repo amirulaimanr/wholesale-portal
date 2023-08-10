@@ -1,15 +1,25 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "primereact/button";
-import { ProgressSpinner } from "primereact/progressspinner";
+import Skeleton from "react-loading-skeleton";
+import { useState, useEffect } from "react";
 
-const Products = ({ product, loading }) => {
+const Products = ({ product }) => {
+    // skeleton loading
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        setTimeout(() => {
+            setLoading(false);
+        }, 2000);
+    });
+
     return (
         <div>
             <div className="col-12 sm:col-6 lg:col-12 xl:col-4 p-2">
                 {loading ? (
-                    <div className="col-np-xl bg-white p-3 cursor-pointer mr-4 border-round productList-card" style={{ position: "relative" }}>
-                        <ProgressSpinner style={{ width: "50px", height: "50px", position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)" }} strokeWidth="8" fill="#EEEEEE" animationDuration=".5s" />
+                    <div style={{ marginRight: "20px" }}>
+                        <Skeleton height={400} width={240} />
                     </div>
                 ) : (
                     <div className="col-np-xl bg-white p-3 cursor-pointer mr-4 border-round productList-card" key={product.id}>

@@ -12,12 +12,13 @@ import { ProductService } from "../../services/productServices";
 import productsData from "../../data/productsData";
 import suppliersData from "../../data/suppliersData";
 import { useDispatch, useSelector } from "react-redux";
+import Skeleton from "react-loading-skeleton";
 
 const Dashboard = (props) => {
     const history = useHistory();
     const dispatch = useDispatch();
 
-    const { productList, id } = useSelector((state) => state.productsModel);
+    const { productList, id, loading } = useSelector((state) => state.productsModel);
 
     useEffect(() => {
         dispatch.productsModel.fetchProducts(id);
@@ -133,6 +134,15 @@ const Dashboard = (props) => {
     const itemTemplate = (item) => {
         return <img src={item.itemImageSrc} alt={item.alt} style={{ height: "400px", width: "100%", marginTop: "15px", display: "block" }} />;
     };
+
+    // // skeleton loading
+    // const [loading, setLoading] = useState(true);
+
+    // useEffect(() => {
+    //     setTimeout(() => {
+    //         setLoading(false);
+    //     }, 2000);
+    // });
 
     return (
         <div className="col-12 flex flex-column align-items-center">
@@ -326,19 +336,30 @@ const Dashboard = (props) => {
                     </div>
 
                     {newProducts.slice(0, 4).map((product) => (
-                        <Link to={`/products/${product.category}/${product._id}`} className="text-900">
-                            <div className="col-np bg-white pl-3 cursor-pointer" key={product.id}>
+                        <Link to={`/products/${product.category}/${product._id}`} className="text-900" key={product.id}>
+                            <div className="col-np bg-white pl-3 cursor-pointer">
                                 <div className="col-np-content">
-                                    <div className="col-np-image">
-                                        <img data-v-6fef611d="" width="100%" alt={product.name} className="img" data-src={product.image} src={product.image} lazy="loaded" />
-                                    </div>
+                                    <div className="col-np-image-h">{loading ? <Skeleton height={200} width={180} /> : <img data-v-6fef611d="" width="100%" alt={product.name} className="img" data-src={product.image} src={product.image} lazy="loaded" />}</div>
                                     <div className="product-details-flexbox-h">
-                                        <div className="product-name">{product.name}</div>
-                                        <div className="product-price">
-                                            <b>{product.price}</b> / {product.unit}
-                                        </div>
-                                        <div className="product-qty-h">{product.qty} (MOQ)</div>
-                                        <div className="product-button-h">Inquire Now</div>
+                                        {loading ? (
+                                            <>
+                                                <div style={{ marginTop: "20px" }}>
+                                                    <Skeleton height={20} width={100} />
+                                                </div>
+                                                <Skeleton height={20} width={60} />
+                                                <Skeleton height={20} width={40} />
+                                                <Skeleton height={20} width={80} />
+                                            </>
+                                        ) : (
+                                            <>
+                                                <div className="product-name">{product.name}</div>
+                                                <div className="product-price">
+                                                    <b>{product.price}</b> / {product.unit}
+                                                </div>
+                                                <div className="product-qty-h">{product.qty} (MOQ)</div>
+                                                <div className="product-button-h">Inquire Now</div>
+                                            </>
+                                        )}
                                     </div>
                                 </div>
                             </div>
@@ -356,16 +377,27 @@ const Dashboard = (props) => {
                         <Link to={`/products/${product.category}/${product._id}`} className="text-900">
                             <div className="col-np bg-white pl-3 cursor-pointer" key={product.id}>
                                 <div className="col-np-content">
-                                    <div className="col-np-image">
-                                        <img data-v-6fef611d="" width="100%" alt={product.name} className="img" data-src={product.image} src={product.image} lazy="loaded" />
-                                    </div>
+                                    <div className="col-np-image-h"> {loading ? <Skeleton height={200} width={180} /> : <img data-v-6fef611d="" width="100%" alt={product.name} className="img" data-src={product.image} src={product.image} lazy="loaded" />}</div>
                                     <div className="product-details-flexbox-h">
-                                        <div className="product-name">{product.name}</div>
-                                        <div className="product-price">
-                                            <b>{product.price}</b> / {product.unit}
-                                        </div>
-                                        <div className="product-qty-h">{product.qty} (MOQ)</div>
-                                        <div className="product-button-h">Order Now</div>
+                                        {loading ? (
+                                            <>
+                                                <div style={{ marginTop: "20px" }}>
+                                                    <Skeleton height={20} width={100} />
+                                                </div>
+                                                <Skeleton height={20} width={60} />
+                                                <Skeleton height={20} width={40} />
+                                                <Skeleton height={20} width={80} />
+                                            </>
+                                        ) : (
+                                            <>
+                                                <div className="product-name">{product.name}</div>
+                                                <div className="product-price">
+                                                    <b>{product.price}</b> / {product.unit}
+                                                </div>
+                                                <div className="product-qty-h">{product.qty} (MOQ)</div>
+                                                <div className="product-button-h">Order Now</div>
+                                            </>
+                                        )}
                                     </div>
                                 </div>
                             </div>

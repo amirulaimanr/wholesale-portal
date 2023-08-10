@@ -6,6 +6,7 @@ import Products from "../Products/Products";
 import CategoriesFilter from "./CategoriesFilter";
 import { Paginator } from "primereact/paginator";
 import client from "../../services/restClient";
+import Skeleton from "react-loading-skeleton";
 
 const CategoriesMain = ({ match }) => {
     const category = match.params.category;
@@ -20,12 +21,12 @@ const CategoriesMain = ({ match }) => {
 
     const dispatch = useDispatch();
 
-    const { productList, loading, error } = useSelector((state) => state.productsModel);
+    const { productList, loading } = useSelector((state) => state.productsModel);
     console.log("productList:", productList);
 
-    useEffect(() => {
-        dispatch.productsModel.fetchProducts(category);
-    }, [dispatch, category]);
+    // useEffect(() => {
+    //     dispatch.productsModel.fetchProducts(category);
+    // }, [dispatch, category]);
 
     const [products, setProducts] = useState([]);
 
@@ -80,14 +81,14 @@ const CategoriesMain = ({ match }) => {
     return (
         <>
             <CategoriesFilter applyFilters={applyFilters} />
-            <main className="main-wrap pl-4">
+            <main className="main-wrap pl-4" style={{ minHeight: "800px" }}>
                 <div className="text-orange-600 font-bold pl-4">
                     <h2>{match.params.category.replace(/_/g, " ").charAt(0).toUpperCase() + match.params.category.slice(1).replace(/_/g, " ")}</h2>
                 </div>
                 <div className="card-body">
                     {loading ? (
-                        <div className="text-center">
-                            <h3>Loading...</h3>
+                        <div style={{ marginRight: "20px" }}>
+                            <Skeleton height={400} width={240} />
                         </div>
                     ) : (
                         <div className="prod-row">

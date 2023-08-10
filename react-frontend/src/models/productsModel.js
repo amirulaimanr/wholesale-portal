@@ -26,7 +26,7 @@ export const productsModel = {
     effects: (dispatch) => ({
         async fetchProducts(category, id) {
             try {
-                // dispatch.products.setLoading(true);
+                dispatch.productsModel.setLoading(true);
                 const query = {
                     query: {
                         $and: [{ category }],
@@ -40,7 +40,7 @@ export const productsModel = {
             } catch (error) {
                 // dispatch.products.setError(error.response && error.response.data.message ? error.response.data.message : error.message);
             } finally {
-                // dispatch.products.setLoading(false);
+                dispatch.productsModel.setLoading(false);
             }
         },
 
